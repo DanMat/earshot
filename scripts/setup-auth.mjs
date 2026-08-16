@@ -13,6 +13,7 @@ import { execFileSync, execSync } from 'node:child_process';
 import { existsSync, readdirSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
+import { resolveAudible } from './resolve-audible.mjs';
 
 const CONFIG_DIR = join(homedir(), '.audible');
 
@@ -31,7 +32,8 @@ function die(msg) {
 }
 
 // ── Preflight ────────────────────────────────────────────────────────────────
-if (!has('audible')) {
+const AUDIBLE = resolveAudible();
+if (!AUDIBLE) {
 	die(
 		'audible-cli not found. Install it once (it is a Python tool):\n' +
 			'    pipx install audible-cli\n' +
@@ -49,12 +51,15 @@ if (existsSync(CONFIG_DIR) && readdirSync(CONFIG_DIR).some((f) => f.endsWith('.j
 } else {
 	console.log('→ Launching Audible login (audible quickstart).');
 	console.log('  Answer the prompts and sign in — clear any CAPTCHA/2FA here, once.\n');
-	execFileSync('audible', ['quickstart'], { stdio: 'inherit' });
+	execFileSync(AUDIBLE, ['quickstart'], { stdio: 'inherit' });
 }
 
 // ── 2. Export the library (the spike) ────────────────────────────────────────
 console.log('\n→ Pulling your library so we can see the fields…');
-execFileSync('node', ['scripts/pull.mjs'], { stdio: 'inherit' });
+execFileSync('node', ['scripts/pull.mjs'], {
+	stdio: 'inherit',
+	env: { ...process.env, AUDIBLE_BIN: AUDIBLE },
+});
 
 // ── 3. Store the whole auth/config dir as one GitHub secret ───────────────────
 // Snapshotting the dir (config + auth file, whatever it's named) is the robust

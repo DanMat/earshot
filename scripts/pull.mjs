@@ -10,6 +10,13 @@
  */
 import { execFileSync } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
+import { resolveAudible } from './resolve-audible.mjs';
+
+const AUDIBLE = resolveAudible();
+if (!AUDIBLE) {
+	console.error('\n✗ audible-cli not found. Run `pnpm setup:auth` first.\n');
+	process.exit(1);
+}
 
 mkdirSync('data', { recursive: true });
 
@@ -26,7 +33,7 @@ const RESPONSE_GROUPS = [
 	'listening_status',
 ].join(',');
 
-const run = (args) => execFileSync('audible', args, { stdio: 'inherit' });
+const run = (args) => execFileSync(AUDIBLE, args, { stdio: 'inherit' });
 
 console.log('→ Exporting your Audible library → data/library.json');
 try {

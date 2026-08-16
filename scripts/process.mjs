@@ -15,6 +15,11 @@ const items = raw.items ?? [];
 
 const names = (arr) => (arr ?? []).map((x) => x?.name).filter(Boolean);
 
+// Audible lists translators/editors/etc. in the authors array with a role suffix
+// ("J. Torres - translator"). Keep only actual authors.
+const NON_AUTHOR = /\s-\s(translator|editor|foreword|introduction|contributor|adapter|afterword)/i;
+const authorsOf = (arr) => names(arr).filter((n) => !NON_AUTHOR.test(n));
+
 /** Broadest genre from each category ladder (e.g. "Science Fiction & Fantasy"). */
 function genres(b) {
 	const out = new Set();
@@ -44,7 +49,7 @@ const books = items.map((b) => {
 		asin: b.asin,
 		title: b.title,
 		subtitle: b.subtitle ?? null,
-		authors: names(b.authors),
+		authors: authorsOf(b.authors),
 		narrators: names(b.narrators),
 		series: (b.series ?? []).map((s) => ({ title: s.title, sequence: s.sequence ?? null })),
 		genres: genres(b),

@@ -1,9 +1,36 @@
+# dependencies
 node_modules/
+.pnp.*
+.yarn/*
 
+# build output
+dist/
+coverage/
+*.tsbuildinfo
+
+# test artifacts (Playwright)
+test-results/
+playwright-report/
+playwright/.cache/
+
+# logs
+*.log
+npm-debug.log*
+
+# env & editor
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# ── earshot: Audible data & auth ──────────────────────────────────────────────
 # Raw Audible pull (root only) — has order/account fields. The curated,
 # copyright-safe subset lives in public/data/ and IS committed.
 /data/
-
-# Local Audible auth / config — NEVER commit. Token lives in the AUDIBLE_CONFIG GitHub secret.
+# Local Audible auth — NEVER commit. Token lives in the AUDIBLE_CONFIG secret.
 .audible/
 *.audible.json

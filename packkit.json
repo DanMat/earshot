@@ -1,0 +1,151 @@
+{
+  "$schema": "https://packkitlabs.github.io/create-packkit-js/packkit.schema.json",
+  "generator": "create-packkit",
+  "version": "4.4.0",
+  "preset": "react-app",
+  "settings": {
+    "target": [
+      "app"
+    ],
+    "framework": "react",
+    "packageManager": "pnpm",
+    "nodeVersion": "22",
+    "sourcemaps": false,
+    "lint": "biome",
+    "release": "none",
+    "workflows": [
+      "ci"
+    ]
+  },
+  "baseline": {
+    "schemaVersion": 1,
+    "files": {
+      ".editorconfig": {
+        "hash": "1811c495930b03"
+      },
+      ".github/ISSUE_TEMPLATE/bug_report.md": {
+        "hash": "14665755d4fe69"
+      },
+      ".github/ISSUE_TEMPLATE/feature_request.md": {
+        "hash": "19ef8d724b4866"
+      },
+      ".github/PULL_REQUEST_TEMPLATE.md": {
+        "hash": "174297edf0cebd"
+      },
+      ".github/renovate.json": {
+        "hash": "0ae9c2290044dd"
+      },
+      ".github/workflows/ci.yml": {
+        "hash": "14be76ac2b62f9"
+      },
+      ".gitignore": {
+        "hash": "1fd9c31aebe75a"
+      },
+      ".npmrc": {
+        "hash": "154fbd08123dcc"
+      },
+      ".nvmrc": {
+        "hash": "00d50b19fe3538"
+      },
+      ".vscode/extensions.json": {
+        "hash": "18f6f91b644a03"
+      },
+      ".vscode/settings.json": {
+        "hash": "13fea7fc45b85e"
+      },
+      "AGENTS.md": {
+        "hash": "0ceac0a65b8f2f"
+      },
+      "CLAUDE.md": {
+        "hash": "0a3e1dac8414fa"
+      },
+      "CODE_OF_CONDUCT.md": {
+        "hash": "11130d8e94d7e7"
+      },
+      "CONTRIBUTING.md": {
+        "hash": "1dcd9bc9b8a58f"
+      },
+      "LICENSE": {
+        "hash": "0e08f61c4b401a"
+      },
+      "README.md": {
+        "hash": "13f37f4e4c649d"
+      },
+      "SECURITY.md": {
+        "hash": "1fc69ca4db19fc"
+      },
+      "biome.json": {
+        "hash": "08e127fb8b6613"
+      },
+      "index.html": {
+        "hash": "1034ff664c0262"
+      },
+      "package.json": {
+        "hash": "175643db76f2f6"
+      },
+      "src/App.tsx": {
+        "hash": "0da0bea6c25237"
+      },
+      "src/index.test.tsx": {
+        "hash": "1f48393bba2f79"
+      },
+      "src/main.tsx": {
+        "hash": "15b54f6a5f506d"
+      },
+      "tsconfig.json": {
+        "hash": "016a0659e66edd"
+      },
+      "vite.config.ts": {
+        "hash": "0ef14dc2b7bcff"
+      },
+      "vitest.config.ts": {
+        "hash": "11f4a64b66fc1c"
+      }
+    },
+    "packageJson": {
+      "scripts": {
+        "typecheck": "tsc --noEmit",
+        "dev": "vite",
+        "build": "tsc --noEmit && vite build",
+        "preview": "vite preview",
+        "clean": "rimraf dist",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "coverage": "vitest run --coverage",
+        "lint": "biome lint .",
+        "lint:fix": "biome lint --write .",
+        "format": "biome format --write .",
+        "prepare": "simple-git-hooks"
+      },
+      "dependencies": {
+        "dependencies": {
+          "react": "^19.0.0",
+          "react-dom": "^19.0.0"
+        },
+        "devDependencies": {
+          "@biomejs/biome": "^2.0.0",
+          "@testing-library/dom": "^10.0.0",
+          "@testing-library/react": "^16.0.0",
+          "@types/node": "^22.0.0",
+          "@types/react": "^19.0.0",
+          "@types/react-dom": "^19.0.0",
+          "@vitejs/plugin-react": "^6.0.0",
+          "@vitest/coverage-v8": "^4.0.0",
+          "jsdom": "^29.0.0",
+          "lint-staged": "^16.2.0",
+          "rimraf": "^6.0.0",
+          "simple-git-hooks": "^2.11.0",
+          "typescript": "^5.9.3",
+          "vite": "^8.0.0",
+          "vitest": "^4.0.0"
+        }
+      },
+      "protectedFields": {
+        "engines": {
+          "node": ">=22.13.0"
+        },
+        "packageManager": "pnpm@9.10.0"
+      }
+    }
+  }
+}

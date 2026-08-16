@@ -1,14 +1,58 @@
 {
 	"name": "earshot",
 	"version": "0.0.0",
+	"description": "My audiobook year — pulled automatically from Audible.",
+	"license": "MIT",
 	"private": true,
 	"type": "module",
-	"description": "My audiobook year — pulled automatically from Audible.",
+	"engines": {
+		"node": ">=22.13.0"
+	},
 	"packageManager": "pnpm@10.34.5",
 	"scripts": {
+		"dev": "vite",
+		"build": "tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit",
+		"clean": "rimraf dist",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"coverage": "vitest run --coverage",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint --write .",
+		"format": "biome format --write .",
+		"prepare": "simple-git-hooks",
 		"setup:auth": "node scripts/setup-auth.mjs",
 		"pull": "node scripts/pull.mjs",
 		"process": "node scripts/process.mjs",
 		"refresh": "node scripts/pull.mjs && node scripts/process.mjs"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx}": "biome check --write --no-errors-on-unmatched"
+	},
+	"dependencies": {
+		"@fontsource-variable/fraunces": "^5.3.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.0",
+		"@testing-library/dom": "^10.0.0",
+		"@testing-library/react": "^16.0.0",
+		"@types/node": "^22.0.0",
+		"@types/react": "^19.0.0",
+		"@types/react-dom": "^19.0.0",
+		"@vitejs/plugin-react": "^6.0.0",
+		"@vitest/coverage-v8": "^4.0.0",
+		"jsdom": "^29.0.0",
+		"lint-staged": "^16.2.0",
+		"rimraf": "^6.0.0",
+		"simple-git-hooks": "^2.11.0",
+		"typescript": "^5.9.3",
+		"vite": "^8.0.0",
+		"vitest": "^4.0.0"
 	}
 }

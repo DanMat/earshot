@@ -25,7 +25,8 @@
 		"setup:auth": "node scripts/setup-auth.mjs",
 		"pull": "node scripts/pull.mjs",
 		"process": "node scripts/process.mjs",
-		"refresh": "node scripts/pull.mjs && node scripts/process.mjs"
+		"refresh": "node scripts/pull.mjs && node scripts/process.mjs",
+		"deploy": "pnpm build && wrangler deploy"
 	},
 	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged"
@@ -53,6 +54,7 @@
 		"simple-git-hooks": "^2.11.0",
 		"typescript": "^5.9.3",
 		"vite": "^8.0.0",
-		"vitest": "^4.0.0"
+		"vitest": "^4.0.0",
+		"wrangler": "^4.123.0"
 	}
 }

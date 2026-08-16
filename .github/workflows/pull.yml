@@ -1,0 +1,102 @@
+name: pull
+
+# Automatic Audible refresh. Restores the device token from the AUDIBLE_CONFIG
+# secret, pulls + processes the library, and commits the curated data when it
+# changes. On failure (usually an expired token) it opens a GitHub issue — which
+# emails you — with the 2-minute fix, and auto-closes it once a pull succeeds.
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # daily, 08:00 UTC
+  workflow_dispatch: # let me trigger it by hand too
+
+permissions:
+  contents: write # commit refreshed data
+  issues: write # open/close the re-auth issue
+
+concurrency:
+  group: pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install audible-cli
+        run: pip install --disable-pip-version-check audible-cli
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Restore Audible auth
+        env:
+          AUDIBLE_CONFIG: ${{ secrets.AUDIBLE_CONFIG }}
+        run: |
+          if [ -z "$AUDIBLE_CONFIG" ]; then
+            echo "::error::AUDIBLE_CONFIG secret is empty. Run 'pnpm setup:auth' locally to set it."
+            exit 1
+          fi
+          mkdir -p "$HOME/.audible"
+          printf '%s' "$AUDIBLE_CONFIG" | base64 -d | tar xzf - -C "$HOME/.audible"
+
+      - name: Pull + process
+        run: |
+          node scripts/pull.mjs
+          node scripts/process.mjs
+
+      - name: Commit refreshed data
+        run: |
+          if [ -n "$(git status --porcelain public/data)" ]; then
+            git config user.name "earshot-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/data
+            git commit -m "chore: refresh audiobook data [skip ci]"
+            git push
+            echo "Data updated."
+          else
+            echo "No changes."
+          fi
+
+      - name: Auth recovered — close re-auth issue
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --label audible-auth --state open --json number -q '.[].number'); do
+            gh issue close "$n" -c "✅ A scheduled pull just succeeded — auth is healthy again."
+          done
+
+      - name: Auth failed — open re-auth issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create audible-auth --color B60205 --description "Audible token needs a refresh" 2>/dev/null || true
+          existing=$(gh issue list --label audible-auth --state open --json number -q '.[].number' | head -1)
+          body=$(cat <<EOF
+          The scheduled Audible pull failed — most likely the device token expired
+          (password change, deregistered device, or a security event).
+
+          **Fix (~2 min):**
+          \`\`\`bash
+          cd earshot
+          pnpm setup:auth
+          \`\`\`
+          That re-logs you in and re-stores the \`AUDIBLE_CONFIG\` secret. The next
+          run (or a manual **Run workflow**) will pick it up and auto-close this issue.
+
+          Failed run: $RUN_URL
+          EOF
+          )
+          if [ -z "$existing" ]; then
+            gh issue create --label audible-auth --title "🔑 Audible re-auth needed" --body "$body"
+          else
+            gh issue comment "$existing" --body "Still failing. $RUN_URL"
+          fi

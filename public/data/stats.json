@@ -1,0 +1,294 @@
+{
+  "generatedAt": "2026-08-16T22:14:51.942Z",
+  "totals": {
+    "library": 126,
+    "finished": 80,
+    "inProgress": 19,
+    "notStarted": 28,
+    "finishedHours": 1284,
+    "libraryHours": 2048,
+    "libraryDays": 85
+  },
+  "span": {
+    "first": "2024-09-01T10:12:27.626Z",
+    "last": "2026-08-11T08:53:59.604Z"
+  },
+  "topNarrators": [
+    {
+      "name": "Heath Miller",
+      "count": 12
+    },
+    {
+      "name": "Travis Baldree",
+      "count": 10
+    },
+    {
+      "name": "Jeff Hays",
+      "count": 8
+    },
+    {
+      "name": "Ki Hong Lee",
+      "count": 8
+    },
+    {
+      "name": "Hugh Laurie",
+      "count": 7
+    },
+    {
+      "name": "Matthew Macfadyen",
+      "count": 7
+    },
+    {
+      "name": "Riz Ahmed",
+      "count": 7
+    },
+    {
+      "name": "Michelle Gomez",
+      "count": 7
+    },
+    {
+      "name": "Cush Jumbo",
+      "count": 7
+    },
+    {
+      "name": "Mark Addy",
+      "count": 6
+    },
+    {
+      "name": "Simon Pegg",
+      "count": 6
+    },
+    {
+      "name": "John Meagher",
+      "count": 6
+    }
+  ],
+  "topAuthors": [
+    {
+      "name": "James Rollins",
+      "count": 14
+    },
+    {
+      "name": "Shirtaloon",
+      "count": 12
+    },
+    {
+      "name": "Travis Deverell",
+      "count": 12
+    },
+    {
+      "name": "J. Torres - translator",
+      "count": 9
+    },
+    {
+      "name": "Hye Young Im - translator",
+      "count": 9
+    },
+    {
+      "name": "Matt Dinniman",
+      "count": 8
+    },
+    {
+      "name": "TurtleMe",
+      "count": 8
+    },
+    {
+      "name": "Chugong",
+      "count": 8
+    },
+    {
+      "name": "J.K. Rowling",
+      "count": 7
+    },
+    {
+      "name": "Rebecca Cantrell",
+      "count": 5
+    },
+    {
+      "name": "Tommy Kerper",
+      "count": 4
+    },
+    {
+      "name": "SourpatchHero",
+      "count": 4
+    }
+  ],
+  "topGenres": [
+    {
+      "name": "Science Fiction & Fantasy",
+      "count": 62
+    },
+    {
+      "name": "Literature & Fiction",
+      "count": 21
+    },
+    {
+      "name": "Mystery, Thriller & Suspense",
+      "count": 19
+    },
+    {
+      "name": "Children's Audiobooks",
+      "count": 7
+    },
+    {
+      "name": "Romance",
+      "count": 3
+    },
+    {
+      "name": "Comedy & Humor",
+      "count": 2
+    },
+    {
+      "name": "Teen & Young Adult",
+      "count": 2
+    },
+    {
+      "name": "Arts & Entertainment",
+      "count": 1
+    }
+  ],
+  "series": [
+    {
+      "title": "He Who Fights with Monsters",
+      "owned": 12,
+      "finished": 12
+    },
+    {
+      "title": "Red Rising",
+      "owned": 11,
+      "finished": 0
+    },
+    {
+      "title": "The Beginning After the End",
+      "owned": 10,
+      "finished": 8
+    },
+    {
+      "title": "Dungeon Crawler Carl",
+      "owned": 8,
+      "finished": 8
+    },
+    {
+      "title": "Solo Leveling Series",
+      "owned": 8,
+      "finished": 8
+    },
+    {
+      "title": "Harry Potter (Full-Cast Editions)",
+      "owned": 7,
+      "finished": 7
+    },
+    {
+      "title": "Sigma Force",
+      "owned": 7,
+      "finished": 1
+    },
+    {
+      "title": "The Order of the Sanguines",
+      "owned": 5,
+      "finished": 5
+    },
+    {
+      "title": "I'm Not the Hero",
+      "owned": 4,
+      "finished": 4
+    },
+    {
+      "title": "Gideon Crew Series",
+      "owned": 3,
+      "finished": 2
+    },
+    {
+      "title": "The Age of Madness",
+      "owned": 3,
+      "finished": 0
+    },
+    {
+      "title": "Moonfall",
+      "owned": 3,
+      "finished": 3
+    },
+    {
+      "title": "Audible Iliad & Odyssey",
+      "owned": 2,
+      "finished": 0
+    },
+    {
+      "title": "Iliad & Odyssey",
+      "owned": 2,
+      "finished": 0
+    },
+    {
+      "title": "Mage Tank",
+      "owned": 2,
+      "finished": 0
+    },
+    {
+      "title": "The Dresden Files",
+      "owned": 2,
+      "finished": 2
+    },
+    {
+      "title": "Hierarchy",
+      "owned": 2,
+      "finished": 2
+    },
+    {
+      "title": "Omniscient Reader's Viewpoint",
+      "owned": 2,
+      "finished": 2
+    },
+    {
+      "title": "Quantum Earth",
+      "owned": 2,
+      "finished": 2
+    }
+  ],
+  "byMonth": {
+    "2026-08": 1,
+    "2026-07": 2,
+    "2026-06": 9,
+    "2026-05": 2,
+    "2026-04": 2,
+    "2026-03": 1,
+    "2026-02": 3,
+    "2026-01": 6,
+    "2025-12": 3,
+    "2025-11": 2,
+    "2025-10": 2,
+    "2025-09": 8,
+    "2025-07": 2,
+    "2025-06": 2,
+    "2025-05": 1,
+    "2025-04": 4,
+    "2025-03": 3,
+    "2025-02": 7,
+    "2025-01": 1,
+    "2024-12": 3,
+    "2024-11": 8,
+    "2024-10": 6,
+    "2024-09": 2
+  },
+  "longest": [
+    {
+      "title": "Seveneves",
+      "runtimeMin": 1915
+    },
+    {
+      "title": "The Strength of the Few",
+      "runtimeMin": 1870
+    },
+    {
+      "title": "He Who Fights with Monsters: A LitRPG Adventure",
+      "runtimeMin": 1736
+    },
+    {
+      "title": "This Inevitable Ruin",
+      "runtimeMin": 1720
+    },
+    {
+      "title": "The Will of the Many",
+      "runtimeMin": 1694
+    }
+  ]
+}

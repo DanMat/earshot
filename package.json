@@ -7,6 +7,8 @@
 	"packageManager": "pnpm@10.34.5",
 	"scripts": {
 		"setup:auth": "node scripts/setup-auth.mjs",
-		"pull": "node scripts/pull.mjs"
+		"pull": "node scripts/pull.mjs",
+		"process": "node scripts/process.mjs",
+		"refresh": "node scripts/pull.mjs && node scripts/process.mjs"
 	}
 }

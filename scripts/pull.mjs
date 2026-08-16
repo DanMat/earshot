@@ -25,6 +25,7 @@ mkdirSync('data', { recursive: true });
 const RESPONSE_GROUPS = [
 	'contributors',
 	'series',
+	'media', // cover art (product_images)
 	'product_attrs',
 	'product_desc',
 	'product_extended_attrs',

@@ -1,7 +1,8 @@
 node_modules/
 
-# Pulled Audible data (spike output; the public site will publish a curated subset)
-data/
+# Raw Audible pull (root only) — has order/account fields. The curated,
+# copyright-safe subset lives in public/data/ and IS committed.
+/data/
 
 # Local Audible auth / config — NEVER commit. Token lives in the AUDIBLE_CONFIG GitHub secret.
 .audible/

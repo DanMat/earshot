@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
-import type { Book, EarshotData, Stats } from './data.js';
+import type { Book, EarshotData, People, Stats } from './data.js';
 import { loadData } from './data.js';
 import { hours, monthsBetween, monthYear, names, num, shortMonth } from './format.js';
+import { Share } from './ShareCard.js';
 
 export function App() {
 	const [data, setData] = useState<EarshotData | null>(null);
@@ -26,14 +27,15 @@ export function App() {
 			</main>
 		);
 
-	const { books, stats } = data;
+	const { books, stats, people } = data;
 
 	return (
 		<main className="wrap">
 			<Hero books={books} stats={stats} />
-			<Narrators books={books} stats={stats} />
+			<Narrators books={books} stats={stats} people={people} />
 			<Series stats={stats} />
 			<Timeline stats={stats} />
+			<FunFacts stats={stats} />
 			<Library books={books} />
 			<Footer stats={stats} />
 		</main>
@@ -77,6 +79,10 @@ function Hero({ books, stats }: { books: Book[]; stats: Stats }) {
 				<Figure n={String(t.libraryDays)} sub="days" k="In the library" />
 				<Figure n={String(t.notStarted)} k="Antilibrary (unstarted)" />
 			</div>
+
+			<div className="hero-actions">
+				<Share stats={stats} />
+			</div>
 		</header>
 	);
 }
@@ -94,9 +100,13 @@ function Figure({ n, sub, k }: { n: string; sub?: string; k: string }) {
 }
 
 // ── Narrators (the spine) ─────────────────────────────────────────────────────
-function Narrators({ books, stats }: { books: Book[]; stats: Stats }) {
+type Bio = { name: string; extract: string; url: string };
+
+function Narrators({ books, stats, people }: { books: Book[]; stats: Stats; people: People }) {
 	const finished = books.filter((b) => b.finished);
 	const lead = stats.topNarrators[0];
+	const [bio, setBio] = useState<Bio | null>(null);
+
 	const leadStats = useMemo(() => {
 		if (!lead) return null;
 		const theirs = finished.filter((b) => b.narrators.includes(lead.name));
@@ -104,6 +114,14 @@ function Narrators({ books, stats }: { books: Book[]; stats: Stats }) {
 		return { hours: Math.round(mins / 60), titles: theirs.map((b) => b.title) };
 	}, [finished, lead]);
 
+	useEffect(() => {
+		if (!bio) return;
+		const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setBio(null);
+		window.addEventListener('keydown', onKey);
+		return () => window.removeEventListener('keydown', onKey);
+	}, [bio]);
+
+	const leadBio = lead ? people[lead.name] : undefined;
 	const max = stats.topNarrators[0]?.count ?? 1;
 
 	return (
@@ -112,7 +130,7 @@ function Narrators({ books, stats }: { books: Book[]; stats: Stats }) {
 			<h2 id="voices">Narrators, not just authors</h2>
 			<p className="intro">
 				A book lives or dies on its narrator. These are the voices I spent the most time with — the
-				ones my brain now hears whenever I open the next one.
+				ones my brain now hears whenever I open the next one. Tap a name for a quick bio.
 			</p>
 
 			{lead && leadStats ? (
@@ -126,6 +144,14 @@ function Narrators({ books, stats }: { books: Book[]; stats: Stats }) {
 							My most-heard narrator — <b>{lead.count} finished books</b>, roughly{' '}
 							<b>{leadStats.hours} hours</b> in their company.
 						</div>
+						{leadBio?.found && leadBio.extract ? (
+							<p className="lead-bio">
+								{leadBio.extract}{' '}
+								<a href={leadBio.url} target="_blank" rel="noreferrer">
+									Wikipedia ↗
+								</a>
+							</p>
+						) : null}
 					</div>
 				</div>
 			) : null}
@@ -133,30 +159,91 @@ function Narrators({ books, stats }: { books: Book[]; stats: Stats }) {
 			<div className="cols">
 				<div className="col">
 					<h3>Most-heard narrators</h3>
-					<Ranked items={stats.topNarrators.slice(0, 8)} max={max} />
+					<Ranked items={stats.topNarrators.slice(0, 8)} max={max} people={people} onBio={setBio} />
 				</div>
 				<div className="col">
 					<h3>Most-read authors</h3>
-					<Ranked items={stats.topAuthors.slice(0, 8)} max={stats.topAuthors[0]?.count ?? 1} />
+					<Ranked
+						items={stats.topAuthors.slice(0, 8)}
+						max={stats.topAuthors[0]?.count ?? 1}
+						people={people}
+						onBio={setBio}
+					/>
 				</div>
 			</div>
+
+			{bio ? (
+				<div className="modal" role="dialog" aria-modal="true" aria-label={bio.name}>
+					<button
+						type="button"
+						className="modal-backdrop"
+						aria-label="Close"
+						onClick={() => setBio(null)}
+					/>
+					<div className="modal-panel">
+						<div className="modal-head">
+							<h3>{bio.name}</h3>
+							<button
+								type="button"
+								className="modal-close"
+								aria-label="Close"
+								onClick={() => setBio(null)}
+							>
+								×
+							</button>
+						</div>
+						<p className="modal-bio">{bio.extract}</p>
+						<a className="modal-link" href={bio.url} target="_blank" rel="noreferrer">
+							Read more on Wikipedia ↗
+						</a>
+					</div>
+				</div>
+			) : null}
 		</section>
 	);
 }
 
-function Ranked({ items, max }: { items: { name: string; count: number }[]; max: number }) {
+function Ranked({
+	items,
+	max,
+	people,
+	onBio,
+}: {
+	items: { name: string; count: number }[];
+	max: number;
+	people: People;
+	onBio: (b: Bio) => void;
+}) {
 	return (
 		<div className="rank">
-			{items.map((it, idx) => (
-				<div className="rank-row" key={it.name}>
-					<span className="i">{idx + 1}</span>
-					<span className="name">{it.name}</span>
-					<span className="bar" aria-hidden="true">
-						<i style={{ width: `${(it.count / max) * 100}%` }} />
-					</span>
-					<span className="c">{it.count}</span>
-				</div>
-			))}
+			{items.map((it, idx) => {
+				const p = people[it.name];
+				const hasBio = p?.found && !!p.extract;
+				const inner = (
+					<>
+						<span className="i">{idx + 1}</span>
+						<span className="name">{it.name}</span>
+						<span className="bar" aria-hidden="true">
+							<i style={{ width: `${(it.count / max) * 100}%` }} />
+						</span>
+						<span className="c">{it.count}</span>
+					</>
+				);
+				return hasBio ? (
+					<button
+						type="button"
+						className="rank-row rank-btn"
+						key={it.name}
+						onClick={() => onBio({ name: it.name, extract: p.extract ?? '', url: p.url ?? '#' })}
+					>
+						{inner}
+					</button>
+				) : (
+					<div className="rank-row" key={it.name}>
+						{inner}
+					</div>
+				);
+			})}
 		</div>
 	);
 }
@@ -211,6 +298,56 @@ function Timeline({ stats }: { stats: Stats }) {
 						<span className="tl-n">{b.count || ''}</span>
 						<div className="tl-bar" style={{ height: `${(b.count / max) * 100}%` }} />
 						<span className="tl-m">{shortMonth(b.ym)}</span>
+					</div>
+				))}
+			</div>
+		</section>
+	);
+}
+
+// ── Fun facts (for scale) ─────────────────────────────────────────────────────
+function FunFacts({ stats }: { stats: Stats }) {
+	const t = stats.totals;
+	const roadTrips = Math.round(t.finishedHours / 45); // ~45h to drive coast-to-coast
+	const daysNonstop = Math.round(t.finishedHours / 24);
+	const longest = stats.longest[0];
+	const busiest = stats.busiestMonth;
+
+	const facts: { emoji: string; big: string; label: string }[] = [
+		{ emoji: '🚗', big: `${roadTrips}×`, label: 'coast-to-coast road trips of listening' },
+		{ emoji: '🌙', big: `${daysNonstop}`, label: 'full days, if played back to back' },
+		{ emoji: '🎙', big: `${t.narrators}`, label: 'different narrators in my ears' },
+		{ emoji: '✍️', big: `${t.authors}`, label: 'authors read' },
+	];
+	if (busiest) {
+		facts.push({
+			emoji: '🔥',
+			big: `${busiest.count}`,
+			label: `books in my busiest month (${shortMonth(busiest.ym)})`,
+		});
+	}
+	if (longest) {
+		facts.push({
+			emoji: '⏳',
+			big: hours(longest.runtimeMin),
+			label: `longest single listen — ${longest.title}`,
+		});
+	}
+
+	return (
+		<section className="section" aria-labelledby="scale">
+			<p className="section-label">For scale</p>
+			<h2 id="scale">The numbers, for fun</h2>
+			<div className="funfacts">
+				{facts.map((f) => (
+					<div className="fun" key={f.label}>
+						<div className="fun-big">
+							<span className="fun-emoji" aria-hidden="true">
+								{f.emoji}
+							</span>
+							{f.big}
+						</div>
+						<div className="fun-label">{f.label}</div>
 					</div>
 				))}
 			</div>

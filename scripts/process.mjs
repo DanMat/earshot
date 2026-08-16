@@ -110,6 +110,9 @@ for (const b of finished) {
 	byMonth[m] = (byMonth[m] ?? 0) + 1;
 }
 
+const uniqCount = (arr, keyFn) => new Set(arr.flatMap(keyFn).filter(Boolean)).size;
+const busiest = Object.entries(byMonth).sort((a, z) => z[1] - a[1])[0];
+
 const stats = {
 	totals: {
 		library: books.length,
@@ -119,7 +122,11 @@ const stats = {
 		finishedHours: hrs(finished),
 		libraryHours: hrs(books),
 		libraryDays: Math.round(hrs(books) / 24),
+		narrators: uniqCount(finished, (b) => b.narrators),
+		authors: uniqCount(finished, (b) => b.authors),
+		seriesStarted: series.filter((s) => s.finished > 0).length,
 	},
+	busiestMonth: busiest ? { ym: busiest[0], count: busiest[1] } : null,
 	span: {
 		first: finished.map((b) => b.finishedAt).filter(Boolean).sort()[0] ?? null,
 		last: finished.map((b) => b.finishedAt).filter(Boolean).sort().at(-1) ?? null,
@@ -133,7 +140,13 @@ const stats = {
 		.slice()
 		.sort((a, z) => (z.runtimeMin || 0) - (a.runtimeMin || 0))
 		.slice(0, 5)
-		.map((b) => ({ title: b.title, runtimeMin: b.runtimeMin })),
+		.map((b) => ({
+			title: b.title,
+			runtimeMin: b.runtimeMin,
+			authors: b.authors,
+			narrators: b.narrators,
+			coverUrl: b.coverUrl,
+		})),
 };
 
 mkdirSync('public/data', { recursive: true });

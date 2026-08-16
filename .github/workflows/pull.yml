@@ -45,10 +45,11 @@ jobs:
           mkdir -p "$HOME/.audible"
           printf '%s' "$AUDIBLE_CONFIG" | base64 -d | tar xzf - -C "$HOME/.audible"
 
-      - name: Pull + process
+      - name: Pull + process + enrich
         run: |
           node scripts/pull.mjs
           node scripts/process.mjs
+          node scripts/enrich.mjs
 
       - name: Commit refreshed data
         run: |

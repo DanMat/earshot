@@ -25,7 +25,8 @@
 		"setup:auth": "node scripts/setup-auth.mjs",
 		"pull": "node scripts/pull.mjs",
 		"process": "node scripts/process.mjs",
-		"refresh": "node scripts/pull.mjs && node scripts/process.mjs",
+		"enrich": "node scripts/enrich.mjs",
+		"refresh": "node scripts/pull.mjs && node scripts/process.mjs && node scripts/enrich.mjs",
 		"deploy": "pnpm build && wrangler deploy"
 	},
 	"simple-git-hooks": {
@@ -36,6 +37,7 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/fraunces": "^5.3.0",
+		"modern-screenshot": "^4.7.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
 	},

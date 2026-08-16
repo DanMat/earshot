@@ -6,7 +6,14 @@
     "notStarted": 28,
     "finishedHours": 1284,
     "libraryHours": 2048,
-    "libraryDays": 85
+    "libraryDays": 85,
+    "narrators": 81,
+    "authors": 24,
+    "seriesStarted": 14
+  },
+  "busiestMonth": {
+    "ym": "2026-06",
+    "count": 9
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
@@ -271,23 +278,61 @@
   "longest": [
     {
       "title": "Seveneves",
-      "runtimeMin": 1915
+      "runtimeMin": 1915,
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "narrators": [
+        "Mary Robinette Kowal",
+        "Will Damron"
+      ],
+      "coverUrl": "https://m.media-amazon.com/images/I/41ca2pXECyL._SL500_.jpg"
     },
     {
       "title": "The Strength of the Few",
-      "runtimeMin": 1870
+      "runtimeMin": 1870,
+      "authors": [
+        "James Islington"
+      ],
+      "narrators": [
+        "Euan Morton"
+      ],
+      "coverUrl": "https://m.media-amazon.com/images/I/51tb4tf17KL._SL500_.jpg"
     },
     {
       "title": "He Who Fights with Monsters: A LitRPG Adventure",
-      "runtimeMin": 1736
+      "runtimeMin": 1736,
+      "authors": [
+        "Shirtaloon",
+        "Travis Deverell"
+      ],
+      "narrators": [
+        "Heath Miller"
+      ],
+      "coverUrl": "https://m.media-amazon.com/images/I/51KQ+4F1OVL._SL500_.jpg"
     },
     {
       "title": "This Inevitable Ruin",
-      "runtimeMin": 1720
+      "runtimeMin": 1720,
+      "authors": [
+        "Matt Dinniman"
+      ],
+      "narrators": [
+        "Jeff Hays",
+        "Travis Baldree"
+      ],
+      "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg"
     },
     {
       "title": "The Will of the Many",
-      "runtimeMin": 1694
+      "runtimeMin": 1694,
+      "authors": [
+        "James Islington"
+      ],
+      "narrators": [
+        "Euan Morton"
+      ],
+      "coverUrl": "https://m.media-amazon.com/images/I/51iWZRnlRmL._SL500_.jpg"
     }
   ]
 }

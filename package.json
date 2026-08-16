@@ -1,0 +1,12 @@
+{
+	"name": "earshot",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "My audiobook year — pulled automatically from Audible.",
+	"packageManager": "pnpm@10.34.5",
+	"scripts": {
+		"setup:auth": "node scripts/setup-auth.mjs",
+		"pull": "node scripts/pull.mjs"
+	}
+}

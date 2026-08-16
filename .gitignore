@@ -1,0 +1,8 @@
+node_modules/
+
+# Pulled Audible data (spike output; the public site will publish a curated subset)
+data/
+
+# Local Audible auth / config — NEVER commit. Token lives in the AUDIBLE_CONFIG GitHub secret.
+.audible/
+*.audible.json

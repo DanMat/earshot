@@ -61,7 +61,9 @@ const books = items.map((b) => {
 			overall: r.display_average_rating ? Number(r.display_average_rating) : null,
 			narration: perf.display_average_rating ? Number(perf.display_average_rating) : null,
 			story: story.display_average_rating ? Number(story.display_average_rating) : null,
-			count: r.num_ratings ?? null,
+			// rounded to the nearest 100 — a retrospective wants a stable snapshot,
+			// not a daily commit every time a stranger rates the book.
+			count: r.num_ratings ? Math.round(r.num_ratings / 100) * 100 : null,
 		},
 		coverUrl: coverUrl(b),
 		audibleUrl: b.product_page_url ?? (b.asin ? `https://www.audible.com/pd/${b.asin}` : null),
@@ -104,7 +106,6 @@ for (const b of finished) {
 }
 
 const stats = {
-	generatedAt: new Date().toISOString(),
 	totals: {
 		library: books.length,
 		finished: finished.length,

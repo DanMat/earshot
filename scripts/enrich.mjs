@@ -94,6 +94,14 @@ async function resolve(name) {
 }
 
 // ── run ───────────────────────────────────────────────────────────────────────
+// Found bios are cached forever (they rarely change). Misses are cached with a
+// timestamp and periodically re-checked, so someone who *gets* a Wikipedia page
+// later (e.g. a rising indie narrator) is eventually picked up.
+const STALE_MS = 30 * 24 * 60 * 60 * 1000; // re-check misses after 30 days
+const now = Date.now();
+const isStaleMiss = (e) =>
+	e && e.found === false && (!e.checkedAt || now - Date.parse(e.checkedAt) > STALE_MS);
+
 const stats = JSON.parse(readFileSync('public/data/stats.json', 'utf8'));
 const cache = existsSync(CACHE) ? JSON.parse(readFileSync(CACHE, 'utf8')) : {};
 
@@ -101,13 +109,18 @@ const wanted = [
 	...stats.topNarrators.map((x) => x.name),
 	...stats.topAuthors.map((x) => x.name),
 ];
-const todo = [...new Set(wanted)].filter((name) => !(name in cache));
+const todo = [...new Set(wanted)].filter((name) => !(name in cache) || isStaleMiss(cache[name]));
 
-console.log(`→ enriching ${todo.length} new name(s) (${Object.keys(cache).length} cached)`);
+const fresh = todo.filter((n) => !(n in cache)).length;
+console.log(
+	`→ enriching ${todo.length} name(s): ${fresh} new, ${todo.length - fresh} stale re-check ` +
+		`(${Object.keys(cache).length} cached)`,
+);
 let hits = 0;
 for (const name of todo) {
 	const res = await resolve(name);
-	cache[name] = res;
+	// stamp misses so we re-check them on a cadence, not every run
+	cache[name] = res.found ? res : { found: false, checkedAt: new Date().toISOString() };
 	if (res.found) hits++;
 	console.log(`   ${res.found ? '✓' : '·'} ${name}`);
 	await sleep(200);

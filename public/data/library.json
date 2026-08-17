@@ -26,8 +26,8 @@
     "releaseDate": "2014-08-05",
     "purchaseDate": "2026-08-11T08:54:36.027Z",
     "finished": false,
-    "percentComplete": 53,
-    "finishedAt": "2026-08-16T15:59:14.365Z",
+    "percentComplete": 59,
+    "finishedAt": "2026-08-17T03:50:18.144Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -87,11 +87,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -1986,7 +1986,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 308900
+      "count": 309000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2024,7 +2024,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 29700
+      "count": 29800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK282SYV"
@@ -2250,7 +2250,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 66600
+      "count": 66700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -4332,7 +4332,7 @@
       "story": 4.4,
       "count": 1100
     },
-    "coverUrl": "https://m.media-amazon.com/images/I/61DX-kVK+oL._SL500_.jpg",
+    "coverUrl": "https://m.media-amazon.com/images/I/61n2omGmJ8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B003VKXIAA"
   },
   {
@@ -4716,11 +4716,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

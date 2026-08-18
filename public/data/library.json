@@ -26,8 +26,8 @@
     "releaseDate": "2014-08-05",
     "purchaseDate": "2026-08-11T08:54:36.027Z",
     "finished": false,
-    "percentComplete": 59,
-    "finishedAt": "2026-08-17T03:50:18.144Z",
+    "percentComplete": 95,
+    "finishedAt": "2026-08-18T07:09:02.120Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -377,7 +377,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 26300
+      "count": 26400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -427,7 +427,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5300
+      "count": 5400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -494,7 +494,7 @@
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
-      "story": 4.5,
+      "story": 4.6,
       "count": 70900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/419rQcegOyL._SL500_.jpg",
@@ -1333,7 +1333,7 @@
       "overall": 4.8,
       "narration": 4.8,
       "story": 4.8,
-      "count": 14000
+      "count": 14100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51iWZRnlRmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0BXTL5Y9C"
@@ -1986,7 +1986,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 309000
+      "count": 309200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2063,7 +2063,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 23200
+      "count": 23300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2137,7 +2137,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30200
+      "count": 30300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2175,7 +2175,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 36600
+      "count": 36700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2212,7 +2212,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38000
+      "count": 38100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2250,7 +2250,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 66700
+      "count": 66800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -4716,11 +4716,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

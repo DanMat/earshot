@@ -24,7 +24,6 @@ jobs:
   pull:
     runs-on: ubuntu-latest
     env:
-      AUDIBLE_CONFIG_DIR: ${{ runner.temp }}/audible
       AUDIBLE_COUNTRY_CODE: ${{ vars.AUDIBLE_COUNTRY_CODE }}
     steps:
       - uses: actions/checkout@v4
@@ -38,6 +37,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: Set Audible config dir
+        run: echo "AUDIBLE_CONFIG_DIR=$RUNNER_TEMP/audible" >> "$GITHUB_ENV"
 
       - name: Create ephemeral Audible auth
         env:

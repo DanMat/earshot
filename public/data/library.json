@@ -377,7 +377,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 26500
+      "count": 26600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -1986,7 +1986,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 309300
+      "count": 309400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2100,7 +2100,7 @@
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.4,
-      "count": 11900
+      "count": 12000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QB1lclwjL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DV1119K4"
@@ -2175,7 +2175,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 36700
+      "count": 36800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -4716,11 +4716,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

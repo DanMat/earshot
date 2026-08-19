@@ -1,9 +1,11 @@
 name: pull
 
-# Automatic Audible refresh. Restores the device token from the AUDIBLE_CONFIG
-# secret, pulls + processes the library, and commits the curated data when it
-# changes. On failure (usually an expired token) it opens a GitHub issue — which
-# emails you — with the 2-minute fix, and auto-closes it once a pull succeeds.
+# Automatic Audible refresh. Builds an ephemeral Audible auth on the runner from
+# the AUDIBLE_ADP_TOKEN + AUDIBLE_DEVICE_PRIVATE_KEY secrets (the only two
+# credentials ADP request signing needs), pulls + processes the library, and
+# commits the curated data when it changes. On failure (usually an expired token)
+# it opens a GitHub issue, which emails you, with the fix, and auto-closes it once
+# a pull succeeds.
 
 on:
   schedule:
@@ -21,6 +23,9 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-latest
+    env:
+      AUDIBLE_CONFIG_DIR: ${{ runner.temp }}/audible
+      AUDIBLE_COUNTRY_CODE: ${{ vars.AUDIBLE_COUNTRY_CODE }}
     steps:
       - uses: actions/checkout@v4
 
@@ -34,16 +39,47 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Restore Audible auth
+      - name: Create ephemeral Audible auth
         env:
-          AUDIBLE_CONFIG: ${{ secrets.AUDIBLE_CONFIG }}
+          AUDIBLE_ADP_TOKEN: ${{ secrets.AUDIBLE_ADP_TOKEN }}
+          AUDIBLE_DEVICE_PRIVATE_KEY: ${{ secrets.AUDIBLE_DEVICE_PRIVATE_KEY }}
         run: |
-          if [ -z "$AUDIBLE_CONFIG" ]; then
-            echo "::error::AUDIBLE_CONFIG secret is empty. Run 'pnpm setup:auth' locally to set it."
-            exit 1
-          fi
-          mkdir -p "$HOME/.audible"
-          printf '%s' "$AUDIBLE_CONFIG" | base64 -d | tar xzf - -C "$HOME/.audible"
+          mkdir -p "$AUDIBLE_CONFIG_DIR"
+
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          config_dir = Path(os.environ["AUDIBLE_CONFIG_DIR"])
+          country_code = os.environ["AUDIBLE_COUNTRY_CODE"]
+
+          private_key = os.environ["AUDIBLE_DEVICE_PRIVATE_KEY"]
+          # audible currently expects the PEM to end with a newline.
+          if not private_key.endswith("\n"):
+              private_key += "\n"
+
+          auth = {
+              "adp_token": os.environ["AUDIBLE_ADP_TOKEN"],
+              "device_private_key": private_key,
+          }
+
+          (config_dir / "auth.json").write_text(json.dumps(auth), encoding="utf-8")
+          (config_dir / "config.toml").write_text(
+              f'''
+          [APP]
+          primary_profile = "ci"
+
+          [profile.ci]
+          auth_file = "auth.json"
+          country_code = "{country_code}"
+          '''.strip(),
+              encoding="utf-8",
+          )
+          PY
+
+          chmod 700 "$AUDIBLE_CONFIG_DIR"
+          chmod 600 "$AUDIBLE_CONFIG_DIR/auth.json"
 
       - name: Pull + process + enrich
         run: |
@@ -70,7 +106,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           for n in $(gh issue list --label audible-auth --state open --json number -q '.[].number'); do
-            gh issue close "$n" -c "✅ A scheduled pull just succeeded — auth is healthy again."
+            gh issue close "$n" -c "✅ A scheduled pull just succeeded, auth is healthy again."
           done
 
       - name: Auth failed — open re-auth issue
@@ -82,16 +118,14 @@ jobs:
           gh label create audible-auth --color B60205 --description "Audible token needs a refresh" 2>/dev/null || true
           existing=$(gh issue list --label audible-auth --state open --json number -q '.[].number' | head -1)
           body=$(cat <<EOF
-          The scheduled Audible pull failed — most likely the device token expired
+          The scheduled Audible pull failed, most likely the device token expired
           (password change, deregistered device, or a security event).
 
-          **Fix (~2 min):**
-          \`\`\`bash
-          cd earshot
-          pnpm setup:auth
-          \`\`\`
-          That re-logs you in and re-stores the \`AUDIBLE_CONFIG\` secret. The next
-          run (or a manual **Run workflow**) will pick it up and auto-close this issue.
+          **Fix:** re-authenticate locally with \`audible quickstart\`, then update
+          the \`AUDIBLE_ADP_TOKEN\` and \`AUDIBLE_DEVICE_PRIVATE_KEY\` repo secrets
+          from the new auth file (its \`adp_token\` and \`device_private_key\`
+          values). The next run (or a manual **Run workflow**) picks it up and
+          auto-closes this issue.
 
           Failed run: $RUN_URL
           EOF

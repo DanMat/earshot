@@ -2,8 +2,9 @@
 /**
  * Pull the Audible library to data/library.json.
  *
- * Reusable: run locally after setup:auth, or in CI (the workflow restores the
- * auth into ~/.audible from the AUDIBLE_CONFIG secret before calling this).
+ * Reusable: run locally after setup:auth, or in CI (the pull workflow sets up
+ * audible-cli and an ephemeral auth via the mkb79/setup-audible-cli action
+ * before calling this).
  *
  * The full `library` export (with contributors) gives us the fields that make
  * this project interesting — narrators, series, runtime — not just titles.

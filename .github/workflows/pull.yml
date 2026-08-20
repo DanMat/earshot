@@ -1,7 +1,8 @@
 name: pull
 
-# Automatic Audible refresh. Builds an ephemeral Audible auth on the runner from
-# the AUDIBLE_ADP_TOKEN + AUDIBLE_DEVICE_PRIVATE_KEY secrets (the only two
+# Automatic Audible refresh. Uses the mkb79/setup-audible-cli action to install
+# audible-cli and build an ephemeral auth on the runner from the
+# AUDIBLE_ADP_TOKEN + AUDIBLE_DEVICE_PRIVATE_KEY secrets (the only two
 # credentials ADP request signing needs), pulls + processes the library, and
 # commits the curated data when it changes. On failure (usually an expired token)
 # it opens a GitHub issue, which emails you, with the fix, and auto-closes it once
@@ -23,65 +24,18 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-latest
-    env:
-      AUDIBLE_COUNTRY_CODE: ${{ vars.AUDIBLE_COUNTRY_CODE }}
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install audible-cli
-        run: pip install --disable-pip-version-check audible-cli
 
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Set Audible config dir
-        run: echo "AUDIBLE_CONFIG_DIR=$RUNNER_TEMP/audible" >> "$GITHUB_ENV"
-
-      - name: Create ephemeral Audible auth
-        env:
-          AUDIBLE_ADP_TOKEN: ${{ secrets.AUDIBLE_ADP_TOKEN }}
-          AUDIBLE_DEVICE_PRIVATE_KEY: ${{ secrets.AUDIBLE_DEVICE_PRIVATE_KEY }}
-        run: |
-          mkdir -p "$AUDIBLE_CONFIG_DIR"
-
-          python - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          config_dir = Path(os.environ["AUDIBLE_CONFIG_DIR"])
-          country_code = os.environ["AUDIBLE_COUNTRY_CODE"]
-
-          private_key = os.environ["AUDIBLE_DEVICE_PRIVATE_KEY"]
-          # audible currently expects the PEM to end with a newline.
-          if not private_key.endswith("\n"):
-              private_key += "\n"
-
-          auth = {
-              "adp_token": os.environ["AUDIBLE_ADP_TOKEN"],
-              "device_private_key": private_key,
-          }
-
-          (config_dir / "auth.json").write_text(json.dumps(auth), encoding="utf-8")
-          (config_dir / "config.toml").write_text(
-              f'''
-          [APP]
-          primary_profile = "ci"
-
-          [profile.ci]
-          auth_file = "auth.json"
-          country_code = "{country_code}"
-          '''.strip(),
-              encoding="utf-8",
-          )
-          PY
-
-          chmod 700 "$AUDIBLE_CONFIG_DIR"
-          chmod 600 "$AUDIBLE_CONFIG_DIR/auth.json"
+      - uses: mkb79/setup-audible-cli@v1
+        with:
+          adp-token: ${{ secrets.AUDIBLE_ADP_TOKEN }}
+          device-private-key: ${{ secrets.AUDIBLE_DEVICE_PRIVATE_KEY }}
+          country-code: ${{ vars.AUDIBLE_COUNTRY_CODE }}
 
       - name: Pull + process + enrich
         run: |

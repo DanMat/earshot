@@ -1,10 +1,10 @@
 {
   "totals": {
     "library": 126,
-    "finished": 80,
-    "inProgress": 19,
+    "finished": 81,
+    "inProgress": 18,
     "notStarted": 28,
-    "finishedHours": 1284,
+    "finishedHours": 1295,
     "libraryHours": 2048,
     "libraryDays": 85,
     "narrators": 81,
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-08-11T08:53:59.604Z"
+    "last": "2026-08-20T05:20:32.437Z"
   },
   "topNarrators": [
     {
@@ -111,12 +111,12 @@
       "count": 4
     },
     {
-      "name": "Dennis E. Taylor",
+      "name": "Douglas Preston",
       "count": 3
     },
     {
-      "name": "Douglas Preston",
-      "count": 2
+      "name": "Lincoln Child",
+      "count": 3
     }
   ],
   "topGenres": [
@@ -126,11 +126,11 @@
     },
     {
       "name": "Literature & Fiction",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Mystery, Thriller & Suspense",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Children's Audiobooks",
@@ -202,7 +202,7 @@
     {
       "title": "Gideon Crew Series",
       "owned": 3,
-      "finished": 2
+      "finished": 3
     },
     {
       "title": "The Age of Madness",
@@ -251,7 +251,7 @@
     }
   ],
   "byMonth": {
-    "2026-08": 1,
+    "2026-08": 2,
     "2026-07": 2,
     "2026-06": 9,
     "2026-05": 2,

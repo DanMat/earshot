@@ -25,9 +25,9 @@
     "runtimeMin": 649,
     "releaseDate": "2014-08-05",
     "purchaseDate": "2026-08-11T08:54:36.027Z",
-    "finished": false,
-    "percentComplete": 81,
-    "finishedAt": "2026-08-19T02:40:03.515Z",
+    "finished": true,
+    "percentComplete": 99,
+    "finishedAt": "2026-08-20T05:20:32.437Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -127,11 +127,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -339,7 +339,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
-      "story": 4.7,
+      "story": 4.8,
       "count": 600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51A0fMhiCwL._SL500_.jpg",
@@ -494,7 +494,7 @@
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
-      "story": 4.6,
+      "story": 4.5,
       "count": 70900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/419rQcegOyL._SL500_.jpg",
@@ -590,7 +590,7 @@
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
-      "story": 4.7,
+      "story": 4.6,
       "count": 400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51UblROgwwL._SL500_.jpg",
@@ -2212,7 +2212,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38100
+      "count": 38200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2250,7 +2250,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 66900
+      "count": 67000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -4716,11 +4716,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

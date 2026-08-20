@@ -1,8 +1,6 @@
-# One-off validation for mkb79/setup-audible-cli (a private repo Dan collaborates
-# on). It checks the action out into this workflow and runs it with earshot's real
-# Audible secrets, then makes a live API call to prove the ephemeral auth the
-# action builds actually authenticates against Audible end to end -- the one thing
-# the action's own fake-credential test suite cannot cover.
+# Validation for mkb79/setup-audible-cli, now that it is public. Runs the action
+# with earshot's real Audible secrets and makes a live API call to prove the
+# ephemeral auth authenticates against Audible end to end.
 #
 # Manual only. earshot is public, so this must never be a pull_request or
 # pull_request_target trigger: the Audible secrets must not be reachable from
@@ -19,19 +17,8 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      # Private action, so check it out with a collaborator token instead of
-      # `uses: mkb79/setup-audible-cli@...` (which only resolves for public or
-      # same-org actions).
-      - name: Check out the setup-audible-cli action
-        uses: actions/checkout@v4
-        with:
-          repository: mkb79/setup-audible-cli
-          ref: main
-          token: ${{ secrets.SETUP_AUDIBLE_CLI_TOKEN }}
-          path: .github/actions/setup-audible-cli
-
-      - name: Set up audible-cli (authenticated) via the action
-        uses: ./.github/actions/setup-audible-cli
+      - name: Set up audible-cli (authenticated) via the published action
+        uses: mkb79/setup-audible-cli@v1
         with:
           adp-token: ${{ secrets.AUDIBLE_ADP_TOKEN }}
           device-private-key: ${{ secrets.AUDIBLE_DEVICE_PRIVATE_KEY }}
@@ -41,9 +28,6 @@ jobs:
         run: |
           set -euo pipefail
           audible --version
-          # A signed API call that only succeeds if the ephemeral adp_token +
-          # device_private_key the action wrote actually authenticate. Limited to
-          # one result to keep the payload tiny.
           audible api 1.0/library -p num_results=1 -o library.json
           python3 - <<'PY'
           import json, pathlib

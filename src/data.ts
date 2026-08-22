@@ -82,17 +82,39 @@ export type Badge = {
 	percentToNext: number | null;
 };
 
+/** A book saved to my Audible wishlist. */
+export type WishlistItem = {
+	asin: string;
+	title: string;
+	authors: string[];
+	narrators: string[];
+	addedAt: string | null;
+	runtimeMin: number | null;
+	coverUrl: string | null;
+	audibleUrl: string;
+};
+
+/** Real listening-time stats (minutes), from Audible's aggregates endpoint. */
+export type Listening = {
+	totalHours: number;
+	startDay: string;
+	daily: { date: string; min: number }[];
+	monthly: { ym: string; min: number }[];
+};
+
 export type EarshotData = {
 	books: Book[];
 	stats: Stats;
 	people: People;
 	geo: Geo;
 	badges: Badge[];
+	wishlist: WishlistItem[];
+	listening: Listening | null;
 };
 
 export async function loadData(): Promise<EarshotData> {
 	const base = import.meta.env.BASE_URL;
-	const [books, stats, people, geo, badges] = await Promise.all([
+	const [books, stats, people, geo, badges, wishlist, listening] = await Promise.all([
 		fetch(`${base}data/library.json`).then((r) => r.json() as Promise<Book[]>),
 		fetch(`${base}data/stats.json`).then((r) => r.json() as Promise<Stats>),
 		// people.json is optional (enrichment may not have run) — default to empty.
@@ -107,6 +129,14 @@ export async function loadData(): Promise<EarshotData> {
 		fetch(`${base}data/badges.json`)
 			.then((r) => (r.ok ? (r.json() as Promise<Badge[]>) : []))
 			.catch(() => [] as Badge[]),
+		// wishlist.json is optional.
+		fetch(`${base}data/wishlist.json`)
+			.then((r) => (r.ok ? (r.json() as Promise<WishlistItem[]>) : []))
+			.catch(() => [] as WishlistItem[]),
+		// listening.json is optional.
+		fetch(`${base}data/listening.json`)
+			.then((r) => (r.ok ? (r.json() as Promise<Listening>) : null))
+			.catch(() => null),
 	]);
-	return { books, stats, people, geo, badges };
+	return { books, stats, people, geo, badges, wishlist, listening };
 }

@@ -44,6 +44,8 @@ jobs:
           node scripts/enrich.mjs
           node scripts/geo.mjs
           node scripts/badges.mjs
+          node scripts/wishlist.mjs
+          node scripts/listening.mjs
 
       - name: Commit refreshed data
         run: |

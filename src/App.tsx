@@ -1,5 +1,14 @@
 import { type CSSProperties, useEffect, useMemo, useState } from 'react';
-import type { Badge, Book, EarshotData, Geo, People, Stats } from './data.js';
+import type {
+	Badge,
+	Book,
+	EarshotData,
+	Geo,
+	Listening,
+	People,
+	Stats,
+	WishlistItem,
+} from './data.js';
 import { loadData } from './data.js';
 import { hm, hours, monthsBetween, monthYear, names, num, shortMonth } from './format.js';
 import { Share } from './ShareCard.js';
@@ -28,7 +37,7 @@ export function App() {
 			</main>
 		);
 
-	const { books, stats, people, geo, badges } = data;
+	const { books, stats, people, geo, badges, wishlist, listening } = data;
 
 	return (
 		<main className="wrap">
@@ -39,9 +48,11 @@ export function App() {
 			<NarratorLift books={books} />
 			<AroundWorld books={books} geo={geo} />
 			<Series stats={stats} />
+			<ListeningCalendar listening={listening} />
 			<Timeline stats={stats} />
 			<FunFacts stats={stats} />
 			<Badges badges={badges} />
+			<Wishlist items={wishlist} />
 			<Library books={books} />
 			<Footer stats={stats} />
 		</main>
@@ -835,6 +846,111 @@ function Card({ book: b }: { book: Book }) {
 				</div>
 			) : null}
 		</article>
+	);
+}
+
+// ── Listening calendar (heatmap) ──────────────────────────────────────────────
+function ListeningCalendar({ listening }: { listening: Listening | null }) {
+	const cells = useMemo(() => {
+		if (!listening || listening.daily.length === 0) return null;
+		const byDate = new Map(listening.daily.map((d) => [d.date, d.min]));
+		const start = new Date(`${listening.startDay}T00:00:00Z`);
+		const end = new Date();
+		const days: { date: string; min: number }[] = [];
+		for (const d = new Date(start); d <= end; d.setUTCDate(d.getUTCDate() + 1)) {
+			const iso = d.toISOString().slice(0, 10);
+			days.push({ date: iso, min: byDate.get(iso) ?? 0 });
+		}
+		return { days, pad: start.getUTCDay() };
+	}, [listening]);
+
+	if (!listening || !cells) return null;
+
+	const listenedDays = listening.daily.filter((d) => d.min > 0).length;
+	const busiest = listening.daily.reduce((a, b) => (b.min > a.min ? b : a));
+	const level = (min: number) => (min <= 0 ? 0 : min < 30 ? 1 : min < 90 ? 2 : min < 180 ? 3 : 4);
+
+	return (
+		<section className="section" aria-labelledby="calendar">
+			<p className="section-label">A year in the ears</p>
+			<h2 id="calendar">Every day I pressed play</h2>
+			<p className="intro">
+				Real listening time, straight from Audible: <b>{num(listening.totalHours)} hours</b>{' '}
+				all-time, and I’ve had something playing on <b>{listenedDays}</b> of the last{' '}
+				{cells.days.length} days. Each square is a day; the darker the amber, the longer I listened.
+			</p>
+			<div className="cal-scroll">
+				<div
+					className="cal"
+					role="img"
+					aria-label="Heatmap of how much I listened each day over the past year"
+				>
+					{Array.from({ length: cells.pad }).map((_, i) => (
+						// biome-ignore lint/suspicious/noArrayIndexKey: fixed leading pad cells
+						<span key={`pad-${i}`} className="cal-cell pad" />
+					))}
+					{cells.days.map((d) => (
+						<span
+							key={d.date}
+							className={`cal-cell l${level(d.min)}`}
+							title={`${d.date} · ${hm(d.min)}`}
+						/>
+					))}
+				</div>
+			</div>
+			<div className="cal-legend">
+				<span>Quieter</span>
+				<i className="l1" />
+				<i className="l2" />
+				<i className="l3" />
+				<i className="l4" />
+				<span>Busier</span>
+				<span className="cal-busy">
+					Biggest day:{' '}
+					{new Date(`${busiest.date}T00:00:00Z`).toLocaleDateString('en-US', {
+						month: 'short',
+						day: 'numeric',
+						year: 'numeric',
+						timeZone: 'UTC',
+					})}{' '}
+					— <b>{hm(busiest.min)}</b>
+				</span>
+			</div>
+		</section>
+	);
+}
+
+// ── Wishlist ──────────────────────────────────────────────────────────────────
+function Wishlist({ items }: { items: WishlistItem[] }) {
+	if (items.length === 0) return null;
+	const totalHours = Math.round(items.reduce((s, b) => s + (b.runtimeMin ?? 0), 0) / 60);
+	return (
+		<section className="section" aria-labelledby="wishlist">
+			<p className="section-label">Saved for later</p>
+			<h2 id="wishlist">On the wishlist</h2>
+			<p className="intro">
+				{items.length} books I’ve earmarked but not started — about {num(totalHours)} hours waiting
+				in the wings. Newest saves first.
+			</p>
+			<div className="grid">
+				{items.map((b) => (
+					<article className="card" key={b.asin}>
+						<a
+							className="cover"
+							href={b.audibleUrl}
+							target="_blank"
+							rel="noreferrer"
+							title={`${b.title} on Audible`}
+						>
+							{b.coverUrl ? <img src={b.coverUrl} alt="" loading="lazy" /> : null}
+							{b.addedAt ? <span className="badge want">Saved {monthYear(b.addedAt)}</span> : null}
+						</a>
+						<div className="ct">{b.title}</div>
+						<div className="cmeta">{names(b.authors)}</div>
+					</article>
+				))}
+			</div>
+		</section>
 	);
 }
 

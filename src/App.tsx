@@ -52,6 +52,7 @@ export function App() {
 			<Timeline stats={stats} />
 			<FunFacts stats={stats} />
 			<Badges badges={badges} />
+			<SeriesChallenges stats={stats} />
 			<Wishlist items={wishlist} />
 			<Library books={books} />
 			<Footer stats={stats} />
@@ -915,6 +916,104 @@ function ListeningCalendar({ listening }: { listening: Listening | null }) {
 					})}{' '}
 					— <b>{hm(busiest.min)}</b>
 				</span>
+			</div>
+		</section>
+	);
+}
+
+// ── Series challenges (computed from my own completions) ──────────────────────
+// Audible's official Series Challenges (like Harry Potter) live behind an API we
+// can't reach, but we can do better from the library itself: every series where
+// I've finished every book I own, plus the ones I'm still working through.
+const SERIES_EMOJI: Record<string, string> = {
+	'Harry Potter (Full-Cast Editions)': '⚡',
+	'He Who Fights with Monsters': '👊',
+	'Dungeon Crawler Carl': '🐈',
+	'Solo Leveling Series': '⚔️',
+	'The Order of the Sanguines': '🩸',
+	"I'm Not the Hero": '🦸',
+	Moonfall: '🌙',
+	'The Dresden Files': '🔮',
+	Hierarchy: '🏛️',
+	"Omniscient Reader's Viewpoint": '👁️',
+	'Quantum Earth': '🌍',
+	'The Beginning After the End': '🐉',
+	'Gideon Crew Series': '🔍',
+	'Sigma Force': '🎯',
+};
+const seriesEmoji = (title: string) => SERIES_EMOJI[title] ?? '📚';
+
+function SeriesChallenges({ stats }: { stats: Stats }) {
+	const completed = stats.series
+		.filter((s) => s.owned >= 2 && s.finished >= s.owned)
+		.sort((a, b) => b.owned - a.owned);
+	const chasing = stats.series
+		.filter((s) => s.owned >= 3 && s.finished > 0 && s.finished < s.owned)
+		.sort((a, b) => b.finished / b.owned - a.finished / a.owned)
+		.slice(0, 4);
+	if (completed.length === 0) return null;
+
+	return (
+		<section className="section" aria-labelledby="challenges">
+			<p className="section-label">Series challenges</p>
+			<h2 id="challenges">Series I’ve conquered</h2>
+			<p className="intro">
+				<b>{completed.length}</b> series I’m fully caught up on — every book I own, finished, in
+				order (yes, all seven Harry Potters ⚡). And a few I’m still chasing.
+			</p>
+			<div className="badges">
+				{completed.map((s) => (
+					<figure
+						className="medal master"
+						key={s.title}
+						title={`${s.title} — caught up, ${s.owned} books`}
+					>
+						<div
+							className="medal-disc"
+							style={{ '--ring': '#f7c877', '--deg': '360deg' } as CSSProperties}
+						>
+							<span className="medal-emoji" aria-hidden="true">
+								{seriesEmoji(s.title)}
+							</span>
+						</div>
+						<figcaption>
+							<span className="medal-name">{s.title}</span>
+							<span className="medal-tier" style={{ color: '#f7c877' }}>
+								✓ {s.owned} books
+							</span>
+						</figcaption>
+					</figure>
+				))}
+				{chasing.map((s) => {
+					const pct = Math.round((s.finished / s.owned) * 100);
+					return (
+						<figure
+							className="medal"
+							key={s.title}
+							title={`${s.title} — ${s.finished} of ${s.owned}`}
+						>
+							<div
+								className="medal-disc"
+								style={
+									{
+										'--ring': 'var(--amber)',
+										'--deg': `${Math.round((pct / 100) * 360)}deg`,
+									} as CSSProperties
+								}
+							>
+								<span className="medal-emoji" aria-hidden="true">
+									{seriesEmoji(s.title)}
+								</span>
+							</div>
+							<figcaption>
+								<span className="medal-name">{s.title}</span>
+								<span className="medal-tier">
+									{s.finished}/{s.owned} · {pct}%
+								</span>
+							</figcaption>
+						</figure>
+					);
+				})}
 			</div>
 		</section>
 	);

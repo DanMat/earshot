@@ -1,7 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { App } from './App.js';
+import { App, spineGenre } from './App.js';
+import type { Book } from './data.js';
 import { hm, hours, names, num, shortMonth } from './format.js';
+
+const book = (genres: string[]): Book =>
+	({ title: 't', authors: [], narrators: [], series: [], genres }) as unknown as Book;
 
 describe('format helpers', () => {
 	it('formats numbers with separators', () => {
@@ -22,6 +26,18 @@ describe('format helpers', () => {
 	});
 	it('renders a compact month label', () => {
 		expect(shortMonth('2026-08')).toBe('Aug ’26');
+	});
+});
+
+describe('spineGenre (shelf colouring)', () => {
+	it('picks the most specific genre we have a colour for', () => {
+		expect(spineGenre(book(['Literature & Fiction', 'Science Fiction & Fantasy']))).toBe(
+			'Science Fiction & Fantasy',
+		);
+	});
+	it('falls back to Other when no genre is colour-mapped', () => {
+		expect(spineGenre(book(['Cooking, Food & Wine']))).toBe('Other');
+		expect(spineGenre(book([]))).toBe('Other');
 	});
 });
 

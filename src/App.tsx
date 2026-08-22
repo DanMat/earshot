@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Book, EarshotData, People, Stats } from './data.js';
 import { loadData } from './data.js';
-import { hours, monthsBetween, monthYear, names, num, shortMonth } from './format.js';
+import { hm, hours, monthsBetween, monthYear, names, num, shortMonth } from './format.js';
 import { Share } from './ShareCard.js';
 
 export function App() {
@@ -32,6 +32,7 @@ export function App() {
 	return (
 		<main className="wrap">
 			<Hero books={books} stats={stats} />
+			<Shelf books={books} />
 			<Narrators books={books} stats={stats} people={people} />
 			<Series stats={stats} />
 			<Timeline stats={stats} />
@@ -96,6 +97,114 @@ function Figure({ n, sub, k }: { n: string; sub?: string; k: string }) {
 			</div>
 			<div className="k">{k}</div>
 		</div>
+	);
+}
+
+// ── Shelf ─────────────────────────────────────────────────────────────────────
+// Each finished book drawn as a spine: height = listening time, colour = genre.
+const GENRE_COLORS: Record<string, string> = {
+	'Science Fiction & Fantasy': '#e6a34e',
+	'Mystery, Thriller & Suspense': '#b5533f',
+	"Children's Audiobooks": '#6f9e78',
+	'Teen & Young Adult': '#5f93b0',
+	'Comedy & Humor': '#e7c85a',
+	'Literature & Fiction': '#a986c9',
+};
+const GENRE_ORDER = Object.keys(GENRE_COLORS);
+const OTHER_GENRE = 'Other';
+const OTHER_COLOR = '#93826c';
+
+/** The most specific listed genre we have a colour for, else "Other". */
+export function spineGenre(b: Book): string {
+	for (let i = b.genres.length - 1; i >= 0; i--) {
+		const g = b.genres[i];
+		if (g && GENRE_COLORS[g]) return g;
+	}
+	return OTHER_GENRE;
+}
+
+function Shelf({ books }: { books: Book[] }) {
+	const spines = useMemo(() => {
+		// Finished, single-part titles only — multi-part items and dramatised
+		// "Performance" editions inflate the count (see data notes).
+		const rank = (g: string) => {
+			const i = GENRE_ORDER.indexOf(g);
+			return i === -1 ? GENRE_ORDER.length : i;
+		};
+		return books
+			.filter((b) => b.finished && b.contentType === 'Product' && (b.runtimeMin ?? 0) > 0)
+			.map((b) => ({
+				title: b.title,
+				author: b.authors[0] ?? '',
+				min: b.runtimeMin ?? 0,
+				genre: spineGenre(b),
+			}))
+			.sort((a, b) => rank(a.genre) - rank(b.genre) || b.min - a.min);
+	}, [books]);
+
+	if (spines.length === 0) return null;
+
+	const min = Math.min(...spines.map((s) => s.min));
+	const max = Math.max(...spines.map((s) => s.min));
+	const height = (m: number) =>
+		max === min ? 150 : Math.round(64 + ((m - min) / (max - min)) * (238 - 64));
+
+	const counts = new Map<string, number>();
+	for (const s of spines) counts.set(s.genre, (counts.get(s.genre) ?? 0) + 1);
+	const legend = [...GENRE_ORDER, OTHER_GENRE].filter((g) => counts.has(g));
+
+	const totalHours = Math.round(spines.reduce((s, x) => s + x.min, 0) / 60);
+	const tallest = spines.reduce((a, b) => (b.min > a.min ? b : a));
+
+	return (
+		<section className="section" aria-labelledby="shelf">
+			<p className="section-label">The shelf</p>
+			<h2 id="shelf">Everything I finished, by the hour</h2>
+			<p className="intro">
+				One spine per finished book — the taller it stands, the longer the listen. Coloured by
+				genre; hover any spine for the title.
+			</p>
+
+			<div className="shelf-legend">
+				{legend.map((g) => (
+					<span key={g}>
+						<i style={{ background: GENRE_COLORS[g] ?? OTHER_COLOR }} />
+						{g} <b>{counts.get(g)}</b>
+					</span>
+				))}
+			</div>
+
+			<div className="shelf-scroll">
+				<div className="shelf-inner">
+					<div
+						className="shelf"
+						role="img"
+						aria-label={`${spines.length} finished audiobooks drawn as book spines, each spine's height set by its listening time`}
+					>
+						{spines.map((s, i) => (
+							<div
+								className="spine"
+								// biome-ignore lint/suspicious/noArrayIndexKey: title+index is stable for this static, sorted list
+								key={`${s.title}-${i}`}
+								style={{
+									height: `${height(s.min)}px`,
+									background: GENRE_COLORS[s.genre] ?? OTHER_COLOR,
+								}}
+								title={`${s.title} · ${s.author} · ${hm(s.min)}`}
+							>
+								{height(s.min) > 96 ? <span className="spine-lbl">{s.title}</span> : null}
+							</div>
+						))}
+					</div>
+					<div className="shelf-ledge" aria-hidden="true" />
+				</div>
+			</div>
+
+			<p className="shelf-foot">
+				<b>{spines.length}</b> finished books · <b>{totalHours} hours</b> of eartime · tallest spine
+				is {tallest.title} at {hours(tallest.min)}
+			</p>
+		</section>
 	);
 }
 

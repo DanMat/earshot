@@ -34,7 +34,9 @@ export function App() {
 		<main className="wrap">
 			<Hero books={books} stats={stats} />
 			<Shelf books={books} />
+			<NowPlaying books={books} />
 			<Narrators books={books} stats={stats} people={people} />
+			<NarratorLift books={books} />
 			<AroundWorld books={books} geo={geo} />
 			<Series stats={stats} />
 			<Timeline stats={stats} />
@@ -210,6 +212,91 @@ function Shelf({ books }: { books: Book[] }) {
 	);
 }
 
+// ── Now playing (currently listening) ─────────────────────────────────────────
+function NowPlaying({ books }: { books: Book[] }) {
+	const listening = useMemo(
+		() =>
+			books
+				.filter((b) => !b.finished && b.percentComplete > 0)
+				.sort((a, b) => b.percentComplete - a.percentComplete),
+		[books],
+	);
+	const lead = listening[0];
+	if (!lead) return null;
+	const rest = listening.slice(1);
+	const left = (b: Book) => hm(Math.round((b.runtimeMin ?? 0) * (1 - b.percentComplete / 100)));
+
+	return (
+		<section className="section" aria-labelledby="nowplaying">
+			<p className="section-label">In my ears right now</p>
+			<h2 id="nowplaying">Mid-listen</h2>
+			<p className="intro">
+				Not everything gets finished in one sitting. Here’s what’s cued up and part-way through —{' '}
+				{listening.length} on the go at once, which is probably{' '}
+				{listening.length > 5 ? 'too' : 'about'} many.
+			</p>
+
+			<div className="np">
+				<article className="np-lead">
+					<a
+						className="np-cover"
+						href={lead.audibleUrl ?? '#'}
+						target="_blank"
+						rel="noreferrer"
+						title={`${lead.title} on Audible`}
+					>
+						{lead.coverUrl ? <img src={lead.coverUrl} alt="" loading="lazy" /> : null}
+						<span className="np-play" aria-hidden="true" />
+					</a>
+					<div className="np-meta">
+						<div className="np-tag">
+							<span className="wave" aria-hidden="true">
+								<i />
+								<i />
+								<i />
+								<i />
+							</span>
+							Now playing
+						</div>
+						<div className="np-title">{lead.title}</div>
+						{lead.narrators.length ? (
+							<div className="np-narr">🎙 {names(lead.narrators)}</div>
+						) : null}
+						<div className="np-scrub" aria-hidden="true">
+							<i style={{ width: `${lead.percentComplete}%` }} />
+							<span className="np-knob" style={{ left: `${lead.percentComplete}%` }} />
+						</div>
+						<div className="np-nums">
+							<b>{lead.percentComplete}%</b> in · {left(lead)} to go
+						</div>
+					</div>
+				</article>
+
+				{rest.length ? (
+					<div className="np-rest">
+						{rest.map((b) => (
+							<a
+								className="np-mini"
+								key={b.asin}
+								href={b.audibleUrl ?? '#'}
+								target="_blank"
+								rel="noreferrer"
+								title={`${b.title} — ${b.percentComplete}% in, ${left(b)} to go`}
+							>
+								<span className="np-mini-cover">
+									{b.coverUrl ? <img src={b.coverUrl} alt="" loading="lazy" /> : null}
+									<span className="np-fill" style={{ height: `${b.percentComplete}%` }} />
+								</span>
+								<span className="np-mini-pct">{b.percentComplete}%</span>
+							</a>
+						))}
+					</div>
+				) : null}
+			</div>
+		</section>
+	);
+}
+
 // ── Narrators (the spine) ─────────────────────────────────────────────────────
 type Bio = { name: string; extract: string; url: string };
 
@@ -356,6 +443,83 @@ function Ranked({
 				);
 			})}
 		</div>
+	);
+}
+
+// ── When the narrator lifted it (ratings) ─────────────────────────────────────
+function NarratorLift({ books }: { books: Book[] }) {
+	const finishedRated = books.filter(
+		(b) => b.finished && b.rating?.narration != null && b.rating?.story != null,
+	);
+	const rows = useMemo(
+		() =>
+			finishedRated
+				.map((b) => ({
+					title: b.title,
+					narr: b.rating.narration as number,
+					story: b.rating.story as number,
+					lift: (b.rating.narration as number) - (b.rating.story as number),
+				}))
+				.filter((r) => r.lift >= 0.1)
+				.sort((a, b) => b.lift - a.lift)
+				.slice(0, 8),
+		[finishedRated],
+	);
+	if (rows.length < 3) return null;
+
+	const liftedTotal = finishedRated.filter(
+		(b) => (b.rating.narration as number) > (b.rating.story as number),
+	).length;
+
+	// Rating axis: tight domain so the gap between story and narration is legible.
+	const lo = Math.floor(Math.min(...rows.map((r) => r.story)) * 10) / 10;
+	const hi = 5;
+	const pos = (v: number) => ((v - lo) / (hi - lo)) * 100;
+
+	return (
+		<section className="section" aria-labelledby="lift">
+			<p className="section-label">The voice over the words</p>
+			<h2 id="lift">When the narrator lifted it</h2>
+			<p className="intro">
+				Audible scores narration and story separately. On <b>{liftedTotal}</b> of my finished books
+				the performance out-scored the tale — these are where the voice pulled hardest ahead.
+				(Audible’s community ratings, not mine.)
+			</p>
+
+			<div className="lift">
+				{rows.map((r) => (
+					<div className="lift-row" key={r.title}>
+						<span className="lift-title">{r.title}</span>
+						<span
+							className="lift-track"
+							title={`${r.title} — story ${r.story.toFixed(1)}, narration ${r.narr.toFixed(1)}`}
+						>
+							<span className="lift-line" />
+							<span
+								className="lift-seg"
+								style={{ left: `${pos(r.story)}%`, right: `${100 - pos(r.narr)}%` }}
+							/>
+							<span className="lift-dot story" style={{ left: `${pos(r.story)}%` }} />
+							<span className="lift-dot narr" style={{ left: `${pos(r.narr)}%` }} />
+							<span className="lift-badge" style={{ left: `${pos(r.narr)}%` }}>
+								+{r.lift.toFixed(1)}
+							</span>
+						</span>
+					</div>
+				))}
+				<div className="lift-axis" aria-hidden="true">
+					<span className="lift-key">
+						<i className="story" /> story
+					</span>
+					<span className="lift-key">
+						<i className="narr" /> narration
+					</span>
+					<span className="lift-scale">
+						{lo.toFixed(1)} — {hi.toFixed(1)} ★
+					</span>
+				</div>
+			</div>
+		</section>
 	);
 }
 

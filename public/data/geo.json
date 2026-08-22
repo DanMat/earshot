@@ -44,8 +44,12 @@
     "checkedAt": "2026-08-22T08:41:23.136Z"
   },
   "Chugong": {
-    "found": false,
-    "checkedAt": "2026-08-22T08:41:40.548Z"
+    "found": true,
+    "manual": true,
+    "country": "South Korea",
+    "iso": "KR",
+    "lat": 36.5,
+    "lon": 127.8
   },
   "Cornman": {
     "found": false,
@@ -236,8 +240,12 @@
     "checkedAt": "2026-08-22T08:40:11.782Z"
   },
   "Shirtaloon": {
-    "found": false,
-    "checkedAt": "2026-08-22T08:41:16.879Z"
+    "found": true,
+    "manual": true,
+    "country": "Australia",
+    "iso": "AU",
+    "lat": -25.7,
+    "lon": 134.5
   },
   "SourpatchHero": {
     "found": false,
@@ -268,8 +276,12 @@
     "checkedAt": "2026-08-22T08:41:19.498Z"
   },
   "TurtleMe": {
-    "found": false,
-    "checkedAt": "2026-08-22T08:39:51.263Z"
+    "found": true,
+    "manual": true,
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.83,
+    "lon": -98.58
   },
   "qntm": {
     "found": true,
@@ -280,7 +292,11 @@
     "lon": -2
   },
   "singNsong": {
-    "found": false,
-    "checkedAt": "2026-08-22T08:40:18.759Z"
+    "found": true,
+    "manual": true,
+    "country": "South Korea",
+    "iso": "KR",
+    "lat": 36.5,
+    "lon": 127.8
   }
 }

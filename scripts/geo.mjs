@@ -40,6 +40,15 @@ const WRITERS = new Set([
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Known pen-name authors with no usable Wikidata record, filled in by hand so the
+// map isn't blind to them. Kept small and only for names we're confident about.
+const MANUAL = {
+	Chugong: { country: 'South Korea', iso: 'KR', lat: 36.5, lon: 127.8 }, // Solo Leveling
+	singNsong: { country: 'South Korea', iso: 'KR', lat: 36.5, lon: 127.8 }, // Omniscient Reader
+	Shirtaloon: { country: 'Australia', iso: 'AU', lat: -25.7, lon: 134.5 }, // Travis Deverell
+	TurtleMe: { country: 'United States', iso: 'US', lat: 39.83, lon: -98.58 }, // The Beginning After the End
+};
+
 const norm = (s) =>
 	s
 		.normalize('NFD')
@@ -168,7 +177,15 @@ const books = JSON.parse(readFileSync('public/data/library.json', 'utf8'));
 const cache = existsSync(CACHE) ? JSON.parse(readFileSync(CACHE, 'utf8')) : {};
 
 const authors = [...new Set(books.flatMap((b) => b.authors ?? []))];
-const todo = authors.filter((name) => !(name in cache) || isStaleMiss(cache[name]));
+
+// Manual overrides always win (and never hit the network).
+for (const name of authors) {
+	if (MANUAL[name]) cache[name] = { found: true, manual: true, ...MANUAL[name] };
+}
+
+const todo = authors.filter(
+	(name) => !MANUAL[name] && (!(name in cache) || isStaleMiss(cache[name])),
+);
 
 const fresh = todo.filter((n) => !(n in cache)).length;
 console.log(

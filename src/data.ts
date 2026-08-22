@@ -73,6 +73,7 @@ export type Geo = Record<string, GeoEntry>;
 /** An Audible listening badge (achievement). */
 export type Badge = {
 	id: string;
+	name: string;
 	description: string;
 	tier: 'original' | 'silver' | 'gold' | 'master' | null;
 	earnedAt: string | null;

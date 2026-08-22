@@ -48,6 +48,7 @@ for (const cb of progress.customer_badges ?? []) {
 
 	badges.push({
 		id,
+		name: md.name ?? id, // Audible's own display name (e.g. "Nibbler", "Dabbler")
 		description: md.description ?? '',
 		tier, // null when not yet earned
 		earnedAt: cb.earned_badge_level?.level_acquired_time ?? null,

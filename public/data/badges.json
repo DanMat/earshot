@@ -1,6 +1,7 @@
 [
   {
     "id": "listeninglevel",
+    "name": "Listening Level",
     "description": "Total number of hours listened(lifetime listen, across all devices).",
     "tier": "master",
     "earnedAt": "2025-03-20T21:20:45.057Z",
@@ -10,6 +11,7 @@
   },
   {
     "id": "marathoner",
+    "name": "Marathoner",
     "description": "Number of hours listened in one session.",
     "tier": "gold",
     "earnedAt": "2025-10-30T15:18:43.163Z",
@@ -19,6 +21,7 @@
   },
   {
     "id": "audibleobsessed",
+    "name": "Daily Dipper",
     "description": "Number of consecutive days used.",
     "tier": "gold",
     "earnedAt": "2025-05-02T04:42:56.667Z",
@@ -28,6 +31,7 @@
   },
   {
     "id": "sampler",
+    "name": "Sampler",
     "description": "Number of samples listened to",
     "tier": "gold",
     "earnedAt": "2025-04-26T04:32:34.618Z",
@@ -37,6 +41,7 @@
   },
   {
     "id": "repeatlistener",
+    "name": "Repeat Listener",
     "description": "Number of times the same book has been completed.",
     "tier": "gold",
     "earnedAt": "2025-02-05T01:41:46.973Z",
@@ -46,6 +51,7 @@
   },
   {
     "id": "weekendwarrior",
+    "name": "Weekend Warrior",
     "description": "Number of hours listened during the weekend.",
     "tier": "gold",
     "earnedAt": "2024-09-15T22:40:34.835Z",
@@ -55,6 +61,7 @@
   },
   {
     "id": "allnighter",
+    "name": "Night Owl",
     "description": "Time listened at night, between 10pm and 6am.",
     "tier": "gold",
     "earnedAt": "2024-09-02T05:03:39.960Z",
@@ -64,6 +71,7 @@
   },
   {
     "id": "highnoon",
+    "name": "High Noon",
     "description": "Time listened during lunch time, i.e. between 11am and 2pm.",
     "tier": "gold",
     "earnedAt": "2024-08-31T17:24:34.374Z",
@@ -73,6 +81,7 @@
   },
   {
     "id": "mounteverest",
+    "name": "Mount Everest",
     "description": "Length of longest book listened to from start to finish, in hours.",
     "tier": "silver",
     "earnedAt": "2026-04-23T08:07:47.059Z",
@@ -82,6 +91,7 @@
   },
   {
     "id": "procrastinator",
+    "name": "Dabbler",
     "description": "Number of books of distinct genres completed",
     "tier": "silver",
     "earnedAt": "2025-11-12T20:12:21.694Z",
@@ -91,6 +101,7 @@
   },
   {
     "id": "sevendaystretch",
+    "name": "7-day stretch",
     "description": "Number of distinct books completed in a single week.",
     "tier": "silver",
     "earnedAt": "2024-10-08T10:45:51.499Z",
@@ -100,6 +111,7 @@
   },
   {
     "id": "socialbutterfly",
+    "name": "Social Butterfly",
     "description": "Number of times a user shares an activity though Facebook, Twitter, or Email.",
     "tier": "original",
     "earnedAt": "2026-06-18T01:04:27.771Z",
@@ -109,6 +121,7 @@
   },
   {
     "id": "alexa",
+    "name": "Alexa",
     "description": "Number of distinct books listened to on Alexa",
     "tier": "original",
     "earnedAt": "2025-09-09T00:51:00.144Z",
@@ -118,6 +131,7 @@
   },
   {
     "id": "thestack",
+    "name": "The Stack",
     "description": "Number of books in the library, excluding subscriptions and book parts.",
     "tier": "original",
     "earnedAt": "2025-05-26T03:50:33.396Z",
@@ -127,6 +141,7 @@
   },
   {
     "id": "undecider",
+    "name": "Nibbler",
     "description": "Number of books listened to (not necessarily completed) in one day.",
     "tier": "original",
     "earnedAt": "2024-09-01T13:41:51.192Z",
@@ -136,6 +151,7 @@
   },
   {
     "id": "collector",
+    "name": "Collector",
     "description": "Number of gold badges collected",
     "tier": "original",
     "earnedAt": "2024-08-31T17:24:34.443Z",
@@ -145,6 +161,7 @@
   },
   {
     "id": "flash80",
+    "name": "Watchtower",
     "description": "Number of times Statistics screen has been visited.",
     "tier": null,
     "earnedAt": null,
@@ -154,6 +171,7 @@
   },
   {
     "id": "stenographer",
+    "name": "Stenographer",
     "description": "Number of bookmarks created.",
     "tier": null,
     "earnedAt": null,

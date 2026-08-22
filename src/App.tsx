@@ -839,25 +839,27 @@ function Card({ book: b }: { book: Book }) {
 }
 
 // ── Badges (trophy case) ──────────────────────────────────────────────────────
-const BADGE_INFO: Record<string, { name: string; emoji: string }> = {
-	listeninglevel: { name: 'Lifetime Hours', emoji: '🎧' },
-	marathoner: { name: 'Marathoner', emoji: '🏃' },
-	audibleobsessed: { name: 'On a Streak', emoji: '🔥' },
-	allnighter: { name: 'Night Owl', emoji: '🌙' },
-	highnoon: { name: 'High Noon', emoji: '🌞' },
-	repeatlistener: { name: 'On Repeat', emoji: '🔁' },
-	sampler: { name: 'The Sampler', emoji: '🎼' },
-	weekendwarrior: { name: 'Weekend Warrior', emoji: '🎧' },
-	mounteverest: { name: 'Mt. Everest', emoji: '🏔️' },
-	procrastinator: { name: 'Genre Explorer', emoji: '🎭' },
-	sevendaystretch: { name: 'Big Week', emoji: '📆' },
-	collector: { name: 'Collector', emoji: '🏅' },
-	thestack: { name: 'The Stack', emoji: '📚' },
-	undecider: { name: 'Book-a-Day', emoji: '📖' },
-	alexa: { name: 'On Alexa', emoji: '🔊' },
-	socialbutterfly: { name: 'Social Butterfly', emoji: '🦋' },
-	flash80: { name: 'Stat Watcher', emoji: '📊' },
-	stenographer: { name: 'Bookmarker', emoji: '🔖' },
+// Names come from Audible (badge.name); we just pick an emoji to echo its art.
+const BADGE_EMOJI: Record<string, string> = {
+	listeninglevel: '🎧',
+	marathoner: '🏃',
+	audibleobsessed: '🏋️', // Daily Dipper
+	allnighter: '🦉', // Night Owl
+	highnoon: '☀️',
+	repeatlistener: '🔁',
+	sampler: '🧪',
+	weekendwarrior: '🛡️',
+	mounteverest: '🏔️',
+	procrastinator: '🎨', // Dabbler
+	sevendaystretch: '🗓️',
+	collector: '🧺',
+	thestack: '📚',
+	undecider: '🍪', // Nibbler
+	alexa: '🔊',
+	socialbutterfly: '🦋',
+	flash80: '🗼', // Watchtower
+	stenographer: '🔖',
+	bingelistener: '🏁', // The Closer
 };
 const TIER_COLOR: Record<string, string> = {
 	master: '#f7c877',
@@ -899,7 +901,7 @@ function Badges({ badges }: { badges: Badge[] }) {
 }
 
 function Medal({ b, locked = false }: { b: Badge; locked?: boolean }) {
-	const info = BADGE_INFO[b.id] ?? { name: b.id, emoji: '🎧' };
+	const emoji = BADGE_EMOJI[b.id] ?? '🎧';
 	const tier = b.tier ?? 'original';
 	const color = locked ? 'var(--faint)' : (TIER_COLOR[tier] ?? 'var(--amber)');
 	const pct = locked ? (b.percentToNext ?? 0) : (b.percentToNext ?? 100);
@@ -913,7 +915,7 @@ function Medal({ b, locked = false }: { b: Badge; locked?: boolean }) {
 	return (
 		<figure
 			className={locked ? 'medal locked' : `medal ${tier}`}
-			title={`${info.name}${locked ? '' : ` · ${TIER_NAME[tier]}`} — ${caption}`}
+			title={`${b.name}${locked ? '' : ` · ${TIER_NAME[tier]}`} — ${caption}`}
 		>
 			<div
 				className="medal-disc"
@@ -925,11 +927,11 @@ function Medal({ b, locked = false }: { b: Badge; locked?: boolean }) {
 				}
 			>
 				<span className="medal-emoji" aria-hidden="true">
-					{info.emoji}
+					{emoji}
 				</span>
 			</div>
 			<figcaption>
-				<span className="medal-name">{info.name}</span>
+				<span className="medal-name">{b.name}</span>
 				<span className="medal-tier" style={{ color: locked ? undefined : color }}>
 					{sub}
 				</span>

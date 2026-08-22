@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { App, spineGenre } from './App.js';
+import { App, flag, spineGenre } from './App.js';
 import type { Book } from './data.js';
 import { hm, hours, names, num, shortMonth } from './format.js';
 
@@ -38,6 +38,13 @@ describe('spineGenre (shelf colouring)', () => {
 	it('falls back to Other when no genre is colour-mapped', () => {
 		expect(spineGenre(book(['Cooking, Food & Wine']))).toBe('Other');
 		expect(spineGenre(book([]))).toBe('Other');
+	});
+});
+
+describe('flag (ISO → emoji)', () => {
+	it('maps alpha-2 codes to regional-indicator flag emoji', () => {
+		expect(flag('US')).toBe('🇺🇸');
+		expect(flag('gb')).toBe('🇬🇧');
 	});
 });
 

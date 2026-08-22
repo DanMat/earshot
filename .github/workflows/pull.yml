@@ -42,6 +42,7 @@ jobs:
           node scripts/pull.mjs
           node scripts/process.mjs
           node scripts/enrich.mjs
+          node scripts/geo.mjs
 
       - name: Commit refreshed data
         run: |

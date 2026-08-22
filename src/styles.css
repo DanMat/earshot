@@ -819,6 +819,84 @@ button.rank-btn:focus-visible {
 	}
 }
 
+/* ── Around the world ───────────────────────────────────────────────────────── */
+.world-grid {
+	display: grid;
+	grid-template-columns: 1.6fr 1fr;
+	gap: clamp(1rem, 3vw, 2.4rem);
+	align-items: start;
+}
+@media (max-width: 760px) {
+	.world-grid {
+		grid-template-columns: 1fr;
+	}
+}
+.world-map-wrap {
+	background: var(--bg-2);
+	border: 1px solid var(--line);
+	border-radius: var(--r);
+	padding: 0.75rem;
+}
+.world-map {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.world-land {
+	fill: #241c12;
+}
+.world-dot {
+	fill: var(--amber);
+	fill-opacity: 0.82;
+	stroke: var(--amber-2);
+	stroke-opacity: 0.5;
+	stroke-width: 1;
+	transition: fill-opacity 0.15s;
+}
+.world-dot:hover {
+	fill-opacity: 1;
+}
+.world-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+.world-list li {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.6rem;
+	align-items: baseline;
+}
+.wl-flag {
+	font-size: 1.15rem;
+	line-height: 1;
+}
+.wl-top {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+	align-items: baseline;
+}
+.wl-country {
+	font-weight: 600;
+	color: var(--ink);
+}
+.wl-c {
+	font-family: var(--mono);
+	font-size: 0.72rem;
+	color: var(--amber);
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+.wl-authors {
+	font-size: 0.8rem;
+	color: var(--muted);
+	line-height: 1.4;
+}
+
 /* ── Library grid ─────────────────────────────────────────────────────────── */
 .filters {
 	display: flex;

@@ -1,0 +1,286 @@
+{
+  "Adrian Kulp": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:42:04.595Z"
+  },
+  "Alyssa Blask Campbell": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:13.547Z"
+  },
+  "Andy Weir": {
+    "found": true,
+    "qid": "Q18590295",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Ayn Rand": {
+    "found": true,
+    "qid": "Q132524",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Blake Crouch": {
+    "found": true,
+    "qid": "Q20630583",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Brandon Sanderson": {
+    "found": true,
+    "qid": "Q457608",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "C. Mantis": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:23.136Z"
+  },
+  "Chugong": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:40.548Z"
+  },
+  "Cornman": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:39:59.753Z"
+  },
+  "Dan Brown": {
+    "found": true,
+    "qid": "Q7345",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Dennis E. Taylor": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:40:31.251Z"
+  },
+  "Douglas Preston": {
+    "found": true,
+    "qid": "Q742632",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Homer": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:39:38.453Z"
+  },
+  "Ian McEwan": {
+    "found": true,
+    "qid": "Q190379",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
+  },
+  "J.I. Packer": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:40:26.815Z"
+  },
+  "J.K. Rowling": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:39:56.147Z"
+  },
+  "J.M. Clarke": {
+    "found": true,
+    "qid": "Q47087",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
+  },
+  "James Islington": {
+    "found": true,
+    "qid": "Q84570758",
+    "country": "Australia",
+    "iso": "AU",
+    "lat": -25,
+    "lon": 133
+  },
+  "James Rollins": {
+    "found": true,
+    "qid": "Q467404",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Jim Butcher": {
+    "found": true,
+    "qid": "Q1367995",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Joe Abercrombie": {
+    "found": true,
+    "qid": "Q515421",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
+  },
+  "John Kenney": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:39:42.334Z"
+  },
+  "Jonathan Renshaw": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:28.991Z"
+  },
+  "Ken Segall": {
+    "found": true,
+    "qid": "Q98410583",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "L. Frank Baum": {
+    "found": true,
+    "qid": "Q207544",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Lauren Elizabeth Stauble": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:15.170Z"
+  },
+  "Lincoln Child": {
+    "found": true,
+    "qid": "Q793895",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Mark Greaney": {
+    "found": true,
+    "qid": "Q19880094",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Matt Dinniman": {
+    "found": true,
+    "qid": "Q134731703",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Matt Haig": {
+    "found": true,
+    "qid": "Q926682",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
+  },
+  "Min Jin Lee": {
+    "found": true,
+    "qid": "Q13563026",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Neal Stephenson": {
+    "found": true,
+    "qid": "Q312853",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Pierce Brown": {
+    "found": true,
+    "qid": "Q19665989",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "RJ Barker": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:04.849Z"
+  },
+  "Rebecca Cantrell": {
+    "found": true,
+    "qid": "Q18211310",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Richard Ferber": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:37.607Z"
+  },
+  "Shawn Wilson": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:40:11.782Z"
+  },
+  "Shirtaloon": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:16.879Z"
+  },
+  "SourpatchHero": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:40:23.728Z"
+  },
+  "Stephen Fry": {
+    "found": true,
+    "qid": "Q192912",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
+  },
+  "Steve Berry": {
+    "found": true,
+    "qid": "Q225089",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
+  "Tommy Kerper": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:40:22.247Z"
+  },
+  "Travis Deverell": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:41:19.498Z"
+  },
+  "TurtleMe": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:39:51.263Z"
+  },
+  "qntm": {
+    "found": true,
+    "qid": "Q106988964",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
+  },
+  "singNsong": {
+    "found": false,
+    "checkedAt": "2026-08-22T08:40:18.759Z"
+  }
+}

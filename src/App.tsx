@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
-import type { Book, EarshotData, People, Stats } from './data.js';
+import type { Book, EarshotData, Geo, People, Stats } from './data.js';
 import { loadData } from './data.js';
 import { hm, hours, monthsBetween, monthYear, names, num, shortMonth } from './format.js';
 import { Share } from './ShareCard.js';
+import { project, WORLD_H, WORLD_PATH, WORLD_W } from './worldPath.js';
 
 export function App() {
 	const [data, setData] = useState<EarshotData | null>(null);
@@ -27,13 +28,14 @@ export function App() {
 			</main>
 		);
 
-	const { books, stats, people } = data;
+	const { books, stats, people, geo } = data;
 
 	return (
 		<main className="wrap">
 			<Hero books={books} stats={stats} />
 			<Shelf books={books} />
 			<Narrators books={books} stats={stats} people={people} />
+			<AroundWorld books={books} geo={geo} />
 			<Series stats={stats} />
 			<Timeline stats={stats} />
 			<FunFacts stats={stats} />
@@ -354,6 +356,119 @@ function Ranked({
 				);
 			})}
 		</div>
+	);
+}
+
+// ── Around the world ──────────────────────────────────────────────────────────
+type CountryAgg = {
+	iso: string;
+	country: string;
+	lat: number;
+	lon: number;
+	books: number;
+	authors: string[];
+};
+
+/** ISO 3166-1 alpha-2 → flag emoji (regional indicator symbols). */
+export function flag(iso: string): string {
+	return iso
+		.toUpperCase()
+		.replace(/[^A-Z]/g, '')
+		.replace(/./g, (c) => String.fromCodePoint(127397 + c.charCodeAt(0)));
+}
+
+function AroundWorld({ books, geo }: { books: Book[]; geo: Geo }) {
+	const countries = useMemo(() => {
+		const by = new Map<string, CountryAgg>();
+		for (const b of books) {
+			if (!b.finished) continue;
+			const counted = new Set<string>();
+			for (const author of b.authors) {
+				const g = geo[author];
+				if (!g?.found || !g.iso || g.lat == null || g.lon == null) continue;
+				let agg = by.get(g.iso);
+				if (!agg) {
+					agg = {
+						iso: g.iso,
+						country: g.country ?? g.iso,
+						lat: g.lat,
+						lon: g.lon,
+						books: 0,
+						authors: [],
+					};
+					by.set(g.iso, agg);
+				}
+				if (!agg.authors.includes(author)) agg.authors.push(author);
+				// count each book once per country, even with co-authors
+				if (!counted.has(g.iso)) {
+					agg.books += 1;
+					counted.add(g.iso);
+				}
+			}
+		}
+		return [...by.values()].sort(
+			(a, b) => b.books - a.books || b.authors.length - a.authors.length,
+		);
+	}, [books, geo]);
+
+	if (countries.length < 2) return null; // not enough to be a map
+
+	const maxBooks = Math.max(...countries.map((c) => c.books));
+	const totalAuthors = new Set(countries.flatMap((c) => c.authors)).size;
+	const radius = (n: number) => 4 + Math.sqrt(n / maxBooks) * 13;
+
+	return (
+		<section className="section" aria-labelledby="world">
+			<p className="section-label">Read around the world</p>
+			<h2 id="world">Where my authors are from</h2>
+			<p className="intro">
+				Every finished book placed by its author’s home country — {totalAuthors} authors across{' '}
+				{countries.length} countries. (Pen-name web-serial authors with no public record sit this
+				one out.)
+			</p>
+
+			<div className="world-grid">
+				<div className="world-map-wrap">
+					<svg
+						className="world-map"
+						viewBox={`0 0 ${WORLD_W} ${WORLD_H}`}
+						role="img"
+						aria-label={`World map with a dot on each of the ${countries.length} countries my authors come from`}
+					>
+						<path className="world-land" d={WORLD_PATH} />
+						{countries.map((c) => {
+							const [x, y] = project(c.lon, c.lat);
+							return (
+								<circle key={c.iso} className="world-dot" cx={x} cy={y} r={radius(c.books)}>
+									<title>{`${c.country} — ${c.books} book${
+										c.books === 1 ? '' : 's'
+									}, ${c.authors.length} author${c.authors.length === 1 ? '' : 's'}`}</title>
+								</circle>
+							);
+						})}
+					</svg>
+				</div>
+
+				<ol className="world-list">
+					{countries.map((c) => (
+						<li key={c.iso}>
+							<span className="wl-flag" aria-hidden="true">
+								{flag(c.iso)}
+							</span>
+							<div className="wl-main">
+								<div className="wl-top">
+									<span className="wl-country">{c.country}</span>
+									<span className="wl-c">
+										{c.books} book{c.books === 1 ? '' : 's'}
+									</span>
+								</div>
+								<div className="wl-authors">{names(c.authors)}</div>
+							</div>
+						</li>
+					))}
+				</ol>
+			</div>
+		</section>
 	);
 }
 

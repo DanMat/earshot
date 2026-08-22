@@ -60,17 +60,31 @@ export type Stats = {
 export type Person = { found: boolean; extract?: string; url?: string; wikiTitle?: string };
 export type People = Record<string, Person>;
 
-export type EarshotData = { books: Book[]; stats: Stats; people: People };
+/** Author → country of citizenship, for the "Around the world" map. */
+export type GeoEntry = {
+	found: boolean;
+	country?: string;
+	iso?: string;
+	lat?: number | null;
+	lon?: number | null;
+};
+export type Geo = Record<string, GeoEntry>;
+
+export type EarshotData = { books: Book[]; stats: Stats; people: People; geo: Geo };
 
 export async function loadData(): Promise<EarshotData> {
 	const base = import.meta.env.BASE_URL;
-	const [books, stats, people] = await Promise.all([
+	const [books, stats, people, geo] = await Promise.all([
 		fetch(`${base}data/library.json`).then((r) => r.json() as Promise<Book[]>),
 		fetch(`${base}data/stats.json`).then((r) => r.json() as Promise<Stats>),
 		// people.json is optional (enrichment may not have run) — default to empty.
 		fetch(`${base}data/people.json`)
 			.then((r) => (r.ok ? (r.json() as Promise<People>) : {}))
 			.catch(() => ({}) as People),
+		// geo.json is optional (author→country enrichment may not have run).
+		fetch(`${base}data/geo.json`)
+			.then((r) => (r.ok ? (r.json() as Promise<Geo>) : {}))
+			.catch(() => ({}) as Geo),
 	]);
-	return { books, stats, people };
+	return { books, stats, people, geo };
 }

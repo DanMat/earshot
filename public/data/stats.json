@@ -126,11 +126,11 @@
     },
     {
       "name": "Literature & Fiction",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Mystery, Thriller & Suspense",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Children's Audiobooks",
@@ -215,12 +215,12 @@
       "finished": 3
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },

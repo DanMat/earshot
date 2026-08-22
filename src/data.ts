@@ -102,6 +102,9 @@ export type Listening = {
 	monthly: { ym: string; min: number }[];
 };
 
+/** Series title → true number of books in the series (null if unknown). */
+export type SeriesLengths = Record<string, number | null>;
+
 export type EarshotData = {
 	books: Book[];
 	stats: Stats;
@@ -110,33 +113,40 @@ export type EarshotData = {
 	badges: Badge[];
 	wishlist: WishlistItem[];
 	listening: Listening | null;
+	seriesLengths: SeriesLengths;
 };
 
 export async function loadData(): Promise<EarshotData> {
 	const base = import.meta.env.BASE_URL;
-	const [books, stats, people, geo, badges, wishlist, listening] = await Promise.all([
-		fetch(`${base}data/library.json`).then((r) => r.json() as Promise<Book[]>),
-		fetch(`${base}data/stats.json`).then((r) => r.json() as Promise<Stats>),
-		// people.json is optional (enrichment may not have run) — default to empty.
-		fetch(`${base}data/people.json`)
-			.then((r) => (r.ok ? (r.json() as Promise<People>) : {}))
-			.catch(() => ({}) as People),
-		// geo.json is optional (author→country enrichment may not have run).
-		fetch(`${base}data/geo.json`)
-			.then((r) => (r.ok ? (r.json() as Promise<Geo>) : {}))
-			.catch(() => ({}) as Geo),
-		// badges.json is optional (badge pull may not have run).
-		fetch(`${base}data/badges.json`)
-			.then((r) => (r.ok ? (r.json() as Promise<Badge[]>) : []))
-			.catch(() => [] as Badge[]),
-		// wishlist.json is optional.
-		fetch(`${base}data/wishlist.json`)
-			.then((r) => (r.ok ? (r.json() as Promise<WishlistItem[]>) : []))
-			.catch(() => [] as WishlistItem[]),
-		// listening.json is optional.
-		fetch(`${base}data/listening.json`)
-			.then((r) => (r.ok ? (r.json() as Promise<Listening>) : null))
-			.catch(() => null),
-	]);
-	return { books, stats, people, geo, badges, wishlist, listening };
+	const [books, stats, people, geo, badges, wishlist, listening, seriesLengths] = await Promise.all(
+		[
+			fetch(`${base}data/library.json`).then((r) => r.json() as Promise<Book[]>),
+			fetch(`${base}data/stats.json`).then((r) => r.json() as Promise<Stats>),
+			// people.json is optional (enrichment may not have run) — default to empty.
+			fetch(`${base}data/people.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<People>) : {}))
+				.catch(() => ({}) as People),
+			// geo.json is optional (author→country enrichment may not have run).
+			fetch(`${base}data/geo.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<Geo>) : {}))
+				.catch(() => ({}) as Geo),
+			// badges.json is optional (badge pull may not have run).
+			fetch(`${base}data/badges.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<Badge[]>) : []))
+				.catch(() => [] as Badge[]),
+			// wishlist.json is optional.
+			fetch(`${base}data/wishlist.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<WishlistItem[]>) : []))
+				.catch(() => [] as WishlistItem[]),
+			// listening.json is optional.
+			fetch(`${base}data/listening.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<Listening>) : null))
+				.catch(() => null),
+			// series.json (true series lengths) is optional.
+			fetch(`${base}data/series.json`)
+				.then((r) => (r.ok ? (r.json() as Promise<SeriesLengths>) : {}))
+				.catch(() => ({}) as SeriesLengths),
+		],
+	);
+	return { books, stats, people, geo, badges, wishlist, listening, seriesLengths };
 }

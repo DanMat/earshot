@@ -30,7 +30,8 @@
 		"badges": "node scripts/badges.mjs",
 		"wishlist": "node scripts/wishlist.mjs",
 		"listening": "node scripts/listening.mjs",
-		"refresh": "node scripts/pull.mjs && node scripts/process.mjs && node scripts/enrich.mjs && node scripts/geo.mjs && node scripts/badges.mjs && node scripts/wishlist.mjs && node scripts/listening.mjs",
+		"series": "node scripts/series.mjs",
+		"refresh": "node scripts/pull.mjs && node scripts/process.mjs && node scripts/enrich.mjs && node scripts/geo.mjs && node scripts/badges.mjs && node scripts/wishlist.mjs && node scripts/listening.mjs && node scripts/series.mjs",
 		"deploy": "pnpm build && wrangler deploy"
 	},
 	"simple-git-hooks": {

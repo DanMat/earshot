@@ -6,6 +6,7 @@ import type {
 	Geo,
 	Listening,
 	People,
+	SeriesLengths,
 	Stats,
 	WishlistItem,
 } from './data.js';
@@ -37,7 +38,7 @@ export function App() {
 			</main>
 		);
 
-	const { books, stats, people, geo, badges, wishlist, listening } = data;
+	const { books, stats, people, geo, badges, wishlist, listening, seriesLengths } = data;
 
 	return (
 		<main className="wrap">
@@ -47,12 +48,12 @@ export function App() {
 			<Narrators books={books} stats={stats} people={people} />
 			<NarratorLift books={books} />
 			<AroundWorld books={books} geo={geo} />
-			<Series stats={stats} />
+			<Series stats={stats} lengths={seriesLengths} />
 			<ListeningCalendar listening={listening} />
 			<Timeline stats={stats} />
 			<FunFacts stats={stats} />
 			<Badges badges={badges} />
-			<SeriesChallenges stats={stats} />
+			<SeriesChallenges stats={stats} lengths={seriesLengths} />
 			<Wishlist items={wishlist} />
 			<Library books={books} />
 			<Footer stats={stats} />
@@ -650,7 +651,7 @@ function AroundWorld({ books, geo }: { books: Book[]; geo: Geo }) {
 }
 
 // ── Series completion ─────────────────────────────────────────────────────────
-function Series({ stats }: { stats: Stats }) {
+function Series({ stats, lengths }: { stats: Stats; lengths: SeriesLengths }) {
 	// Only series I've actually started, most-read first, cap the list.
 	const series = stats.series.filter((s) => s.finished > 0).slice(0, 10);
 	return (
@@ -658,23 +659,26 @@ function Series({ stats }: { stats: Stats }) {
 			<p className="section-label">Down the rabbit hole</p>
 			<h2 id="series">Series I fell into</h2>
 			<p className="intro">
-				Once a series has me, it really has me. How far I’ve gotten through the ones I own.
+				Once a series has me, it really has me. How far through each I’ve gotten — measured against
+				the full series, not just the books I own.
 			</p>
 			<div className="series-list">
 				{series.map((s) => {
-					const done = s.finished >= s.owned;
+					// True series length when we know it; fall back to what I own.
+					const total = lengths[s.title] ?? s.owned;
+					const caughtUp = lengths[s.title] != null && s.finished >= total;
 					return (
-						<div className={done ? 'serie done' : 'serie'} key={s.title}>
+						<div className={caughtUp ? 'serie done' : 'serie'} key={s.title}>
 							<div className="top">
 								<span className="t">
-									{s.title} {done ? <span className="tag">complete</span> : null}
+									{s.title} {caughtUp ? <span className="tag">caught up</span> : null}
 								</span>
 								<span className="frac">
-									{s.finished} / {s.owned}
+									{s.finished} / {total}
 								</span>
 							</div>
 							<div className="track" aria-hidden="true">
-								<i style={{ width: `${(s.finished / s.owned) * 100}%` }} />
+								<i style={{ width: `${Math.min(100, (s.finished / total) * 100)}%` }} />
 							</div>
 						</div>
 					);
@@ -943,30 +947,36 @@ const SERIES_EMOJI: Record<string, string> = {
 };
 const seriesEmoji = (title: string) => SERIES_EMOJI[title] ?? '📚';
 
-function SeriesChallenges({ stats }: { stats: Stats }) {
-	const completed = stats.series
-		.filter((s) => s.owned >= 2 && s.finished >= s.owned)
-		.sort((a, b) => b.owned - a.owned);
-	const chasing = stats.series
-		.filter((s) => s.owned >= 3 && s.finished > 0 && s.finished < s.owned)
-		.sort((a, b) => b.finished / b.owned - a.finished / a.owned)
-		.slice(0, 4);
+function SeriesChallenges({ stats, lengths }: { stats: Stats; lengths: SeriesLengths }) {
+	// Judge against the TRUE series length (from series.json), never books owned —
+	// owning 3 of Gideon Crew's 5 is not "complete". Only measured series qualify.
+	const withTotal = stats.series
+		.map((s) => ({ ...s, total: lengths[s.title] ?? null }))
+		.filter((s): s is typeof s & { total: number } => s.total != null && s.total >= 2);
+	const completed = withTotal
+		.filter((s) => s.finished >= s.total)
+		.sort((a, b) => b.total - a.total);
+	const chasing = withTotal
+		.filter((s) => s.finished > 0 && s.finished < s.total)
+		.sort((a, b) => b.finished / b.total - a.finished / a.total)
+		.slice(0, 6);
 	if (completed.length === 0) return null;
 
 	return (
 		<section className="section" aria-labelledby="challenges">
 			<p className="section-label">Series challenges</p>
-			<h2 id="challenges">Series I’ve conquered</h2>
+			<h2 id="challenges">Series I’ve finished</h2>
 			<p className="intro">
-				<b>{completed.length}</b> series I’m fully caught up on — every book I own, finished, in
-				order (yes, all seven Harry Potters ⚡). And a few I’m still chasing.
+				<b>{completed.length}</b> series heard to the very end — every book that exists, in order
+				(yes, all seven Harry Potters ⚡). Below the gold are the ones I’m still chasing; the ring
+				shows how close.
 			</p>
 			<div className="badges">
 				{completed.map((s) => (
 					<figure
 						className="medal master"
 						key={s.title}
-						title={`${s.title} — caught up, ${s.owned} books`}
+						title={`${s.title} — complete, all ${s.total} books`}
 					>
 						<div
 							className="medal-disc"
@@ -979,18 +989,18 @@ function SeriesChallenges({ stats }: { stats: Stats }) {
 						<figcaption>
 							<span className="medal-name">{s.title}</span>
 							<span className="medal-tier" style={{ color: '#f7c877' }}>
-								✓ {s.owned} books
+								✓ all {s.total}
 							</span>
 						</figcaption>
 					</figure>
 				))}
 				{chasing.map((s) => {
-					const pct = Math.round((s.finished / s.owned) * 100);
+					const pct = Math.round((s.finished / s.total) * 100);
 					return (
 						<figure
 							className="medal"
 							key={s.title}
-							title={`${s.title} — ${s.finished} of ${s.owned}`}
+							title={`${s.title} — ${s.finished} of ${s.total}`}
 						>
 							<div
 								className="medal-disc"
@@ -1008,7 +1018,7 @@ function SeriesChallenges({ stats }: { stats: Stats }) {
 							<figcaption>
 								<span className="medal-name">{s.title}</span>
 								<span className="medal-tier">
-									{s.finished}/{s.owned} · {pct}%
+									{s.finished}/{s.total} · {pct}%
 								</span>
 							</figcaption>
 						</figure>

@@ -43,6 +43,7 @@ jobs:
           node scripts/process.mjs
           node scripts/enrich.mjs
           node scripts/geo.mjs
+          node scripts/badges.mjs
 
       - name: Commit refreshed data
         run: |

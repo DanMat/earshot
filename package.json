@@ -27,7 +27,8 @@
 		"process": "node scripts/process.mjs",
 		"enrich": "node scripts/enrich.mjs",
 		"geo": "node scripts/geo.mjs",
-		"refresh": "node scripts/pull.mjs && node scripts/process.mjs && node scripts/enrich.mjs && node scripts/geo.mjs",
+		"badges": "node scripts/badges.mjs",
+		"refresh": "node scripts/pull.mjs && node scripts/process.mjs && node scripts/enrich.mjs && node scripts/geo.mjs && node scripts/badges.mjs",
 		"deploy": "pnpm build && wrangler deploy"
 	},
 	"simple-git-hooks": {

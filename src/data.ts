@@ -70,11 +70,28 @@ export type GeoEntry = {
 };
 export type Geo = Record<string, GeoEntry>;
 
-export type EarshotData = { books: Book[]; stats: Stats; people: People; geo: Geo };
+/** An Audible listening badge (achievement). */
+export type Badge = {
+	id: string;
+	description: string;
+	tier: 'original' | 'silver' | 'gold' | 'master' | null;
+	earnedAt: string | null;
+	reward: string | null;
+	next: string | null;
+	percentToNext: number | null;
+};
+
+export type EarshotData = {
+	books: Book[];
+	stats: Stats;
+	people: People;
+	geo: Geo;
+	badges: Badge[];
+};
 
 export async function loadData(): Promise<EarshotData> {
 	const base = import.meta.env.BASE_URL;
-	const [books, stats, people, geo] = await Promise.all([
+	const [books, stats, people, geo, badges] = await Promise.all([
 		fetch(`${base}data/library.json`).then((r) => r.json() as Promise<Book[]>),
 		fetch(`${base}data/stats.json`).then((r) => r.json() as Promise<Stats>),
 		// people.json is optional (enrichment may not have run) — default to empty.
@@ -85,6 +102,10 @@ export async function loadData(): Promise<EarshotData> {
 		fetch(`${base}data/geo.json`)
 			.then((r) => (r.ok ? (r.json() as Promise<Geo>) : {}))
 			.catch(() => ({}) as Geo),
+		// badges.json is optional (badge pull may not have run).
+		fetch(`${base}data/badges.json`)
+			.then((r) => (r.ok ? (r.json() as Promise<Badge[]>) : []))
+			.catch(() => [] as Badge[]),
 	]);
-	return { books, stats, people, geo };
+	return { books, stats, people, geo, badges };
 }

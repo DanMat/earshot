@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
-import type { Book, EarshotData, Geo, People, Stats } from './data.js';
+import { type CSSProperties, useEffect, useMemo, useState } from 'react';
+import type { Badge, Book, EarshotData, Geo, People, Stats } from './data.js';
 import { loadData } from './data.js';
 import { hm, hours, monthsBetween, monthYear, names, num, shortMonth } from './format.js';
 import { Share } from './ShareCard.js';
@@ -28,7 +28,7 @@ export function App() {
 			</main>
 		);
 
-	const { books, stats, people, geo } = data;
+	const { books, stats, people, geo, badges } = data;
 
 	return (
 		<main className="wrap">
@@ -41,6 +41,7 @@ export function App() {
 			<Series stats={stats} />
 			<Timeline stats={stats} />
 			<FunFacts stats={stats} />
+			<Badges badges={badges} />
 			<Library books={books} />
 			<Footer stats={stats} />
 		</main>
@@ -834,6 +835,106 @@ function Card({ book: b }: { book: Book }) {
 				</div>
 			) : null}
 		</article>
+	);
+}
+
+// ── Badges (trophy case) ──────────────────────────────────────────────────────
+const BADGE_INFO: Record<string, { name: string; emoji: string }> = {
+	listeninglevel: { name: 'Lifetime Hours', emoji: '🎧' },
+	marathoner: { name: 'Marathoner', emoji: '🏃' },
+	audibleobsessed: { name: 'On a Streak', emoji: '🔥' },
+	allnighter: { name: 'Night Owl', emoji: '🌙' },
+	highnoon: { name: 'High Noon', emoji: '🌞' },
+	repeatlistener: { name: 'On Repeat', emoji: '🔁' },
+	sampler: { name: 'The Sampler', emoji: '🎼' },
+	weekendwarrior: { name: 'Weekend Warrior', emoji: '🎧' },
+	mounteverest: { name: 'Mt. Everest', emoji: '🏔️' },
+	procrastinator: { name: 'Genre Explorer', emoji: '🎭' },
+	sevendaystretch: { name: 'Big Week', emoji: '📆' },
+	collector: { name: 'Collector', emoji: '🏅' },
+	thestack: { name: 'The Stack', emoji: '📚' },
+	undecider: { name: 'Book-a-Day', emoji: '📖' },
+	alexa: { name: 'On Alexa', emoji: '🔊' },
+	socialbutterfly: { name: 'Social Butterfly', emoji: '🦋' },
+	flash80: { name: 'Stat Watcher', emoji: '📊' },
+	stenographer: { name: 'Bookmarker', emoji: '🔖' },
+};
+const TIER_COLOR: Record<string, string> = {
+	master: '#f7c877',
+	gold: '#e6a34e',
+	silver: '#c9cdd4',
+	original: '#c8874a',
+};
+const TIER_NAME: Record<string, string> = {
+	master: 'Master',
+	gold: 'Gold',
+	silver: 'Silver',
+	original: 'Bronze',
+};
+
+function Badges({ badges }: { badges: Badge[] }) {
+	const earned = badges.filter((b) => b.tier);
+	if (earned.length === 0) return null;
+	const locked = badges.filter((b) => !b.tier);
+
+	return (
+		<section className="section" aria-labelledby="badges">
+			<p className="section-label">The trophy case</p>
+			<h2 id="badges">Badges I’ve racked up</h2>
+			<p className="intro">
+				Audible hands these out for listening habits. I’ve earned <b>{earned.length}</b> of{' '}
+				{badges.length} — the ring around each shows how close I am to the next tier. (My proudest:
+				90 days straight, and the same book finished 20 times.)
+			</p>
+			<div className="badges">
+				{earned.map((b) => (
+					<Medal key={b.id} b={b} />
+				))}
+				{locked.map((b) => (
+					<Medal key={b.id} b={b} locked />
+				))}
+			</div>
+		</section>
+	);
+}
+
+function Medal({ b, locked = false }: { b: Badge; locked?: boolean }) {
+	const info = BADGE_INFO[b.id] ?? { name: b.id, emoji: '🎧' };
+	const tier = b.tier ?? 'original';
+	const color = locked ? 'var(--faint)' : (TIER_COLOR[tier] ?? 'var(--amber)');
+	const pct = locked ? (b.percentToNext ?? 0) : (b.percentToNext ?? 100);
+	const caption = locked ? b.description : (b.reward ?? b.description);
+	const sub = locked
+		? b.next
+			? `${b.percentToNext ?? 0}% to unlock`
+			: 'Locked'
+		: (TIER_NAME[tier] ?? '');
+
+	return (
+		<figure
+			className={locked ? 'medal locked' : `medal ${tier}`}
+			title={`${info.name}${locked ? '' : ` · ${TIER_NAME[tier]}`} — ${caption}`}
+		>
+			<div
+				className="medal-disc"
+				style={
+					{
+						'--ring': color,
+						'--deg': `${Math.round((pct / 100) * 360)}deg`,
+					} as CSSProperties
+				}
+			>
+				<span className="medal-emoji" aria-hidden="true">
+					{info.emoji}
+				</span>
+			</div>
+			<figcaption>
+				<span className="medal-name">{info.name}</span>
+				<span className="medal-tier" style={{ color: locked ? undefined : color }}>
+					{sub}
+				</span>
+			</figcaption>
+		</figure>
 	);
 }
 

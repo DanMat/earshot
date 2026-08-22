@@ -1,0 +1,164 @@
+[
+  {
+    "id": "listeninglevel",
+    "description": "Total number of hours listened(lifetime listen, across all devices).",
+    "tier": "master",
+    "earnedAt": "2025-03-20T21:20:45.057Z",
+    "reward": "",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "marathoner",
+    "description": "Number of hours listened in one session.",
+    "tier": "gold",
+    "earnedAt": "2025-10-30T15:18:43.163Z",
+    "reward": "Incredible—you've listened for 8 hours straight.",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "audibleobsessed",
+    "description": "Number of consecutive days used.",
+    "tier": "gold",
+    "earnedAt": "2025-05-02T04:42:56.667Z",
+    "reward": "You listened for 90 days straight!",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "sampler",
+    "description": "Number of samples listened to",
+    "tier": "gold",
+    "earnedAt": "2025-04-26T04:32:34.618Z",
+    "reward": "You previewed 50 different audiobooks!",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "repeatlistener",
+    "description": "Number of times the same book has been completed.",
+    "tier": "gold",
+    "earnedAt": "2025-02-05T01:41:46.973Z",
+    "reward": "You've listened to the same audiobook 20 times!",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "weekendwarrior",
+    "description": "Number of hours listened during the weekend.",
+    "tier": "gold",
+    "earnedAt": "2024-09-15T22:40:34.835Z",
+    "reward": "You've listened 24 hours over a single weekend!",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "allnighter",
+    "description": "Time listened at night, between 10pm and 6am.",
+    "tier": "gold",
+    "earnedAt": "2024-09-02T05:03:39.960Z",
+    "reward": "You've listened 8 hours straight at night!",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "highnoon",
+    "description": "Time listened during lunch time, i.e. between 11am and 2pm.",
+    "tier": "gold",
+    "earnedAt": "2024-08-31T17:24:34.374Z",
+    "reward": "You've listened non-stop from 11am to 2pm!",
+    "next": null,
+    "percentToNext": 100
+  },
+  {
+    "id": "mounteverest",
+    "description": "Length of longest book listened to from start to finish, in hours.",
+    "tier": "silver",
+    "earnedAt": "2026-04-23T08:07:47.059Z",
+    "reward": "You finished an audiobook that's longer than 30 hours!",
+    "next": "gold",
+    "percentToNext": 9.598611111111111
+  },
+  {
+    "id": "procrastinator",
+    "description": "Number of books of distinct genres completed",
+    "tier": "silver",
+    "earnedAt": "2025-11-12T20:12:21.694Z",
+    "reward": "You've listened to audiobooks in at least 5 different genres!",
+    "next": "gold",
+    "percentToNext": 16.666666666666664
+  },
+  {
+    "id": "sevendaystretch",
+    "description": "Number of distinct books completed in a single week.",
+    "tier": "silver",
+    "earnedAt": "2024-10-08T10:45:51.499Z",
+    "reward": "You finished 5 audiobooks in a single week!",
+    "next": "gold",
+    "percentToNext": 80
+  },
+  {
+    "id": "socialbutterfly",
+    "description": "Number of times a user shares an activity though Facebook, Twitter, or Email.",
+    "tier": "original",
+    "earnedAt": "2026-06-18T01:04:27.771Z",
+    "reward": "You shared your listening habits on social media 5 times!",
+    "next": "silver",
+    "percentToNext": 0
+  },
+  {
+    "id": "alexa",
+    "description": "Number of distinct books listened to on Alexa",
+    "tier": "original",
+    "earnedAt": "2025-09-09T00:51:00.144Z",
+    "reward": "You've listened to 1 audiobook on Alexa!",
+    "next": "silver",
+    "percentToNext": 50
+  },
+  {
+    "id": "thestack",
+    "description": "Number of books in the library, excluding subscriptions and book parts.",
+    "tier": "original",
+    "earnedAt": "2025-05-26T03:50:33.396Z",
+    "reward": "You've collected 50 audiobooks in your Library!",
+    "next": "silver",
+    "percentToNext": 41.333333333333336
+  },
+  {
+    "id": "undecider",
+    "description": "Number of books listened to (not necessarily completed) in one day.",
+    "tier": "original",
+    "earnedAt": "2024-09-01T13:41:51.192Z",
+    "reward": "You listened to 3 audiobooks in 1 day!",
+    "next": "silver",
+    "percentToNext": 16.666666666666664
+  },
+  {
+    "id": "collector",
+    "description": "Number of gold badges collected",
+    "tier": "original",
+    "earnedAt": "2024-08-31T17:24:34.443Z",
+    "reward": "You unlocked your first badge!",
+    "next": "silver",
+    "percentToNext": 50
+  },
+  {
+    "id": "flash80",
+    "description": "Number of times Statistics screen has been visited.",
+    "tier": null,
+    "earnedAt": null,
+    "reward": null,
+    "next": "original",
+    "percentToNext": 2
+  },
+  {
+    "id": "stenographer",
+    "description": "Number of bookmarks created.",
+    "tier": null,
+    "earnedAt": null,
+    "reward": null,
+    "next": "original",
+    "percentToNext": 50
+  }
+]

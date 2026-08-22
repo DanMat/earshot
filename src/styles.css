@@ -843,7 +843,9 @@ button.rank-btn:focus-visible {
 	display: block;
 }
 .world-land {
-	fill: #241c12;
+	fill: #46351f;
+	stroke: #5f4a2c;
+	stroke-width: 0.5;
 }
 .world-dot {
 	fill: var(--amber);
@@ -1147,6 +1149,71 @@ button.rank-btn:focus-visible {
 	margin-left: auto;
 	font-family: var(--mono);
 	color: var(--faint);
+}
+
+/* ── Badges (trophy case) ───────────────────────────────────────────────────── */
+.badges {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+	gap: 1.4rem 1rem;
+}
+.medal {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.55rem;
+}
+.medal-disc {
+	position: relative;
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	background: conic-gradient(var(--ring) var(--deg), var(--line-2) 0);
+	display: grid;
+	place-items: center;
+}
+.medal:not(.locked) .medal-disc {
+	box-shadow: 0 0 18px -7px var(--ring);
+}
+.medal-disc::before {
+	content: '';
+	position: absolute;
+	inset: 5px;
+	border-radius: 50%;
+	background: var(--bg-2);
+}
+.medal.master .medal-disc::before {
+	background: radial-gradient(circle at 50% 35%, rgba(247, 200, 119, 0.16), var(--bg-2) 70%);
+}
+.medal-emoji {
+	position: relative;
+	font-size: 30px;
+	line-height: 1;
+}
+.medal.locked {
+	opacity: 0.5;
+}
+.medal.locked .medal-emoji {
+	filter: grayscale(1);
+}
+.medal figcaption {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+}
+.medal-name {
+	font-size: 0.82rem;
+	color: var(--ink);
+	line-height: 1.2;
+}
+.medal-tier {
+	font-family: var(--mono);
+	font-size: 0.64rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
 }
 
 /* ── Library grid ─────────────────────────────────────────────────────────── */

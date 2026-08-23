@@ -87,11 +87,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -127,11 +127,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -175,9 +175,9 @@
     "runtimeMin": 454,
     "releaseDate": "2025-06-11",
     "purchaseDate": "2026-07-19T03:09:50.059Z",
-    "finished": false,
-    "percentComplete": 80,
-    "finishedAt": "2026-08-22T08:03:59.215Z",
+    "finished": true,
+    "percentComplete": 99,
+    "finishedAt": "2026-08-23T05:41:50.210Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
@@ -218,7 +218,7 @@
       "overall": 4.7,
       "narration": 4.9,
       "story": 4.7,
-      "count": 8000
+      "count": 8100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/411me2ykf6L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK3ZV4XR"
@@ -377,7 +377,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 26800
+      "count": 26900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -460,7 +460,7 @@
     "percentComplete": 0,
     "finishedAt": null,
     "rating": {
-      "overall": 4.8,
+      "overall": 4.7,
       "narration": 4.9,
       "story": 4.8,
       "count": 1200
@@ -706,7 +706,7 @@
       "overall": 4.3,
       "narration": 4.5,
       "story": 4.3,
-      "count": 2200
+      "count": 2300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51WqzWiKo7L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DWC5SRXV"
@@ -1419,7 +1419,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5700
+      "count": 5800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61PDURimu0L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14PB6WN"
@@ -1988,7 +1988,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 309700
+      "count": 309800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -4718,11 +4718,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

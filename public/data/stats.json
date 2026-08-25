@@ -1,12 +1,12 @@
 {
   "totals": {
-    "library": 126,
+    "library": 127,
     "finished": 81,
-    "inProgress": 18,
+    "inProgress": 19,
     "notStarted": 28,
     "finishedHours": 1292,
-    "libraryHours": 2048,
-    "libraryDays": 85,
+    "libraryHours": 2073,
+    "libraryDays": 86,
     "narrators": 82,
     "authors": 25,
     "seriesStarted": 14
@@ -215,12 +215,12 @@
       "finished": 3
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },

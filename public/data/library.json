@@ -24,8 +24,8 @@
     "releaseDate": "2015-02-10",
     "purchaseDate": "2026-08-24T09:57:20.092Z",
     "finished": false,
-    "percentComplete": 7,
-    "finishedAt": "2026-08-25T03:50:03.222Z",
+    "percentComplete": 15,
+    "finishedAt": "2026-08-26T02:35:23.163Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -413,7 +413,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 27100
+      "count": 27200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -463,7 +463,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5500
+      "count": 5600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -498,7 +498,7 @@
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
-      "story": 4.8,
+      "story": 4.7,
       "count": 1200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kU3yteEkL._SL500_.jpg",
@@ -531,7 +531,7 @@
       "overall": 4.6,
       "narration": 4.8,
       "story": 4.5,
-      "count": 70900
+      "count": 71000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/419rQcegOyL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/059334023X"
@@ -1855,7 +1855,8 @@
     ],
     "series": [],
     "genres": [
-      "Children's Audiobooks"
+      "Children's Audiobooks",
+      "Science Fiction & Fantasy"
     ],
     "language": "english",
     "contentType": "Product",
@@ -1991,7 +1992,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 33100
+      "count": 33200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2024,7 +2025,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 310000
+      "count": 310200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2101,7 +2102,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 23500
+      "count": 23600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2175,7 +2176,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30500
+      "count": 30600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2213,7 +2214,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 37000
+      "count": 37100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2250,7 +2251,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38400
+      "count": 38500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -4483,7 +4484,7 @@
       "story": 4.3,
       "count": 100
     },
-    "coverUrl": "https://m.media-amazon.com/images/I/61JHxApTsvL._SL500_.jpg",
+    "coverUrl": "https://m.media-amazon.com/images/I/61FRhBq5UQL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B017RVZ176"
   },
   {

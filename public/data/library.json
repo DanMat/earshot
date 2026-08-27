@@ -24,8 +24,8 @@
     "releaseDate": "2015-02-10",
     "purchaseDate": "2026-08-24T09:57:20.092Z",
     "finished": false,
-    "percentComplete": 15,
-    "finishedAt": "2026-08-26T02:35:23.163Z",
+    "percentComplete": 29,
+    "finishedAt": "2026-08-27T14:24:31.216Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -123,11 +123,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -413,7 +413,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 27200
+      "count": 27300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -575,7 +575,7 @@
     "percentComplete": 98,
     "finishedAt": "2026-06-23T07:06:20.660Z",
     "rating": {
-      "overall": 4.6,
+      "overall": 4.5,
       "narration": 4.8,
       "story": 4.6,
       "count": 100
@@ -1355,6 +1355,7 @@
       }
     ],
     "genres": [
+      "Arts & Entertainment",
       "Science Fiction & Fantasy"
     ],
     "language": "english",
@@ -2025,7 +2026,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 310200
+      "count": 310300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2049,7 +2050,8 @@
     ],
     "genres": [
       "Literature & Fiction",
-      "Science Fiction & Fantasy"
+      "Science Fiction & Fantasy",
+      "Comedy & Humor"
     ],
     "language": "english",
     "contentType": "Product",
@@ -2088,7 +2090,9 @@
       }
     ],
     "genres": [
-      "Science Fiction & Fantasy"
+      "Arts & Entertainment",
+      "Science Fiction & Fantasy",
+      "Comedy & Humor"
     ],
     "language": "english",
     "contentType": "Product",
@@ -2133,8 +2137,8 @@
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
-    "percentComplete": 42,
-    "finishedAt": "2026-08-05T04:12:27.199Z",
+    "percentComplete": 43,
+    "finishedAt": "2026-08-27T16:30:40.889Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2251,7 +2255,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38500
+      "count": 38600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2289,7 +2293,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 67500
+      "count": 67700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -4755,11 +4759,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

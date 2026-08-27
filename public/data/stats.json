@@ -138,6 +138,10 @@
     },
     {
       "name": "Comedy & Humor",
+      "count": 5
+    },
+    {
+      "name": "Arts & Entertainment",
       "count": 3
     },
     {
@@ -147,10 +151,6 @@
     {
       "name": "Teen & Young Adult",
       "count": 2
-    },
-    {
-      "name": "Arts & Entertainment",
-      "count": 1
     }
   ],
   "series": [
@@ -215,12 +215,12 @@
       "finished": 3
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },

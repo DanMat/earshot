@@ -24,8 +24,8 @@
     "releaseDate": "2015-02-10",
     "purchaseDate": "2026-08-24T09:57:20.092Z",
     "finished": false,
-    "percentComplete": 27,
-    "finishedAt": "2026-08-28T19:15:04.179Z",
+    "percentComplete": 34,
+    "finishedAt": "2026-08-29T04:37:26.047Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -163,11 +163,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -375,7 +375,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
-      "story": 4.7,
+      "story": 4.8,
       "count": 600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51A0fMhiCwL._SL500_.jpg",
@@ -1247,7 +1247,7 @@
       "overall": 4.6,
       "narration": 4.7,
       "story": 4.6,
-      "count": 1700
+      "count": 1800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51TqPkm61XL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0D325KNCF"
@@ -1802,7 +1802,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 7400
+      "count": 7500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61p0qiVzZLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F154ZCSN"
@@ -1993,7 +1993,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 33200
+      "count": 33300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2137,8 +2137,8 @@
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
-    "percentComplete": 43,
-    "finishedAt": "2026-08-27T16:30:40.889Z",
+    "percentComplete": 47,
+    "finishedAt": "2026-08-29T06:35:23.060Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -4759,11 +4759,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

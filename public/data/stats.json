@@ -1,12 +1,12 @@
 {
   "totals": {
-    "library": 127,
+    "library": 129,
     "finished": 81,
     "inProgress": 19,
-    "notStarted": 28,
+    "notStarted": 30,
     "finishedHours": 1292,
-    "libraryHours": 2073,
-    "libraryDays": 86,
+    "libraryHours": 2130,
+    "libraryDays": 89,
     "narrators": 82,
     "authors": 25,
     "seriesStarted": 14
@@ -198,6 +198,11 @@
       "title": "I'm Not the Hero",
       "owned": 4,
       "finished": 4
+    },
+    {
+      "title": "The Licanius Trilogy",
+      "owned": 3,
+      "finished": 0
     },
     {
       "title": "Gideon Crew Series",

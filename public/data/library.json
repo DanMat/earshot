@@ -1,5 +1,77 @@
 [
   {
+    "asin": "1774241676",
+    "title": "The Light of All That Falls",
+    "subtitle": "Licanius, Book 3",
+    "authors": [
+      "James Islington"
+    ],
+    "narrators": [
+      "Michael Kramer"
+    ],
+    "series": [
+      {
+        "title": "The Licanius Trilogy",
+        "sequence": "3"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 1839,
+    "releaseDate": "2019-12-10",
+    "purchaseDate": "2026-08-31T03:12:15.094Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "rating": {
+      "overall": 4.7,
+      "narration": 4.9,
+      "story": 4.7,
+      "count": 12300
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51GVfmPjj1L._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/1774241676"
+  },
+  {
+    "asin": "B074MJDNFC",
+    "title": "An Echo of Things to Come",
+    "subtitle": "Licanius, Book 2",
+    "authors": [
+      "James Islington"
+    ],
+    "narrators": [
+      "Michael Kramer"
+    ],
+    "series": [
+      {
+        "title": "The Licanius Trilogy",
+        "sequence": "2"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 1588,
+    "releaseDate": "2017-08-22",
+    "purchaseDate": "2026-08-31T03:12:06.059Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "rating": {
+      "overall": 4.7,
+      "narration": 4.8,
+      "story": 4.6,
+      "count": 16900
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/519EFrwKmyL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B074MJDNFC"
+  },
+  {
     "asin": "B00S5AAHLY",
     "title": "The Shadow of What Was Lost",
     "subtitle": "Licanius, Book 1",
@@ -24,8 +96,8 @@
     "releaseDate": "2015-02-10",
     "purchaseDate": "2026-08-24T09:57:20.092Z",
     "finished": false,
-    "percentComplete": 37,
-    "finishedAt": "2026-08-30T03:27:42.167Z",
+    "percentComplete": 49,
+    "finishedAt": "2026-08-31T05:43:20.633Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -413,7 +485,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 27500
+      "count": 27600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -499,7 +571,7 @@
       "overall": 4.7,
       "narration": 4.9,
       "story": 4.7,
-      "count": 1200
+      "count": 1300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kU3yteEkL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FB4BPCML"
@@ -1492,7 +1564,7 @@
       "overall": 4.6,
       "narration": 4.8,
       "story": 4.6,
-      "count": 2300
+      "count": 2400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51hilWRrB-L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DVTP6FL7"
@@ -1921,7 +1993,7 @@
       "overall": 4.8,
       "narration": 4.8,
       "story": 4.9,
-      "count": 16700
+      "count": 16800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51ym2M+-kiL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RPXHR"
@@ -2026,7 +2098,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 310600
+      "count": 310700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2137,8 +2209,8 @@
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
-    "percentComplete": 47,
-    "finishedAt": "2026-08-30T09:09:46.546Z",
+    "percentComplete": 58,
+    "finishedAt": "2026-08-31T11:53:37.959Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2180,7 +2252,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30700
+      "count": 30800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2218,7 +2290,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 37200
+      "count": 37300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2293,7 +2365,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 67900
+      "count": 68000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2905,8 +2977,8 @@
     "percentComplete": 0,
     "finishedAt": "2025-09-07T02:16:26.357Z",
     "rating": {
-      "overall": 4.6,
-      "narration": 4.6,
+      "overall": 4.5,
+      "narration": 4.5,
       "story": 4.5,
       "count": 2400
     },
@@ -4759,11 +4831,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

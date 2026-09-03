@@ -96,8 +96,8 @@
     "releaseDate": "2015-02-10",
     "purchaseDate": "2026-08-24T09:57:20.092Z",
     "finished": false,
-    "percentComplete": 46,
-    "finishedAt": "2026-09-02T03:24:27.093Z",
+    "percentComplete": 52,
+    "finishedAt": "2026-09-03T02:46:14.478Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -535,7 +535,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5700
+      "count": 5800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -650,7 +650,7 @@
       "overall": 4.5,
       "narration": 4.8,
       "story": 4.6,
-      "count": 100
+      "count": 200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51zLKuKe-tL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FSBJLFQ1"
@@ -1369,7 +1369,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5000
+      "count": 5100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qW73k+gWL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14P2632"
@@ -2098,7 +2098,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 311000
+      "count": 311100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2178,7 +2178,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 23700
+      "count": 23800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2210,7 +2210,7 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 59,
-    "finishedAt": "2026-09-01T09:49:27.242Z",
+    "finishedAt": "2026-09-02T15:59:16.561Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2252,7 +2252,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30800
+      "count": 30900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2327,7 +2327,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38800
+      "count": 38900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2335,7 +2335,7 @@
   {
     "asin": "B08V8B2CGV",
     "title": "Dungeon Crawler Carl",
-    "subtitle": "A LitRPG/Gamelit Adventure",
+    "subtitle": "Dungeon Crawler Carl, Book 1",
     "authors": [
       "Matt Dinniman"
     ],
@@ -2351,7 +2351,8 @@
     "genres": [
       "Literature & Fiction",
       "Mystery, Thriller & Suspense",
-      "Science Fiction & Fantasy"
+      "Science Fiction & Fantasy",
+      "Comedy & Humor"
     ],
     "language": "english",
     "contentType": "Product",
@@ -2365,7 +2366,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 68200
+      "count": 68300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"

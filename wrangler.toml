@@ -1,6 +1,8 @@
 # earshot — static assets on Cloudflare Workers (assets-only, no Worker script).
 name = "earshot"
 compatibility_date = "2025-09-01"
+workers_dev = true
+routes = [{ pattern = "earshot.danmat.dev", custom_domain = true }]
 
 [assets]
 directory = "./dist"

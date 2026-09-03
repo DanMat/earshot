@@ -3,7 +3,7 @@
 My audiobook year — pulled **automatically** from Audible and turned into a public,
 copyright-safe retrospective built around the **narrators**, not just the books.
 
-**Live:** https://earshot.danmat.workers.dev
+**Live:** https://earshot.danmat.dev
 
 Metadata and my own listening stats only — titles, authors, narrators, runtimes,
 series, finished/progress. Never book text, audio, or transcripts.

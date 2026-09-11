@@ -1,5 +1,33 @@
 [
   {
+    "asin": "B0FWG3S57F",
+    "title": "Whistler",
+    "authors": [
+      "Ann Patchett"
+    ],
+    "narrators": [
+      "Ann Patchett"
+    ],
+    "addedAt": "2026-09-11T11:39:15Z",
+    "runtimeMin": 644,
+    "coverUrl": "https://m.media-amazon.com/images/I/419PAU-R+YL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0FWG3S57F"
+  },
+  {
+    "asin": "B0GLHBXLMZ",
+    "title": "The Coffee Shop Detectives",
+    "authors": [
+      "Louise Mumford"
+    ],
+    "narrators": [
+      "Alison Steadman"
+    ],
+    "addedAt": "2026-09-11T11:38:33Z",
+    "runtimeMin": 656,
+    "coverUrl": "https://m.media-amazon.com/images/I/51ExhnBMM7L._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0GLHBXLMZ"
+  },
+  {
     "asin": "1781983666",
     "title": "Finnegans Wake",
     "authors": [

@@ -60,8 +60,8 @@
     "releaseDate": "2017-08-22",
     "purchaseDate": "2026-08-31T03:12:06.059Z",
     "finished": false,
-    "percentComplete": 82,
-    "finishedAt": "2026-09-18T05:19:52.546Z",
+    "percentComplete": 89,
+    "finishedAt": "2026-09-19T08:16:07.779Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -1874,7 +1874,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 7600
+      "count": 7700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61p0qiVzZLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F154ZCSN"
@@ -2065,7 +2065,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 33900
+      "count": 34000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2098,7 +2098,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 312500
+      "count": 312600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2366,7 +2366,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 69500
+      "count": 69600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -3018,7 +3018,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 24000
+      "count": 24100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/517RzWHDDDL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0B5HY4BM7"
@@ -4784,7 +4784,7 @@
       "overall": 4.3,
       "narration": 4.6,
       "story": 4.3,
-      "count": 700
+      "count": 800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51pfAryjx2L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1250845483"

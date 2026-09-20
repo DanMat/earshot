@@ -1,10 +1,10 @@
 {
   "totals": {
     "library": 129,
-    "finished": 82,
-    "inProgress": 19,
+    "finished": 83,
+    "inProgress": 18,
     "notStarted": 29,
-    "finishedHours": 1317,
+    "finishedHours": 1344,
     "libraryHours": 2130,
     "libraryDays": 89,
     "narrators": 83,
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-09-09T06:39:03.716Z"
+    "last": "2026-09-20T05:28:12.840Z"
   },
   "topNarrators": [
     {
@@ -103,16 +103,16 @@
       "count": 5
     },
     {
+      "name": "James Islington",
+      "count": 4
+    },
+    {
       "name": "Tommy Kerper",
       "count": 4
     },
     {
       "name": "SourpatchHero",
       "count": 4
-    },
-    {
-      "name": "James Islington",
-      "count": 3
     },
     {
       "name": "Dennis E. Taylor",
@@ -122,7 +122,7 @@
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 63
+      "count": 64
     },
     {
       "name": "Literature & Fiction",
@@ -202,7 +202,7 @@
     {
       "title": "The Licanius Trilogy",
       "owned": 3,
-      "finished": 1
+      "finished": 2
     },
     {
       "title": "Gideon Crew Series",
@@ -220,12 +220,12 @@
       "finished": 3
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
@@ -256,7 +256,7 @@
     }
   ],
   "byMonth": {
-    "2026-09": 1,
+    "2026-09": 2,
     "2026-08": 2,
     "2026-07": 2,
     "2026-06": 9,

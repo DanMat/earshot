@@ -2,8 +2,8 @@
   "totals": {
     "library": 129,
     "finished": 83,
-    "inProgress": 18,
-    "notStarted": 29,
+    "inProgress": 19,
+    "notStarted": 28,
     "finishedHours": 1344,
     "libraryHours": 2130,
     "libraryDays": 89,
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-09-20T05:28:12.840Z"
+    "last": "2026-09-21T02:35:19.477Z"
   },
   "topNarrators": [
     {

@@ -1,12 +1,12 @@
 {
   "totals": {
-    "library": 129,
+    "library": 131,
     "finished": 83,
-    "inProgress": 19,
+    "inProgress": 21,
     "notStarted": 28,
     "finishedHours": 1344,
-    "libraryHours": 2130,
-    "libraryDays": 89,
+    "libraryHours": 2173,
+    "libraryDays": 91,
     "narrators": 83,
     "authors": 25,
     "seriesStarted": 15
@@ -218,6 +218,11 @@
       "title": "Moonfall",
       "owned": 3,
       "finished": 3
+    },
+    {
+      "title": "Hyperion",
+      "owned": 2,
+      "finished": 0
     },
     {
       "title": "Iliad & Odyssey",

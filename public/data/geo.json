@@ -63,6 +63,14 @@
     "lat": 39.828175,
     "lon": -98.5795
   },
+  "Dan Simmons": {
+    "found": true,
+    "qid": "Q297538",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
   "Dennis E. Taylor": {
     "found": false,
     "checkedAt": "2026-09-21T14:51:42.066Z"

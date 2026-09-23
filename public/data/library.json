@@ -1,5 +1,82 @@
 [
   {
+    "asin": "B002V5D34W",
+    "title": "The Fall of Hyperion",
+    "subtitle": null,
+    "authors": [
+      "Dan Simmons"
+    ],
+    "narrators": [
+      "Victor Bevine"
+    ],
+    "series": [
+      {
+        "title": "Hyperion",
+        "sequence": "2"
+      }
+    ],
+    "genres": [
+      "Literature & Fiction",
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 1305,
+    "releaseDate": "2008-12-22",
+    "purchaseDate": "2026-09-23T03:08:20.675Z",
+    "finished": false,
+    "percentComplete": 100,
+    "finishedAt": null,
+    "rating": {
+      "overall": 4.5,
+      "narration": 4.6,
+      "story": 4.5,
+      "count": 14700
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51F+q5aqJML._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B002V5D34W"
+  },
+  {
+    "asin": "B002V5BLIW",
+    "title": "Hyperion",
+    "subtitle": null,
+    "authors": [
+      "Dan Simmons"
+    ],
+    "narrators": [
+      "Marc Vietor",
+      "Allyson Johnson",
+      "Kevin Pariseau",
+      "Jay Snyder",
+      "Victor Bevine"
+    ],
+    "series": [
+      {
+        "title": "Hyperion",
+        "sequence": "1"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 1244,
+    "releaseDate": "2008-12-22",
+    "purchaseDate": "2026-09-23T03:08:04.091Z",
+    "finished": false,
+    "percentComplete": 100,
+    "finishedAt": null,
+    "rating": {
+      "overall": 4.4,
+      "narration": 4.6,
+      "story": 4.4,
+      "count": 26000
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51RIKu29fRL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B002V5BLIW"
+  },
+  {
     "asin": "1774241676",
     "title": "The Light of All That Falls",
     "subtitle": "Licanius, Book 3",
@@ -24,8 +101,8 @@
     "releaseDate": "2019-12-10",
     "purchaseDate": "2026-08-31T03:12:15.094Z",
     "finished": false,
-    "percentComplete": 14,
-    "finishedAt": "2026-09-22T08:43:06.107Z",
+    "percentComplete": 22,
+    "finishedAt": "2026-09-23T06:15:33.249Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -366,7 +443,7 @@
       "story": 4.1,
       "count": 2900
     },
-    "coverUrl": "https://m.media-amazon.com/images/I/510vhT-Nq9L._SL500_.jpg",
+    "coverUrl": "https://m.media-amazon.com/images/I/51MLSWcCUbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B004N8J9G6"
   },
   {
@@ -485,7 +562,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 29400
+      "count": 29500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -908,7 +985,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 200
+      "count": 300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51r7UjHEwEL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FF61W874"
@@ -1405,7 +1482,7 @@
       "overall": 4.7,
       "narration": 4.8,
       "story": 4.6,
-      "count": 7300
+      "count": 7400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51tb4tf17KL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F6F26LSS"
@@ -1824,7 +1901,7 @@
       "overall": 4.6,
       "narration": 4.8,
       "story": 4.5,
-      "count": 2400
+      "count": 2500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51RzBGPim5L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CPTBF8H1"
@@ -2098,7 +2175,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 312900
+      "count": 313000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2209,7 +2286,7 @@
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
-    "percentComplete": 52,
+    "percentComplete": 53,
     "finishedAt": "2026-09-21T22:31:33.119Z",
     "rating": {
       "overall": 4.4,
@@ -2252,7 +2329,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31500
+      "count": 31600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2290,7 +2367,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38200
+      "count": 38300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2366,7 +2443,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 69800
+      "count": 69900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -4801,7 +4878,9 @@
     ],
     "series": [],
     "genres": [
-      "Relationships, Parenting & Personal Development"
+      "Health & Wellness",
+      "Relationships, Parenting & Personal Development",
+      "Religion & Spirituality"
     ],
     "language": "english",
     "contentType": "Product",

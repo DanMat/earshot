@@ -101,8 +101,8 @@
     "releaseDate": "2019-12-10",
     "purchaseDate": "2026-08-31T03:12:15.094Z",
     "finished": false,
-    "percentComplete": 22,
-    "finishedAt": "2026-09-23T06:15:33.249Z",
+    "percentComplete": 24,
+    "finishedAt": "2026-09-24T08:26:29.217Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -612,7 +612,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 6200
+      "count": 6300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -680,7 +680,7 @@
       "overall": 4.6,
       "narration": 4.8,
       "story": 4.5,
-      "count": 71200
+      "count": 71300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/419rQcegOyL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/059334023X"
@@ -2175,7 +2175,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 313000
+      "count": 313100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2214,7 +2214,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30700
+      "count": 30800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK282SYV"
@@ -2255,7 +2255,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 24300
+      "count": 24400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2443,7 +2443,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 69900
+      "count": 70000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -3347,7 +3347,7 @@
       "overall": 4.5,
       "narration": 4.7,
       "story": 4.5,
-      "count": 14300
+      "count": 14400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/41kTCl6OwHL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1984886878"

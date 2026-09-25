@@ -101,8 +101,8 @@
     "releaseDate": "2019-12-10",
     "purchaseDate": "2026-08-31T03:12:15.094Z",
     "finished": false,
-    "percentComplete": 24,
-    "finishedAt": "2026-09-24T08:26:29.217Z",
+    "percentComplete": 28,
+    "finishedAt": "2026-09-25T04:02:57.289Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -272,11 +272,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -562,7 +562,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 29500
+      "count": 29600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -1605,7 +1605,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 6000
+      "count": 6100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61PDURimu0L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14PB6WN"
@@ -2142,7 +2142,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 34100
+      "count": 34200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2175,7 +2175,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 313100
+      "count": 313200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2286,13 +2286,13 @@
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
-    "percentComplete": 53,
-    "finishedAt": "2026-09-21T22:31:33.119Z",
+    "percentComplete": 54,
+    "finishedAt": "2026-09-25T01:43:06.594Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.4,
-      "count": 12200
+      "count": 12300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QB1lclwjL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DV1119K4"
@@ -2367,7 +2367,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 38300
+      "count": 38400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2404,7 +2404,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 39800
+      "count": 39900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2443,7 +2443,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 70000
+      "count": 70100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2462,6 +2462,10 @@
       {
         "title": "The Mistborn Saga",
         "sequence": "1"
+      },
+      {
+        "title": "The Cosmere",
+        "sequence": ""
       }
     ],
     "genres": [
@@ -2661,7 +2665,7 @@
       "story": 4.8,
       "count": 9300
     },
-    "coverUrl": "https://m.media-amazon.com/images/I/51vsS2x1uML._SL500_.jpg",
+    "coverUrl": "https://m.media-amazon.com/images/I/51tsjoJpB8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1478916613"
   },
   {

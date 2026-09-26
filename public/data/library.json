@@ -101,8 +101,8 @@
     "releaseDate": "2019-12-10",
     "purchaseDate": "2026-08-31T03:12:15.094Z",
     "finished": false,
-    "percentComplete": 28,
-    "finishedAt": "2026-09-25T04:02:57.289Z",
+    "percentComplete": 32,
+    "finishedAt": "2026-09-26T03:44:16.901Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -487,7 +487,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 5,
-      "story": 4.8,
+      "story": 4.9,
       "count": 100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51uLq2O6OKL._SL500_.jpg",
@@ -562,7 +562,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 29600
+      "count": 29700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -2106,7 +2106,7 @@
       "overall": 4.7,
       "narration": 4.8,
       "story": 4.6,
-      "count": 109200
+      "count": 109300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51yMirAE25L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B01L082HJ2"
@@ -2329,7 +2329,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31600
+      "count": 31700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2443,7 +2443,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 70100
+      "count": 70200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2460,12 +2460,12 @@
     ],
     "series": [
       {
-        "title": "The Mistborn Saga",
-        "sequence": "1"
-      },
-      {
         "title": "The Cosmere",
         "sequence": ""
+      },
+      {
+        "title": "The Mistborn Saga",
+        "sequence": "1"
       }
     ],
     "genres": [
@@ -4915,11 +4915,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

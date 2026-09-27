@@ -1,11 +1,11 @@
 {
   "totals": {
-    "library": 131,
+    "library": 132,
     "finished": 83,
-    "inProgress": 21,
-    "notStarted": 28,
+    "inProgress": 20,
+    "notStarted": 30,
     "finishedHours": 1344,
-    "libraryHours": 2173,
+    "libraryHours": 2184,
     "libraryDays": 91,
     "narrators": 83,
     "authors": 25,
@@ -200,6 +200,11 @@
       "finished": 4
     },
     {
+      "title": "The Dresden Files",
+      "owned": 3,
+      "finished": 2
+    },
+    {
       "title": "The Licanius Trilogy",
       "owned": 3,
       "finished": 2
@@ -238,11 +243,6 @@
       "title": "Mage Tank",
       "owned": 2,
       "finished": 0
-    },
-    {
-      "title": "The Dresden Files",
-      "owned": 2,
-      "finished": 2
     },
     {
       "title": "Hierarchy",

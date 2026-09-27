@@ -1,5 +1,53 @@
 [
   {
+    "asin": "B0GHZV8TGT",
+    "title": "Grave Peril [Dramatized Adaptation]",
+    "subtitle": "Dresden Files 3",
+    "authors": [
+      "Jim Butcher"
+    ],
+    "narrators": [
+      "Full Cast Full Cast",
+      "Matthew Bassett",
+      "Wyn Delano",
+      "Nicole Perez",
+      "Nora Achrati",
+      "Gabriel Michael",
+      "Laura C. Harris",
+      "Christopher Walker",
+      "Jessica Threet",
+      "Julienne Irons",
+      "Erin Lin",
+      "Marlon Dance-Hooi"
+    ],
+    "series": [
+      {
+        "title": "The Dresden Files",
+        "sequence": "3"
+      }
+    ],
+    "genres": [
+      "Mystery, Thriller & Suspense",
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 697,
+    "releaseDate": "2026-04-30",
+    "purchaseDate": "2026-09-27T03:27:48.697Z",
+    "finished": false,
+    "percentComplete": 14,
+    "finishedAt": "2026-09-27T07:20:26.911Z",
+    "rating": {
+      "overall": 4.7,
+      "narration": 4.8,
+      "story": 4.8,
+      "count": 100
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51j4ilG3SXL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0GHZV8TGT"
+  },
+  {
     "asin": "B002V5D34W",
     "title": "The Fall of Hyperion",
     "subtitle": null,
@@ -65,13 +113,13 @@
     "releaseDate": "2008-12-22",
     "purchaseDate": "2026-09-23T03:08:04.091Z",
     "finished": false,
-    "percentComplete": 100,
-    "finishedAt": null,
+    "percentComplete": 0,
+    "finishedAt": "2026-09-27T03:25:24.386Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.6,
       "story": 4.4,
-      "count": 26000
+      "count": 26100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51RIKu29fRL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B002V5BLIW"
@@ -1307,8 +1355,8 @@
     "releaseDate": "2023-05-17",
     "purchaseDate": "2026-04-02T11:52:51.984Z",
     "finished": false,
-    "percentComplete": 5,
-    "finishedAt": "2026-05-07T03:54:11.179Z",
+    "percentComplete": 0,
+    "finishedAt": "2026-09-27T03:26:21.839Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -1990,7 +2038,7 @@
       "story": 4.6,
       "count": 4600
     },
-    "coverUrl": "https://m.media-amazon.com/images/I/51fRLapGhfL._SL500_.jpg",
+    "coverUrl": "https://m.media-amazon.com/images/I/51Uu+LszhBL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CH1L61BG"
   },
   {
@@ -2142,7 +2190,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 34200
+      "count": 34300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2175,7 +2223,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 313200
+      "count": 313300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2255,7 +2303,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 24400
+      "count": 24500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2404,7 +2452,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 39900
+      "count": 40000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2443,7 +2491,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 70200
+      "count": 70300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2840,7 +2888,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 13900
+      "count": 14000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/514RAoV-CrL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DWZYWQTB"
@@ -4915,11 +4963,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

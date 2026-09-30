@@ -1,13 +1,13 @@
 {
   "totals": {
     "library": 132,
-    "finished": 83,
-    "inProgress": 20,
+    "finished": 84,
+    "inProgress": 19,
     "notStarted": 30,
-    "finishedHours": 1344,
+    "finishedHours": 1356,
     "libraryHours": 2184,
     "libraryDays": 91,
-    "narrators": 83,
+    "narrators": 92,
     "authors": 25,
     "seriesStarted": 15
   },
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-09-21T02:35:19.477Z"
+    "last": "2026-09-30T05:21:05.179Z"
   },
   "topNarrators": [
     {
@@ -115,14 +115,14 @@
       "count": 4
     },
     {
-      "name": "Dennis E. Taylor",
+      "name": "Jim Butcher",
       "count": 3
     }
   ],
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 64
+      "count": 65
     },
     {
       "name": "Literature & Fiction",
@@ -130,7 +130,7 @@
     },
     {
       "name": "Mystery, Thriller & Suspense",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Children's Audiobooks",
@@ -202,7 +202,7 @@
     {
       "title": "The Dresden Files",
       "owned": 3,
-      "finished": 2
+      "finished": 3
     },
     {
       "title": "The Licanius Trilogy",
@@ -230,12 +230,12 @@
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
@@ -261,7 +261,7 @@
     }
   ],
   "byMonth": {
-    "2026-09": 2,
+    "2026-09": 3,
     "2026-08": 2,
     "2026-07": 2,
     "2026-06": 9,

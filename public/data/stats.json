@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-09-30T05:21:05.179Z"
+    "last": "2026-10-01T04:14:37.166Z"
   },
   "topNarrators": [
     {
@@ -133,16 +133,16 @@
       "count": 21
     },
     {
+      "name": "Comedy & Humor",
+      "count": 8
+    },
+    {
       "name": "Children's Audiobooks",
       "count": 7
     },
     {
-      "name": "Comedy & Humor",
-      "count": 6
-    },
-    {
       "name": "Arts & Entertainment",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Romance",
@@ -261,7 +261,8 @@
     }
   ],
   "byMonth": {
-    "2026-09": 3,
+    "2026-10": 1,
+    "2026-09": 2,
     "2026-08": 2,
     "2026-07": 2,
     "2026-06": 9,

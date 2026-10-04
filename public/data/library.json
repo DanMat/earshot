@@ -445,8 +445,8 @@
     "releaseDate": "2025-05-13",
     "purchaseDate": "2026-07-07T04:41:36.329Z",
     "finished": false,
-    "percentComplete": 49,
-    "finishedAt": "2026-10-03T08:37:43.287Z",
+    "percentComplete": 61,
+    "finishedAt": "2026-10-04T07:46:19.457Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -728,7 +728,7 @@
       "overall": 4.6,
       "narration": 4.8,
       "story": 4.5,
-      "count": 71300
+      "count": 71400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/419rQcegOyL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/059334023X"
@@ -1530,7 +1530,7 @@
       "overall": 4.7,
       "narration": 4.8,
       "story": 4.6,
-      "count": 7400
+      "count": 7500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51tb4tf17KL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F6F26LSS"
@@ -2337,8 +2337,8 @@
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
-    "percentComplete": 64,
-    "finishedAt": "2026-10-03T03:11:34.792Z",
+    "percentComplete": 66,
+    "finishedAt": "2026-10-04T11:52:25.468Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2381,7 +2381,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31900
+      "count": 32000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2495,7 +2495,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 70700
+      "count": 70800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2512,12 +2512,12 @@
     ],
     "series": [
       {
-        "title": "The Mistborn Saga",
-        "sequence": "1"
-      },
-      {
         "title": "The Cosmere",
         "sequence": ""
+      },
+      {
+        "title": "The Mistborn Saga",
+        "sequence": "1"
       }
     ],
     "genres": [
@@ -2854,7 +2854,7 @@
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
-      "story": 4.5,
+      "story": 4.4,
       "count": 100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/417vLkXpWnL._SL500_.jpg",
@@ -2892,7 +2892,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 14000
+      "count": 14100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/514RAoV-CrL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DWZYWQTB"

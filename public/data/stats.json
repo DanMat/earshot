@@ -1,12 +1,12 @@
 {
   "totals": {
-    "library": 132,
+    "library": 133,
     "finished": 84,
     "inProgress": 19,
-    "notStarted": 30,
+    "notStarted": 31,
     "finishedHours": 1356,
-    "libraryHours": 2184,
-    "libraryDays": 91,
+    "libraryHours": 2207,
+    "libraryDays": 92,
     "narrators": 92,
     "authors": 25,
     "seriesStarted": 15
@@ -156,7 +156,7 @@
   "series": [
     {
       "title": "He Who Fights with Monsters",
-      "owned": 12,
+      "owned": 13,
       "finished": 12
     },
     {

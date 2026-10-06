@@ -1,5 +1,42 @@
 [
   {
+    "asin": "B0H4LKXP2C",
+    "title": "He Who Fights with Monsters 13: A LitRPG Adventure",
+    "subtitle": "He Who Fights with Monsters, Book 13",
+    "authors": [
+      "Shirtaloon",
+      "Travis Deverell"
+    ],
+    "narrators": [
+      "Heath Miller"
+    ],
+    "series": [
+      {
+        "title": "He Who Fights with Monsters",
+        "sequence": "13"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 1341,
+    "releaseDate": "2026-10-06",
+    "purchaseDate": "2026-10-06T07:09:55.879Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "rating": {
+      "overall": 5,
+      "narration": 5,
+      "story": 5,
+      "count": 0
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
+  },
+  {
     "asin": "B0GHZV8TGT",
     "title": "Grave Peril [Dramatized Adaptation]",
     "subtitle": "Dresden Files 3",
@@ -445,8 +482,8 @@
     "releaseDate": "2025-05-13",
     "purchaseDate": "2026-07-07T04:41:36.329Z",
     "finished": false,
-    "percentComplete": 69,
-    "finishedAt": "2026-10-05T07:21:19.874Z",
+    "percentComplete": 82,
+    "finishedAt": "2026-10-06T07:01:10.744Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -610,7 +647,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30300
+      "count": 30400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -1654,7 +1691,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 6100
+      "count": 6200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61PDURimu0L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14PB6WN"
@@ -2119,7 +2156,7 @@
       "overall": 4.8,
       "narration": 4.8,
       "story": 4.9,
-      "count": 17200
+      "count": 17300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51ym2M+-kiL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RPXHR"
@@ -2193,7 +2230,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 34500
+      "count": 34600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2226,7 +2263,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 314000
+      "count": 314100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2265,7 +2302,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31000
+      "count": 31100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK282SYV"
@@ -2338,7 +2375,7 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 66,
-    "finishedAt": "2026-10-05T10:37:02.361Z",
+    "finishedAt": "2026-10-05T22:52:41.117Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2495,7 +2532,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 70900
+      "count": 71000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"

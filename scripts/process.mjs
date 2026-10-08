@@ -61,6 +61,11 @@ const books = items.map((b) => {
 		finished: ls.is_finished === true,
 		percentComplete: ls.percent_complete ?? 0,
 		finishedAt: ls.finished_at_timestamp ?? null,
+		// Audible's finished_at_timestamp is really "status last updated": it's set
+		// when a book is finished AND bumped on each listening session, so for
+		// in-progress titles it is the last-listened time. We surface it as a
+		// generic activity timestamp so every list can be ordered by recent activity.
+		lastActivityAt: ls.finished_at_timestamp ?? null,
 		// community ratings (public facts) — overall / narration / story
 		rating: {
 			overall: r.display_average_rating ? Number(r.display_average_rating) : null,

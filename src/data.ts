@@ -23,6 +23,8 @@ export type Book = {
 	finished: boolean;
 	percentComplete: number;
 	finishedAt: string | null;
+	/** When the listening status last changed (finished, or last listened to). Used to order lists by recent activity. */
+	lastActivityAt: string | null;
 	rating: Rating;
 	coverUrl: string | null;
 	audibleUrl: string | null;

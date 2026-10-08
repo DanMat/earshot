@@ -232,7 +232,12 @@ function NowPlaying({ books }: { books: Book[] }) {
 		() =>
 			books
 				.filter((b) => !b.finished && b.percentComplete > 0)
-				.sort((a, b) => b.percentComplete - a.percentComplete),
+				// Most recent listening activity first (fall back to furthest-along).
+				.sort(
+					(a, b) =>
+						(b.lastActivityAt ?? '').localeCompare(a.lastActivityAt ?? '') ||
+						b.percentComplete - a.percentComplete,
+				),
 		[books],
 	);
 	const lead = listening[0];
@@ -782,12 +787,13 @@ function Library({ books }: { books: Book[] }) {
 			(filter === 'finished' && b.finished) ||
 			(filter === 'progress' && !b.finished && b.percentComplete > 0) ||
 			(filter === 'unstarted' && b.percentComplete === 0);
+		// Order every tab by most recent activity (finished-at, or last listened).
+		// finishedAt is a fallback so finished books stay recency-ordered even before
+		// a fresh pull backfills lastActivityAt.
+		const activity = (b: Book) => b.lastActivityAt ?? b.finishedAt ?? '';
 		return books
 			.filter(match)
-			.sort(
-				(a, b) =>
-					(b.finishedAt ?? '').localeCompare(a.finishedAt ?? '') || a.title.localeCompare(b.title),
-			);
+			.sort((a, b) => activity(b).localeCompare(activity(a)) || a.title.localeCompare(b.title));
 	}, [books, filter]);
 
 	const tabs: { id: Filter; label: string }[] = [

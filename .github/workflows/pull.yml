@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write # commit refreshed data
   issues: write # open/close the re-auth issue
+  actions: write # dispatch the deploy workflow after a refresh
 
 concurrency:
   group: pull
@@ -49,6 +50,7 @@ jobs:
           node scripts/series.mjs
 
       - name: Commit refreshed data
+        id: commit
         run: |
           if [ -n "$(git status --porcelain public/data)" ]; then
             git config user.name "earshot-bot"
@@ -56,10 +58,22 @@ jobs:
             git add public/data
             git commit -m "chore: refresh audiobook data"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "Data updated."
           else
             echo "No changes."
           fi
+
+      # The commit above is pushed with GITHUB_TOKEN, and GitHub deliberately does
+      # not fire push-triggered workflows (like deploy) from GITHUB_TOKEN commits,
+      # so the data would never reach the live site. Dispatch the deploy explicitly.
+      - name: Deploy the refreshed data
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run deploy.yml --ref main
+          echo "Deploy dispatched."
 
       - name: Auth recovered — close re-auth issue
         if: success()

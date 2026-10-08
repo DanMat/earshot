@@ -103,6 +103,21 @@ for (const b of books) {
 		seriesMap.set(s.title, e);
 	}
 }
+// Manual series corrections. Omnibus editions (several volumes sold as one
+// audiobook) count as a single library item, so item-counting undercounts how
+// many volumes I actually own and finished. Override the computed counts here.
+const SERIES_OVERRIDES = {
+	// I own the book 1-2 and book 3-4 omnibuses, so 4 volumes read as 2 items.
+	// 12 of the 13 volumes listened to.
+	'The Beginning After the End': { owned: 13, finished: 12 },
+};
+for (const [title, o] of Object.entries(SERIES_OVERRIDES)) {
+	const e = seriesMap.get(title);
+	if (!e) continue;
+	if (o.owned != null) e.owned = o.owned;
+	if (o.finished != null) e.finished = o.finished;
+}
+
 const series = [...seriesMap.values()]
 	.filter((s) => s.owned > 1)
 	.sort((a, z) => z.owned - a.owned);

@@ -27,6 +27,7 @@
     "finished": false,
     "percentComplete": 31,
     "finishedAt": "2026-10-08T09:47:15.444Z",
+    "lastActivityAt": "2026-10-08T09:47:15.444Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.8,
@@ -75,6 +76,7 @@
     "finished": true,
     "percentComplete": 97,
     "finishedAt": "2026-10-01T04:14:37.166Z",
+    "lastActivityAt": "2026-10-01T04:14:37.166Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -112,6 +114,7 @@
     "finished": false,
     "percentComplete": 100,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
@@ -152,6 +155,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2026-09-27T03:25:24.386Z",
+    "lastActivityAt": "2026-09-27T03:25:24.386Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.6,
@@ -188,6 +192,7 @@
     "finished": false,
     "percentComplete": 32,
     "finishedAt": "2026-09-26T03:44:16.901Z",
+    "lastActivityAt": "2026-09-26T03:44:16.901Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -224,6 +229,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-09-21T02:35:19.477Z",
+    "lastActivityAt": "2026-09-21T02:35:19.477Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -260,6 +266,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-09-09T06:39:03.716Z",
+    "lastActivityAt": "2026-09-09T06:39:03.716Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -298,6 +305,7 @@
     "finished": false,
     "percentComplete": 96,
     "finishedAt": "2026-08-21T03:18:30.852Z",
+    "lastActivityAt": "2026-08-21T03:18:30.852Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -336,6 +344,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-08-11T08:53:59.604Z",
+    "lastActivityAt": "2026-08-11T08:53:59.604Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -376,6 +385,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.6,
       "narration": 4.6,
@@ -416,6 +426,7 @@
     "finished": false,
     "percentComplete": 22,
     "finishedAt": "2026-07-30T18:27:30.741Z",
+    "lastActivityAt": "2026-07-30T18:27:30.741Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -448,6 +459,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-08-23T05:41:50.210Z",
+    "lastActivityAt": "2026-08-23T05:41:50.210Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
@@ -484,6 +496,7 @@
     "finished": false,
     "percentComplete": 79,
     "finishedAt": "2026-10-07T09:14:26.003Z",
+    "lastActivityAt": "2026-10-07T09:14:26.003Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -522,6 +535,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-07-10T04:26:10.007Z",
+    "lastActivityAt": "2026-07-10T04:26:10.007Z",
     "rating": {
       "overall": 4,
       "narration": 4.2,
@@ -569,6 +583,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.8,
       "narration": 5,
@@ -606,6 +621,7 @@
     "finished": false,
     "percentComplete": 36,
     "finishedAt": "2026-06-16T22:23:07.403Z",
+    "lastActivityAt": "2026-06-16T22:23:07.403Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -643,6 +659,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-06-12T03:52:40.501Z",
+    "lastActivityAt": "2026-06-12T03:52:40.501Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -693,6 +710,7 @@
     "finished": true,
     "percentComplete": 98,
     "finishedAt": "2026-05-23T05:27:38.427Z",
+    "lastActivityAt": "2026-05-23T05:27:38.427Z",
     "rating": {
       "overall": 5,
       "narration": 4.9,
@@ -729,6 +747,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
@@ -761,6 +780,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2026-05-06T02:54:17.322Z",
+    "lastActivityAt": "2026-05-06T02:54:17.322Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
@@ -808,6 +828,7 @@
     "finished": true,
     "percentComplete": 98,
     "finishedAt": "2026-06-23T07:06:20.660Z",
+    "lastActivityAt": "2026-06-23T07:06:20.660Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.8,
@@ -857,6 +878,7 @@
     "finished": true,
     "percentComplete": 89,
     "finishedAt": "2026-06-23T07:51:14.579Z",
+    "lastActivityAt": "2026-06-23T07:51:14.579Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -907,6 +929,7 @@
     "finished": true,
     "percentComplete": 98,
     "finishedAt": "2026-05-18T07:07:49.437Z",
+    "lastActivityAt": "2026-05-18T07:07:49.437Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -939,6 +962,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-04-25T08:34:43.149Z",
+    "lastActivityAt": "2026-04-25T08:34:43.149Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -972,6 +996,7 @@
     "finished": true,
     "percentComplete": 92,
     "finishedAt": "2026-07-03T06:17:55.909Z",
+    "lastActivityAt": "2026-07-03T06:17:55.909Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.5,
@@ -1019,6 +1044,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1066,6 +1092,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1113,6 +1140,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -1161,6 +1189,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -1209,6 +1238,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1256,6 +1286,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1302,6 +1333,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -1348,6 +1380,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1394,6 +1427,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2026-09-27T03:26:21.839Z",
+    "lastActivityAt": "2026-09-27T03:26:21.839Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -1441,6 +1475,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2026-05-23T05:37:00.619Z",
+    "lastActivityAt": "2026-05-23T05:37:00.619Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -1477,6 +1512,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-04-08T01:53:57.403Z",
+    "lastActivityAt": "2026-04-08T01:53:57.403Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -1527,6 +1563,7 @@
     "finished": true,
     "percentComplete": 97,
     "finishedAt": "2026-03-29T04:22:02.167Z",
+    "lastActivityAt": "2026-03-29T04:22:02.167Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1563,6 +1600,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-06-26T06:07:22.586Z",
+    "lastActivityAt": "2026-06-26T06:07:22.586Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -1600,6 +1638,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-02-26T07:15:45.986Z",
+    "lastActivityAt": "2026-02-26T07:15:45.986Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.8,
@@ -1637,6 +1676,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
@@ -1687,6 +1727,7 @@
     "finished": true,
     "percentComplete": 98,
     "finishedAt": "2026-02-16T07:25:06.773Z",
+    "lastActivityAt": "2026-02-16T07:25:06.773Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1723,6 +1764,7 @@
     "finished": false,
     "percentComplete": 63,
     "finishedAt": "2026-05-09T05:00:14.704Z",
+    "lastActivityAt": "2026-05-09T05:00:14.704Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
@@ -1757,6 +1799,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-01-26T06:44:20.351Z",
+    "lastActivityAt": "2026-01-26T06:44:20.351Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.8,
@@ -1807,6 +1850,7 @@
     "finished": true,
     "percentComplete": 98,
     "finishedAt": "2026-01-17T04:26:09.444Z",
+    "lastActivityAt": "2026-01-17T04:26:09.444Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -1841,6 +1885,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-01-08T19:35:40.657Z",
+    "lastActivityAt": "2026-01-08T19:35:40.657Z",
     "rating": {
       "overall": 4.1,
       "narration": 4.4,
@@ -1878,6 +1923,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-01-26T07:37:41.232Z",
+    "lastActivityAt": "2026-01-26T07:37:41.232Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -1909,6 +1955,7 @@
     "finished": false,
     "percentComplete": 5,
     "finishedAt": "2026-01-05T03:52:48.161Z",
+    "lastActivityAt": "2026-01-05T03:52:48.161Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.8,
@@ -1946,6 +1993,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-01-09T01:45:45.751Z",
+    "lastActivityAt": "2026-01-09T01:45:45.751Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -1983,6 +2031,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-12-30T09:12:13.631Z",
+    "lastActivityAt": "2025-12-30T09:12:13.631Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
@@ -2033,6 +2082,7 @@
     "finished": true,
     "percentComplete": 97,
     "finishedAt": "2025-12-22T04:55:22.021Z",
+    "lastActivityAt": "2025-12-22T04:55:22.021Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -2070,6 +2120,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-12-18T21:56:13.360Z",
+    "lastActivityAt": "2025-12-18T21:56:13.360Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -2102,6 +2153,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2025-12-17T17:42:08.562Z",
+    "lastActivityAt": "2025-12-17T17:42:08.562Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.6,
@@ -2152,6 +2204,7 @@
     "finished": true,
     "percentComplete": 97,
     "finishedAt": "2025-11-12T20:12:21.034Z",
+    "lastActivityAt": "2025-11-12T20:12:21.034Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.8,
@@ -2188,6 +2241,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-10-14T07:13:09.975Z",
+    "lastActivityAt": "2025-10-14T07:13:09.975Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -2226,6 +2280,7 @@
     "finished": true,
     "percentComplete": 98,
     "finishedAt": "2025-10-08T04:24:49.852Z",
+    "lastActivityAt": "2025-10-08T04:24:49.852Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2259,6 +2314,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-06-22T02:55:20.650Z",
+    "lastActivityAt": "2026-06-22T02:55:20.650Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -2298,6 +2354,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-01-26T07:37:34.594Z",
+    "lastActivityAt": "2026-01-26T07:37:34.594Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2339,6 +2396,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-11-22T23:14:14.699Z",
+    "lastActivityAt": "2025-11-22T23:14:14.699Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2376,6 +2434,7 @@
     "finished": false,
     "percentComplete": 66,
     "finishedAt": "2026-10-05T22:52:41.117Z",
+    "lastActivityAt": "2026-10-05T22:52:41.117Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2414,6 +2473,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2025-09-24T17:44:37.912Z",
+    "lastActivityAt": "2025-09-24T17:44:37.912Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2452,6 +2512,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2025-09-21T04:00:51.281Z",
+    "lastActivityAt": "2025-09-21T04:00:51.281Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2489,6 +2550,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-09-15T02:35:14.364Z",
+    "lastActivityAt": "2025-09-15T02:35:14.364Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2528,6 +2590,7 @@
     "finished": true,
     "percentComplete": 89,
     "finishedAt": "2025-09-12T09:35:10.590Z",
+    "lastActivityAt": "2025-09-12T09:35:10.590Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -2568,6 +2631,7 @@
     "finished": false,
     "percentComplete": 7,
     "finishedAt": "2025-09-09T04:47:20.341Z",
+    "lastActivityAt": "2025-09-09T04:47:20.341Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.8,
@@ -2604,6 +2668,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.3,
       "narration": 4.5,
@@ -2643,6 +2708,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2675,6 +2741,7 @@
     "finished": true,
     "percentComplete": 94,
     "finishedAt": "2026-06-21T04:30:09.601Z",
+    "lastActivityAt": "2026-06-21T04:30:09.601Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
@@ -2712,6 +2779,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -2748,6 +2816,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.8,
       "narration": 5,
@@ -2784,6 +2853,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -2820,6 +2890,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2026-07-19T02:47:34.137Z",
+    "lastActivityAt": "2026-07-19T02:47:34.137Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -2856,6 +2927,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-09-08T23:39:12.660Z",
+    "lastActivityAt": "2025-09-08T23:39:12.660Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.8,
@@ -2888,6 +2960,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
@@ -2925,6 +2998,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-09-06T16:21:21.956Z",
+    "lastActivityAt": "2025-09-06T16:21:21.956Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -2962,6 +3036,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.4,
       "narration": 4.4,
@@ -2999,6 +3074,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-09-06T16:27:43.033Z",
+    "lastActivityAt": "2025-09-06T16:27:43.033Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -3036,6 +3112,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-09-07T23:42:55.583Z",
+    "lastActivityAt": "2025-09-07T23:42:55.583Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3073,6 +3150,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2025-07-24T11:21:40.935Z",
+    "lastActivityAt": "2025-07-24T11:21:40.935Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3111,6 +3189,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-07-21T05:52:43.143Z",
+    "lastActivityAt": "2025-07-21T05:52:43.143Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3147,6 +3226,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2025-09-07T02:16:26.357Z",
+    "lastActivityAt": "2025-09-07T02:16:26.357Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -3184,6 +3264,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-06-18T08:52:46.321Z",
+    "lastActivityAt": "2025-06-18T08:52:46.321Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -3221,6 +3302,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-06-18T08:52:49.725Z",
+    "lastActivityAt": "2025-06-18T08:52:49.725Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -3257,6 +3339,7 @@
     "finished": false,
     "percentComplete": 13,
     "finishedAt": "2025-05-05T14:20:32.936Z",
+    "lastActivityAt": "2025-05-05T14:20:32.936Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -3295,6 +3378,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-05-06T04:44:46.077Z",
+    "lastActivityAt": "2025-05-06T04:44:46.077Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3331,6 +3415,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-04-26T05:41:58.429Z",
+    "lastActivityAt": "2025-04-26T05:41:58.429Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.8,
@@ -3367,6 +3452,7 @@
     "finished": true,
     "percentComplete": 43,
     "finishedAt": "2026-06-22T02:55:10.583Z",
+    "lastActivityAt": "2026-06-22T02:55:10.583Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
@@ -3403,6 +3489,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": "2025-04-26T05:46:49.524Z",
+    "lastActivityAt": "2025-04-26T05:46:49.524Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -3436,6 +3523,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-06-27T18:37:16.260Z",
+    "lastActivityAt": "2026-06-27T18:37:16.260Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
@@ -3468,6 +3556,7 @@
     "finished": false,
     "percentComplete": 5,
     "finishedAt": "2025-05-14T02:53:19.752Z",
+    "lastActivityAt": "2025-05-14T02:53:19.752Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
@@ -3505,6 +3594,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-04-22T07:27:08.029Z",
+    "lastActivityAt": "2025-04-22T07:27:08.029Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3542,6 +3632,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-04-14T05:27:42.496Z",
+    "lastActivityAt": "2025-04-14T05:27:42.496Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3579,6 +3670,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-04-11T14:35:52.688Z",
+    "lastActivityAt": "2025-04-11T14:35:52.688Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -3616,6 +3708,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2025-03-27T19:29:00.067Z",
+    "lastActivityAt": "2025-03-27T19:29:00.067Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -3648,6 +3741,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.4,
       "narration": 3.9,
@@ -3685,6 +3779,7 @@
     "finished": false,
     "percentComplete": 11,
     "finishedAt": "2025-12-09T00:48:24.357Z",
+    "lastActivityAt": "2025-12-09T00:48:24.357Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.7,
@@ -3722,6 +3817,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-03-07T20:51:44.020Z",
+    "lastActivityAt": "2025-03-07T20:51:44.020Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -3759,6 +3855,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-02-28T00:19:11.465Z",
+    "lastActivityAt": "2025-02-28T00:19:11.465Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.5,
@@ -3795,6 +3892,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2026-02-06T01:23:54.295Z",
+    "lastActivityAt": "2026-02-06T01:23:54.295Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
@@ -3831,6 +3929,7 @@
     "finished": false,
     "percentComplete": 99,
     "finishedAt": "2025-02-20T21:56:43.343Z",
+    "lastActivityAt": "2025-02-20T21:56:43.343Z",
     "rating": {
       "overall": 4.9,
       "narration": 5,
@@ -3867,6 +3966,7 @@
     "finished": true,
     "percentComplete": 0,
     "finishedAt": "2025-02-16T06:28:46.335Z",
+    "lastActivityAt": "2025-02-16T06:28:46.335Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -3903,6 +4003,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-02-14T08:16:35.385Z",
+    "lastActivityAt": "2025-02-14T08:16:35.385Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3940,6 +4041,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-02-14T08:16:39.132Z",
+    "lastActivityAt": "2025-02-14T08:16:39.132Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -3976,6 +4078,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-02-14T08:16:43.565Z",
+    "lastActivityAt": "2025-02-14T08:16:43.565Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -4012,6 +4115,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-02-14T08:16:46.845Z",
+    "lastActivityAt": "2025-02-14T08:16:46.845Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -4048,6 +4152,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-02-05T01:41:46.722Z",
+    "lastActivityAt": "2025-02-05T01:41:46.722Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -4085,6 +4190,7 @@
     "finished": false,
     "percentComplete": 70,
     "finishedAt": "2026-08-24T05:04:27.979Z",
+    "lastActivityAt": "2026-08-24T05:04:27.979Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -4118,6 +4224,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2025-01-19T04:01:39.632Z",
+    "lastActivityAt": "2025-01-19T04:01:39.632Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -4150,6 +4257,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-12-25T18:59:06.818Z",
+    "lastActivityAt": "2024-12-25T18:59:06.818Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -4186,6 +4294,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-12-01T03:09:54.420Z",
+    "lastActivityAt": "2024-12-01T03:09:54.420Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
@@ -4222,6 +4331,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-11-29T19:55:15.679Z",
+    "lastActivityAt": "2024-11-29T19:55:15.679Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.7,
@@ -4258,6 +4368,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-11-28T15:05:46.000Z",
+    "lastActivityAt": "2024-11-28T15:05:46.000Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.7,
@@ -4294,6 +4405,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-11-27T20:36:09.939Z",
+    "lastActivityAt": "2024-11-27T20:36:09.939Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.7,
@@ -4330,6 +4442,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-11-27T02:12:34.192Z",
+    "lastActivityAt": "2024-11-27T02:12:34.192Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.7,
@@ -4366,6 +4479,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-11-26T03:50:15.633Z",
+    "lastActivityAt": "2024-11-26T03:50:15.633Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.7,
@@ -4403,6 +4517,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-11-24T22:05:29.704Z",
+    "lastActivityAt": "2024-11-24T22:05:29.704Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.6,
@@ -4439,6 +4554,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-11-24T22:16:51.560Z",
+    "lastActivityAt": "2024-11-24T22:16:51.560Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.3,
@@ -4476,6 +4592,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-12-30T09:12:57.631Z",
+    "lastActivityAt": "2024-12-30T09:12:57.631Z",
     "rating": {
       "overall": 4.1,
       "narration": 4.4,
@@ -4509,6 +4626,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-10-13T21:47:45.082Z",
+    "lastActivityAt": "2024-10-13T21:47:45.082Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.6,
@@ -4546,6 +4664,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-11-03T04:53:55.142Z",
+    "lastActivityAt": "2024-11-03T04:53:55.142Z",
     "rating": {
       "overall": 4.2,
       "narration": 4.2,
@@ -4580,6 +4699,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-10-21T07:38:15.487Z",
+    "lastActivityAt": "2024-10-21T07:38:15.487Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.4,
@@ -4612,6 +4732,7 @@
     "finished": true,
     "percentComplete": 6,
     "finishedAt": "2026-06-26T06:00:56.292Z",
+    "lastActivityAt": "2026-06-26T06:00:56.292Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -4649,6 +4770,7 @@
     "finished": false,
     "percentComplete": 8,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 3.6,
       "narration": 4.2,
@@ -4686,6 +4808,7 @@
     "finished": false,
     "percentComplete": 5,
     "finishedAt": "2026-02-06T07:13:18.364Z",
+    "lastActivityAt": "2026-02-06T07:13:18.364Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -4725,6 +4848,7 @@
     "finished": true,
     "percentComplete": 60,
     "finishedAt": "2024-10-06T10:03:27.357Z",
+    "lastActivityAt": "2024-10-06T10:03:27.357Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.4,
@@ -4763,6 +4887,7 @@
     "finished": true,
     "percentComplete": 54,
     "finishedAt": "2024-10-06T10:03:40.159Z",
+    "lastActivityAt": "2024-10-06T10:03:40.159Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.5,
@@ -4801,6 +4926,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-10-04T00:31:46.574Z",
+    "lastActivityAt": "2024-10-04T00:31:46.574Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -4839,6 +4965,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-09-21T00:16:58.014Z",
+    "lastActivityAt": "2024-09-21T00:16:58.014Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.5,
@@ -4877,6 +5004,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2024-10-06T10:03:34.660Z",
+    "lastActivityAt": "2024-10-06T10:03:34.660Z",
     "rating": {
       "overall": 4.2,
       "narration": 4.2,
@@ -4913,6 +5041,7 @@
     "finished": true,
     "percentComplete": 99,
     "finishedAt": "2025-03-08T02:08:36.639Z",
+    "lastActivityAt": "2025-03-08T02:08:36.639Z",
     "rating": {
       "overall": 4.6,
       "narration": 4.8,
@@ -4950,6 +5079,7 @@
     "finished": true,
     "percentComplete": 100,
     "finishedAt": "2024-09-01T10:12:27.626Z",
+    "lastActivityAt": "2024-09-01T10:12:27.626Z",
     "rating": {
       "overall": 4.3,
       "narration": 4.6,
@@ -4983,6 +5113,7 @@
     "finished": false,
     "percentComplete": 3,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.3,
       "narration": 4.5,
@@ -5023,6 +5154,7 @@
     "finished": false,
     "percentComplete": 0,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -5054,6 +5186,7 @@
     "finished": false,
     "percentComplete": 30,
     "finishedAt": null,
+    "lastActivityAt": null,
     "rating": {
       "overall": 4.5,
       "narration": 4.5,

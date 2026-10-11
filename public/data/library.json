@@ -25,14 +25,14 @@
     "releaseDate": "2026-10-06",
     "purchaseDate": "2026-10-06T07:09:55.879Z",
     "finished": false,
-    "percentComplete": 53,
-    "finishedAt": "2026-10-10T10:38:05.946Z",
-    "lastActivityAt": "2026-10-10T10:38:05.946Z",
+    "percentComplete": 56,
+    "finishedAt": "2026-10-11T07:25:45.991Z",
+    "lastActivityAt": "2026-10-11T07:25:45.991Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 900
+      "count": 1200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -197,7 +197,7 @@
       "overall": 4.7,
       "narration": 4.9,
       "story": 4.7,
-      "count": 12400
+      "count": 12500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51GVfmPjj1L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1774241676"
@@ -366,11 +366,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -407,11 +407,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -625,7 +625,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
-      "story": 4.8,
+      "story": 4.7,
       "count": 600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51A0fMhiCwL._SL500_.jpg",
@@ -664,7 +664,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 30700
+      "count": 30800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -934,7 +934,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 4600
+      "count": 4700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51Pu7k4GKGL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14KKPH6"
@@ -2319,7 +2319,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 314400
+      "count": 314500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2359,7 +2359,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31100
+      "count": 31200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK282SYV"
@@ -2433,8 +2433,8 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 66,
-    "finishedAt": "2026-10-05T22:52:41.117Z",
-    "lastActivityAt": "2026-10-05T22:52:41.117Z",
+    "finishedAt": "2026-10-11T06:39:12.008Z",
+    "lastActivityAt": "2026-10-11T06:39:12.008Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2555,7 +2555,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 40600
+      "count": 40700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2595,7 +2595,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 71300
+      "count": 71400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2612,12 +2612,12 @@
     ],
     "series": [
       {
-        "title": "The Cosmere",
-        "sequence": ""
-      },
-      {
         "title": "The Mistborn Saga",
         "sequence": "1"
+      },
+      {
+        "title": "The Cosmere",
+        "sequence": ""
       }
     ],
     "genres": [
@@ -2964,7 +2964,7 @@
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
-      "story": 4.4,
+      "story": 4.5,
       "count": 100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/417vLkXpWnL._SL500_.jpg",

@@ -25,14 +25,14 @@
     "releaseDate": "2026-10-06",
     "purchaseDate": "2026-10-06T07:09:55.879Z",
     "finished": false,
-    "percentComplete": 56,
-    "finishedAt": "2026-10-11T07:25:45.991Z",
-    "lastActivityAt": "2026-10-11T07:25:45.991Z",
+    "percentComplete": 67,
+    "finishedAt": "2026-10-12T06:57:20.106Z",
+    "lastActivityAt": "2026-10-12T06:57:20.106Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 1200
+      "count": 1500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -407,11 +407,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -625,7 +625,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
-      "story": 4.7,
+      "story": 4.8,
       "count": 600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51A0fMhiCwL._SL500_.jpg",
@@ -715,7 +715,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 6700
+      "count": 6800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -1568,7 +1568,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5300
+      "count": 5400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qW73k+gWL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14P2632"
@@ -2285,7 +2285,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 34700
+      "count": 34800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2319,7 +2319,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 314500
+      "count": 314600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2401,7 +2401,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 24800
+      "count": 24900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2433,8 +2433,8 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 66,
-    "finishedAt": "2026-10-11T06:39:12.008Z",
-    "lastActivityAt": "2026-10-11T06:39:12.008Z",
+    "finishedAt": "2026-10-12T08:00:04.065Z",
+    "lastActivityAt": "2026-10-12T08:00:04.065Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2517,7 +2517,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 39000
+      "count": 39100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -3079,7 +3079,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 14600
+      "count": 14700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51y56vBbzqL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0D1DPR1X3"
@@ -3117,7 +3117,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.7,
-      "count": 15000
+      "count": 15100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kEPI5OYuL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0C1PV6Q7C"
@@ -5135,11 +5135,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

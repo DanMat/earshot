@@ -1,10 +1,10 @@
 {
   "totals": {
     "library": 133,
-    "finished": 84,
-    "inProgress": 20,
+    "finished": 85,
+    "inProgress": 19,
     "notStarted": 30,
-    "finishedHours": 1356,
+    "finishedHours": 1378,
     "libraryHours": 2207,
     "libraryDays": 92,
     "narrators": 92,
@@ -17,12 +17,12 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-10-01T04:14:37.166Z"
+    "last": "2026-10-16T04:02:45.104Z"
   },
   "topNarrators": [
     {
       "name": "Heath Miller",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Travis Baldree",
@@ -76,11 +76,11 @@
     },
     {
       "name": "Shirtaloon",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Travis Deverell",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Matt Dinniman",
@@ -122,7 +122,7 @@
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 65
+      "count": 66
     },
     {
       "name": "Literature & Fiction",
@@ -157,7 +157,7 @@
     {
       "title": "He Who Fights with Monsters",
       "owned": 13,
-      "finished": 12
+      "finished": 13
     },
     {
       "title": "The Beginning After the End",
@@ -261,7 +261,7 @@
     }
   ],
   "byMonth": {
-    "2026-10": 1,
+    "2026-10": 2,
     "2026-09": 2,
     "2026-08": 2,
     "2026-07": 2,

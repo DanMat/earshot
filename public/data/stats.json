@@ -1,11 +1,11 @@
 {
   "totals": {
-    "library": 133,
+    "library": 134,
     "finished": 85,
-    "inProgress": 19,
+    "inProgress": 20,
     "notStarted": 30,
     "finishedHours": 1378,
-    "libraryHours": 2207,
+    "libraryHours": 2218,
     "libraryDays": 92,
     "narrators": 92,
     "authors": 25,
@@ -195,14 +195,14 @@
       "finished": 5
     },
     {
+      "title": "The Dresden Files",
+      "owned": 4,
+      "finished": 3
+    },
+    {
       "title": "I'm Not the Hero",
       "owned": 4,
       "finished": 4
-    },
-    {
-      "title": "The Dresden Files",
-      "owned": 3,
-      "finished": 3
     },
     {
       "title": "The Licanius Trilogy",

@@ -1,5 +1,53 @@
 [
   {
+    "asin": "B0GYSY86WS",
+    "title": "Summer Knight [Dramatized Adaptation]",
+    "subtitle": "Dresden Files 4",
+    "authors": [
+      "Jim Butcher"
+    ],
+    "narrators": [
+      "Full Cast",
+      "Matthew Bassett",
+      "Nora Sofyan",
+      "Julian Dailey",
+      "Tia Shearer",
+      "Kymberley Cochrane",
+      "Alyssa Keegan",
+      "Colleen Delany",
+      "Michael Glenn",
+      "Chingwe Padraig Sullivan",
+      "Nhea Durousseau",
+      "Christopher Walker"
+    ],
+    "series": [
+      {
+        "title": "The Dresden Files",
+        "sequence": "4"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 660,
+    "releaseDate": "2026-07-22",
+    "purchaseDate": "2026-10-17T02:59:48.000Z",
+    "finished": false,
+    "percentComplete": 32,
+    "finishedAt": "2026-10-17T08:07:51.783Z",
+    "lastActivityAt": "2026-10-17T08:07:51.783Z",
+    "rating": {
+      "overall": 4.7,
+      "narration": 4.9,
+      "story": 4.8,
+      "count": 100
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51wGMBNvL-L._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0GYSY86WS"
+  },
+  {
     "asin": "B0H4LKXP2C",
     "title": "He Who Fights with Monsters 13: A LitRPG Adventure",
     "subtitle": "He Who Fights with Monsters, Book 13",
@@ -32,7 +80,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 2700
+      "count": 2900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -665,7 +713,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31100
+      "count": 31200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -750,10 +798,10 @@
     "finishedAt": null,
     "lastActivityAt": null,
     "rating": {
-      "overall": 4.8,
+      "overall": 4.7,
       "narration": 4.9,
-      "story": 4.8,
-      "count": 1300
+      "story": 4.7,
+      "count": 1400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kU3yteEkL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FB4BPCML"
@@ -2434,8 +2482,8 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 67,
-    "finishedAt": "2026-10-14T00:40:31.200Z",
-    "lastActivityAt": "2026-10-14T00:40:31.200Z",
+    "finishedAt": "2026-10-17T07:22:53.160Z",
+    "lastActivityAt": "2026-10-17T07:22:53.160Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2479,7 +2527,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32300
+      "count": 32400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2518,7 +2566,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 39200
+      "count": 39300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"

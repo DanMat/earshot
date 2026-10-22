@@ -1,11 +1,11 @@
 {
   "Adrian Kulp": {
     "found": false,
-    "checkedAt": "2026-09-21T14:52:14.251Z"
+    "checkedAt": "2026-10-22T13:28:53.399Z"
   },
   "Alyssa Blask Campbell": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:48.213Z"
+    "checkedAt": "2026-10-22T13:28:34.697Z"
   },
   "Andy Weir": {
     "found": true,
@@ -41,7 +41,7 @@
   },
   "C. Mantis": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:56.488Z"
+    "checkedAt": "2026-10-22T13:28:40.955Z"
   },
   "Chugong": {
     "found": true,
@@ -53,7 +53,7 @@
   },
   "Cornman": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:25.431Z"
+    "checkedAt": "2026-10-22T13:28:16.908Z"
   },
   "Dan Brown": {
     "found": true,
@@ -73,7 +73,7 @@
   },
   "Dennis E. Taylor": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:42.066Z"
+    "checkedAt": "2026-10-22T13:28:29.465Z"
   },
   "Douglas Preston": {
     "found": true,
@@ -85,7 +85,7 @@
   },
   "Homer": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:10.819Z"
+    "checkedAt": "2026-10-22T13:28:04.792Z"
   },
   "Ian McEwan": {
     "found": true,
@@ -97,11 +97,15 @@
   },
   "J.I. Packer": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:39.524Z"
+    "checkedAt": "2026-10-22T13:28:26.754Z"
   },
   "J.K. Rowling": {
-    "found": false,
-    "checkedAt": "2026-09-21T14:51:20.077Z"
+    "found": true,
+    "qid": "Q34660",
+    "country": "United Kingdom",
+    "iso": "GB",
+    "lat": 54.6,
+    "lon": -2
   },
   "J.M. Clarke": {
     "found": true,
@@ -145,11 +149,11 @@
   },
   "John Kenney": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:15.904Z"
+    "checkedAt": "2026-10-22T13:28:09.229Z"
   },
   "Jonathan Renshaw": {
     "found": false,
-    "checkedAt": "2026-09-21T14:52:01.651Z"
+    "checkedAt": "2026-10-22T13:28:45.207Z"
   },
   "Ken Segall": {
     "found": true,
@@ -169,7 +173,7 @@
   },
   "Lauren Elizabeth Stauble": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:49.715Z"
+    "checkedAt": "2026-10-22T13:28:36.358Z"
   },
   "Lincoln Child": {
     "found": true,
@@ -229,7 +233,7 @@
   },
   "RJ Barker": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:46.463Z"
+    "checkedAt": "2026-10-22T13:28:32.940Z"
   },
   "Rebecca Cantrell": {
     "found": true,
@@ -239,13 +243,21 @@
     "lat": 39.828175,
     "lon": -98.5795
   },
+  "Rebecca Yarros": {
+    "found": true,
+    "qid": "Q121091992",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
   "Richard Ferber": {
     "found": false,
-    "checkedAt": "2026-09-21T14:52:07.906Z"
+    "checkedAt": "2026-10-22T13:28:49.221Z"
   },
   "Shawn Wilson": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:31.622Z"
+    "checkedAt": "2026-10-22T13:28:21.501Z"
   },
   "Shirtaloon": {
     "found": true,
@@ -257,7 +269,7 @@
   },
   "SourpatchHero": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:34.146Z"
+    "checkedAt": "2026-10-22T13:28:24.033Z"
   },
   "Stephen Fry": {
     "found": true,
@@ -277,11 +289,11 @@
   },
   "Tommy Kerper": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:32.820Z"
+    "checkedAt": "2026-10-22T13:28:22.614Z"
   },
   "Travis Deverell": {
     "found": false,
-    "checkedAt": "2026-09-21T14:51:52.583Z"
+    "checkedAt": "2026-10-22T13:28:01.654Z"
   },
   "TurtleMe": {
     "found": true,

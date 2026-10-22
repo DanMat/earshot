@@ -1,5 +1,54 @@
 [
   {
+    "asin": "B0CKS42KQH",
+    "title": "Fourth Wing (Part 1 of 2) (Dramatized Adaptation)",
+    "subtitle": "The Empyrean, Book 1",
+    "authors": [
+      "Rebecca Yarros"
+    ],
+    "narrators": [
+      "full cast",
+      "Scott McCormick",
+      "Troy Allan",
+      "Jessica Lauren Ball",
+      "Khaya Fraites",
+      "Gabriel Michael",
+      "Torian Brackett",
+      "Taylor Coan",
+      "LaMont Ridgell",
+      "Robb Moreira",
+      "Laura C. Harris",
+      "David Cui Cui"
+    ],
+    "series": [
+      {
+        "title": "The Empyrean",
+        "sequence": "1"
+      }
+    ],
+    "genres": [
+      "Romance",
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Performance",
+    "runtimeMin": 472,
+    "releaseDate": "2023-12-27",
+    "purchaseDate": "2026-10-22T03:39:38.000Z",
+    "finished": false,
+    "percentComplete": 16,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 4.8,
+      "narration": 4.8,
+      "story": 4.8,
+      "count": 4900
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/61i95pK0DoL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0CKS42KQH"
+  },
+  {
     "asin": "B0GYSY86WS",
     "title": "Summer Knight [Dramatized Adaptation]",
     "subtitle": "Dresden Files 4",
@@ -80,7 +129,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 3700
+      "count": 3900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -713,7 +762,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31500
+      "count": 31600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -2204,7 +2253,7 @@
     "finishedAt": "2025-12-17T17:42:08.562Z",
     "lastActivityAt": "2025-12-17T17:42:08.562Z",
     "rating": {
-      "overall": 4.4,
+      "overall": 4.3,
       "narration": 4.6,
       "story": 4.6,
       "count": 200
@@ -2368,7 +2417,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 315200
+      "count": 315300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2450,7 +2499,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 25100
+      "count": 25200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2482,8 +2531,8 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 70,
-    "finishedAt": "2026-10-19T22:36:05.585Z",
-    "lastActivityAt": "2026-10-19T22:36:05.585Z",
+    "finishedAt": "2026-10-22T10:01:44.530Z",
+    "lastActivityAt": "2026-10-22T10:01:44.530Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2566,7 +2615,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 39400
+      "count": 39500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2643,7 +2692,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 72100
+      "count": 72200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2761,7 +2810,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 5600
+      "count": 5700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/41XSUG95gQL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1797213024"
@@ -3868,7 +3917,7 @@
     "lastActivityAt": "2025-03-07T20:51:44.020Z",
     "rating": {
       "overall": 4.7,
-      "narration": 4.7,
+      "narration": 4.8,
       "story": 4.7,
       "count": 1400
     },
@@ -5183,11 +5232,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

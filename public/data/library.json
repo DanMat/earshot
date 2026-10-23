@@ -129,7 +129,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 3900
+      "count": 4100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -504,11 +504,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -813,7 +813,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 7000
+      "count": 7100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -847,7 +847,7 @@
     "finishedAt": null,
     "lastActivityAt": null,
     "rating": {
-      "overall": 4.7,
+      "overall": 4.8,
       "narration": 4.9,
       "story": 4.7,
       "count": 1400
@@ -1032,7 +1032,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 4700
+      "count": 4800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51Pu7k4GKGL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14KKPH6"
@@ -1877,7 +1877,9 @@
     "title": "Omniscient Reader's Viewpoint (novel), Vol. 2",
     "subtitle": null,
     "authors": [
-      "singNsong"
+      "singNsong",
+      "J. Torres — Translator",
+      "Hye Young Im — Translator"
     ],
     "narrators": [],
     "series": [
@@ -2417,7 +2419,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 315300
+      "count": 315400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2537,7 +2539,7 @@
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.4,
-      "count": 12400
+      "count": 12500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QB1lclwjL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DV1119K4"
@@ -2576,7 +2578,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32500
+      "count": 32600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2653,7 +2655,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 41100
+      "count": 41200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2692,7 +2694,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 72200
+      "count": 72300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2709,12 +2711,12 @@
     ],
     "series": [
       {
-        "title": "The Cosmere",
-        "sequence": ""
-      },
-      {
         "title": "The Mistborn Saga",
         "sequence": "1"
+      },
+      {
+        "title": "The Cosmere",
+        "sequence": ""
       }
     ],
     "genres": [
@@ -3002,7 +3004,9 @@
     "title": "Omniscient Reader's Viewpoint (novel), Vol. 1",
     "subtitle": null,
     "authors": [
-      "singNsong"
+      "singNsong",
+      "J. Torres — Translator",
+      "Hye Young Im — Translator"
     ],
     "narrators": [
       "Eric Yang"
@@ -5232,11 +5236,11 @@
     ],
     "series": [
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       },
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       }
     ],

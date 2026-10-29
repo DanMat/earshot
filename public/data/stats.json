@@ -1,11 +1,11 @@
 {
   "totals": {
-    "library": 135,
+    "library": 136,
     "finished": 87,
     "inProgress": 22,
-    "notStarted": 27,
+    "notStarted": 28,
     "finishedHours": 1397,
-    "libraryHours": 2226,
+    "libraryHours": 2233,
     "libraryDays": 93,
     "narrators": 110,
     "authors": 28,
@@ -126,22 +126,18 @@
     },
     {
       "name": "Literature & Fiction",
-      "count": 23
+      "count": 22
     },
     {
       "name": "Mystery, Thriller & Suspense",
       "count": 21
     },
     {
-      "name": "Comedy & Humor",
-      "count": 8
-    },
-    {
       "name": "Children's Audiobooks",
       "count": 7
     },
     {
-      "name": "Arts & Entertainment",
+      "name": "Comedy & Humor",
       "count": 4
     },
     {
@@ -151,6 +147,10 @@
     {
       "name": "Teen & Young Adult",
       "count": 2
+    },
+    {
+      "name": "Arts & Entertainment",
+      "count": 1
     }
   ],
   "series": [
@@ -230,12 +230,12 @@
       "finished": 0
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },

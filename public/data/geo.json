@@ -83,6 +83,14 @@
     "lat": 39.828175,
     "lon": -98.5795
   },
+  "Freida McFadden": {
+    "found": true,
+    "qid": "Q121304449",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
   "Homer": {
     "found": false,
     "checkedAt": "2026-10-22T13:28:04.792Z"

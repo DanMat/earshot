@@ -1,10 +1,10 @@
 {
   "totals": {
     "library": 136,
-    "finished": 88,
+    "finished": 89,
     "inProgress": 22,
-    "notStarted": 27,
-    "finishedHours": 1406,
+    "notStarted": 26,
+    "finishedHours": 1415,
     "libraryHours": 2233,
     "libraryDays": 93,
     "narrators": 113,
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-10-29T22:34:04.591Z"
+    "last": "2026-10-31T01:18:49.426Z"
   },
   "topNarrators": [
     {
@@ -122,7 +122,7 @@
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 69
+      "count": 70
     },
     {
       "name": "Literature & Fiction",
@@ -167,7 +167,7 @@
     {
       "title": "Red Rising",
       "owned": 11,
-      "finished": 2
+      "finished": 3
     },
     {
       "title": "Dungeon Crawler Carl",
@@ -230,12 +230,12 @@
       "finished": 0
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
@@ -261,7 +261,7 @@
     }
   ],
   "byMonth": {
-    "2026-10": 5,
+    "2026-10": 6,
     "2026-09": 2,
     "2026-08": 2,
     "2026-07": 2,

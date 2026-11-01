@@ -1,13 +1,13 @@
 {
   "totals": {
     "library": 136,
-    "finished": 89,
-    "inProgress": 22,
+    "finished": 90,
+    "inProgress": 21,
     "notStarted": 26,
-    "finishedHours": 1415,
+    "finishedHours": 1424,
     "libraryHours": 2233,
     "libraryDays": 93,
-    "narrators": 113,
+    "narrators": 118,
     "authors": 28,
     "seriesStarted": 16
   },
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-10-31T01:18:49.426Z"
+    "last": "2026-11-01T08:48:36.775Z"
   },
   "topNarrators": [
     {
@@ -111,18 +111,18 @@
       "count": 4
     },
     {
-      "name": "Tommy Kerper",
+      "name": "Pierce Brown",
       "count": 4
     },
     {
-      "name": "SourpatchHero",
+      "name": "Tommy Kerper",
       "count": 4
     }
   ],
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 70
+      "count": 71
     },
     {
       "name": "Literature & Fiction",
@@ -167,7 +167,7 @@
     {
       "title": "Red Rising",
       "owned": 11,
-      "finished": 3
+      "finished": 4
     },
     {
       "title": "Dungeon Crawler Carl",
@@ -268,6 +268,7 @@
     "2026-06": 9,
     "2026-05": 2,
     "2026-04": 2,
+    "2026-11": 1,
     "2026-03": 1,
     "2026-02": 3,
     "2026-01": 6,

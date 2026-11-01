@@ -794,7 +794,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32200
+      "count": 32300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -1413,10 +1413,10 @@
     "runtimeMin": 586,
     "releaseDate": "2024-02-08",
     "purchaseDate": "2026-04-02T11:52:51.984Z",
-    "finished": false,
-    "percentComplete": 44,
-    "finishedAt": "2026-10-31T06:57:49.520Z",
-    "lastActivityAt": "2026-10-31T06:57:49.520Z",
+    "finished": true,
+    "percentComplete": 99,
+    "finishedAt": "2026-11-01T08:48:36.775Z",
+    "lastActivityAt": "2026-11-01T08:48:36.775Z",
     "rating": {
       "overall": 4.9,
       "narration": 4.9,
@@ -2448,7 +2448,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 315900
+      "count": 316000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2559,8 +2559,8 @@
     "purchaseDate": "2025-09-24T00:59:45.307Z",
     "finished": false,
     "percentComplete": 88,
-    "finishedAt": "2026-10-31T02:21:56.590Z",
-    "lastActivityAt": "2026-10-31T02:21:56.590Z",
+    "finishedAt": "2026-11-01T05:08:57.877Z",
+    "lastActivityAt": "2026-11-01T05:08:57.877Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2603,7 +2603,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32800
+      "count": 32900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2680,7 +2680,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 41500
+      "count": 41600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2736,12 +2736,12 @@
     ],
     "series": [
       {
-        "title": "The Mistborn Saga",
-        "sequence": "1"
-      },
-      {
         "title": "The Cosmere",
         "sequence": ""
+      },
+      {
+        "title": "The Mistborn Saga",
+        "sequence": "1"
       }
     ],
     "genres": [
@@ -3654,7 +3654,7 @@
       "overall": 4.5,
       "narration": 4.7,
       "story": 4.5,
-      "count": 14400
+      "count": 14500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/41kTCl6OwHL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1984886878"

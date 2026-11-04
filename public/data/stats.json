@@ -1,14 +1,14 @@
 {
   "totals": {
     "library": 136,
-    "finished": 91,
-    "inProgress": 21,
-    "notStarted": 25,
-    "finishedHours": 1435,
+    "finished": 92,
+    "inProgress": 20,
+    "notStarted": 26,
+    "finishedHours": 1458,
     "libraryHours": 2233,
     "libraryDays": 93,
     "narrators": 120,
-    "authors": 28,
+    "authors": 29,
     "seriesStarted": 16
   },
   "busiestMonth": {
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-11-03T09:34:16.369Z"
+    "last": "2026-11-04T04:51:05.764Z"
   },
   "topNarrators": [
     {
@@ -126,11 +126,11 @@
     },
     {
       "name": "Literature & Fiction",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Mystery, Thriller & Suspense",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Children's Audiobooks",
@@ -268,7 +268,7 @@
     "2026-06": 9,
     "2026-05": 2,
     "2026-04": 2,
-    "2026-11": 2,
+    "2026-11": 3,
     "2026-03": 1,
     "2026-02": 3,
     "2026-01": 6,

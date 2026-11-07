@@ -19,9 +19,9 @@
     "releaseDate": "2024-12-17",
     "purchaseDate": "2026-10-28T14:54:03.000Z",
     "finished": false,
-    "percentComplete": 0,
-    "finishedAt": null,
-    "lastActivityAt": null,
+    "percentComplete": 70,
+    "finishedAt": "2026-11-07T08:17:51.757Z",
+    "lastActivityAt": "2026-11-07T08:17:51.757Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
@@ -161,7 +161,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 5800
+      "count": 5900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -496,11 +496,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -845,7 +845,7 @@
       "overall": 5,
       "narration": 4.9,
       "story": 4.9,
-      "count": 7500
+      "count": 7600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51JFEMoRTmL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RVHWN"
@@ -2056,7 +2056,7 @@
     "finishedAt": "2026-01-26T07:37:41.232Z",
     "lastActivityAt": "2026-01-26T07:37:41.232Z",
     "rating": {
-      "overall": 4.8,
+      "overall": 4.7,
       "narration": 4.9,
       "story": 4.7,
       "count": 1600
@@ -2415,7 +2415,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 35500
+      "count": 35600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2448,7 +2448,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 316300
+      "count": 316400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2487,7 +2487,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 31700
+      "count": 31800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK282SYV"
@@ -2719,7 +2719,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 73300
+      "count": 73400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2870,7 +2870,7 @@
       "overall": 4.6,
       "narration": 4.8,
       "story": 4.6,
-      "count": 2500
+      "count": 2600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/417086yn20L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DJ3H33MK"
@@ -4272,7 +4272,7 @@
     ],
     "language": "english",
     "contentType": "Product",
-    "runtimeMin": 745,
+    "runtimeMin": 744,
     "releaseDate": "2019-12-03",
     "purchaseDate": "2025-02-03T02:31:23.693Z",
     "finished": true,
@@ -4285,7 +4285,7 @@
       "story": 4.8,
       "count": 6900
     },
-    "coverUrl": "https://m.media-amazon.com/images/I/518ZH-6fZBL._SL500_.jpg",
+    "coverUrl": "https://m.media-amazon.com/images/I/51A0XoLP2BL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1774241307"
   },
   {

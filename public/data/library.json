@@ -1,5 +1,46 @@
 [
   {
+    "asin": "B0HDFGKSTL",
+    "title": "Exoplanet",
+    "subtitle": null,
+    "authors": [
+      "Benjamin Percy",
+      "Andy Weir"
+    ],
+    "narrators": [
+      "Anthony Mackie",
+      "Ariana DeBose",
+      "John Leguizamo",
+      "Ray Porter",
+      "Cherry Jones",
+      "Aida Osman",
+      "Charlie Plummer",
+      "Sufe Bradshaw",
+      "Full cast"
+    ],
+    "series": [],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 248,
+    "releaseDate": "2026-11-05",
+    "purchaseDate": "2026-11-08T00:09:13.736Z",
+    "finished": false,
+    "percentComplete": 3,
+    "finishedAt": "2026-11-08T01:43:37.367Z",
+    "lastActivityAt": "2026-11-08T01:43:37.367Z",
+    "rating": {
+      "overall": 4.5,
+      "narration": 4.7,
+      "story": 4.4,
+      "count": 1600
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
+  },
+  {
     "asin": "B0DLJF58T5",
     "title": "The Locked Door",
     "subtitle": null,
@@ -18,10 +59,10 @@
     "runtimeMin": 445,
     "releaseDate": "2024-12-17",
     "purchaseDate": "2026-10-28T14:54:03.000Z",
-    "finished": false,
-    "percentComplete": 70,
-    "finishedAt": "2026-11-07T08:17:51.757Z",
-    "lastActivityAt": "2026-11-07T08:17:51.757Z",
+    "finished": true,
+    "percentComplete": 99,
+    "finishedAt": "2026-11-07T23:58:45.381Z",
+    "lastActivityAt": "2026-11-07T23:58:45.381Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.6,
@@ -161,7 +202,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 5900
+      "count": 6000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -794,7 +835,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32700
+      "count": 32800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -2377,7 +2418,7 @@
       "overall": 4.7,
       "narration": 4.8,
       "story": 4.6,
-      "count": 109500
+      "count": 109600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51yMirAE25L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B01L082HJ2"
@@ -2448,7 +2489,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 316400
+      "count": 316500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2557,10 +2598,10 @@
     "runtimeMin": 1370,
     "releaseDate": "2025-09-09",
     "purchaseDate": "2025-09-24T00:59:45.307Z",
-    "finished": true,
+    "finished": false,
     "percentComplete": 0,
-    "finishedAt": "2026-11-04T19:16:46.190Z",
-    "lastActivityAt": "2026-11-04T19:16:46.190Z",
+    "finishedAt": "2026-11-08T13:36:51.385Z",
+    "lastActivityAt": "2026-11-08T13:36:51.385Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.7,
@@ -2603,7 +2644,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 33000
+      "count": 33100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -2680,7 +2721,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 41800
+      "count": 41900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -2719,7 +2760,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 73400
+      "count": 73500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -3839,7 +3880,7 @@
       "overall": 4.7,
       "narration": 4.8,
       "story": 4.7,
-      "count": 48600
+      "count": 48700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51KQ+4F1OVL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1774248182"

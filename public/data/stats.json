@@ -1,13 +1,13 @@
 {
   "totals": {
-    "library": 136,
+    "library": 137,
     "finished": 93,
     "inProgress": 20,
     "notStarted": 25,
-    "finishedHours": 1483,
-    "libraryHours": 2233,
+    "finishedHours": 1467,
+    "libraryHours": 2237,
     "libraryDays": 93,
-    "narrators": 121,
+    "narrators": 122,
     "authors": 30,
     "seriesStarted": 16
   },
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-11-06T02:51:47.166Z"
+    "last": "2026-11-07T23:58:45.381Z"
   },
   "topNarrators": [
     {
@@ -125,11 +125,11 @@
       "count": 73
     },
     {
-      "name": "Literature & Fiction",
-      "count": 23
+      "name": "Mystery, Thriller & Suspense",
+      "count": 22
     },
     {
-      "name": "Mystery, Thriller & Suspense",
+      "name": "Literature & Fiction",
       "count": 22
     },
     {
@@ -261,10 +261,10 @@
     }
   ],
   "byMonth": {
+    "2026-11": 4,
     "2026-10": 6,
     "2026-09": 2,
     "2026-08": 2,
-    "2026-11": 4,
     "2026-07": 2,
     "2026-06": 9,
     "2026-05": 2,

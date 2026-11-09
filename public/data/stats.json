@@ -1,12 +1,12 @@
 {
   "totals": {
-    "library": 137,
+    "library": 138,
     "finished": 93,
     "inProgress": 20,
-    "notStarted": 25,
+    "notStarted": 26,
     "finishedHours": 1467,
-    "libraryHours": 2237,
-    "libraryDays": 93,
+    "libraryHours": 2248,
+    "libraryDays": 94,
     "narrators": 122,
     "authors": 30,
     "seriesStarted": 16
@@ -190,14 +190,14 @@
       "finished": 1
     },
     {
+      "title": "The Dresden Files",
+      "owned": 5,
+      "finished": 4
+    },
+    {
       "title": "The Order of the Sanguines",
       "owned": 5,
       "finished": 5
-    },
-    {
-      "title": "The Dresden Files",
-      "owned": 4,
-      "finished": 4
     },
     {
       "title": "I'm Not the Hero",
@@ -230,12 +230,12 @@
       "finished": 0
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },

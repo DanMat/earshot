@@ -1,5 +1,56 @@
 [
   {
+    "asin": "B0HD18BP66",
+    "title": "Death Masks [Dramatized Adaptation]",
+    "subtitle": "Dresden Files 5",
+    "authors": [
+      "Jim Butcher"
+    ],
+    "narrators": [
+      "Full Cast",
+      "Matthew Bassett",
+      "Nicole Perez",
+      "Wyn Delano",
+      "Nora Sofyan",
+      "Christopher Tester",
+      "Christopher Williams",
+      "Torian Brackett",
+      "Jenna Sharpe",
+      "Yesenia Iglesias",
+      "Gregory Linington",
+      "Rayner Gabriel",
+      "Christopher Walker",
+      "Terence Aselford",
+      "Kenyatta Rogers"
+    ],
+    "series": [
+      {
+        "title": "The Dresden Files",
+        "sequence": "5"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 635,
+    "releaseDate": "2026-11-09",
+    "purchaseDate": "2026-11-09T08:00:48.418Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 0,
+      "narration": 0,
+      "story": 0,
+      "count": null
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51RW7YiJQ5L._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0HD18BP66"
+  },
+  {
     "asin": "B0HDFGKSTL",
     "title": "Exoplanet",
     "subtitle": null,
@@ -28,14 +79,14 @@
     "releaseDate": "2026-11-05",
     "purchaseDate": "2026-11-08T00:09:13.736Z",
     "finished": false,
-    "percentComplete": 3,
-    "finishedAt": "2026-11-08T01:43:37.367Z",
-    "lastActivityAt": "2026-11-08T01:43:37.367Z",
+    "percentComplete": 97,
+    "finishedAt": "2026-11-09T06:42:21.599Z",
+    "lastActivityAt": "2026-11-09T06:42:21.599Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
       "story": 4.4,
-      "count": 1600
+      "count": 2300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -67,7 +118,7 @@
       "overall": 4.5,
       "narration": 4.6,
       "story": 4.5,
-      "count": 5900
+      "count": 6000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/41hYxlHswgL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DLJF58T5"
@@ -163,7 +214,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
-      "story": 4.8,
+      "story": 4.9,
       "count": 100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51wGMBNvL-L._SL500_.jpg",
@@ -202,7 +253,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 6000
+      "count": 6100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -537,11 +588,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -635,7 +686,7 @@
       "overall": 4.5,
       "narration": 4.7,
       "story": 4.5,
-      "count": 1800
+      "count": 1900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/41alsg8wzjL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FCV7FFPV"
@@ -835,7 +886,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32800
+      "count": 32900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -2606,7 +2657,7 @@
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.4,
-      "count": 12500
+      "count": 12600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QB1lclwjL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DV1119K4"
@@ -2683,7 +2734,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.8,
-      "count": 40100
+      "count": 40200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2777,12 +2828,12 @@
     ],
     "series": [
       {
-        "title": "The Cosmere",
-        "sequence": ""
-      },
-      {
         "title": "The Mistborn Saga",
         "sequence": "1"
+      },
+      {
+        "title": "The Cosmere",
+        "sequence": ""
       }
     ],
     "genres": [
@@ -2986,7 +3037,7 @@
       "overall": 4.8,
       "narration": 5,
       "story": 4.8,
-      "count": 9300
+      "count": 9400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51tsjoJpB8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1478916613"

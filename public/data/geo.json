@@ -303,6 +303,14 @@
     "lat": 54.6,
     "lon": -2
   },
+  "Stephen King": {
+    "found": true,
+    "qid": "Q39829",
+    "country": "United States",
+    "iso": "US",
+    "lat": 39.828175,
+    "lon": -98.5795
+  },
   "Steve Berry": {
     "found": true,
     "qid": "Q225089",

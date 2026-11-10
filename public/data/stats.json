@@ -1,14 +1,14 @@
 {
   "totals": {
-    "library": 138,
-    "finished": 93,
+    "library": 139,
+    "finished": 94,
     "inProgress": 20,
     "notStarted": 26,
-    "finishedHours": 1467,
-    "libraryHours": 2248,
-    "libraryDays": 94,
-    "narrators": 122,
-    "authors": 30,
+    "finishedHours": 1471,
+    "libraryHours": 2296,
+    "libraryDays": 96,
+    "narrators": 130,
+    "authors": 31,
     "seriesStarted": 16
   },
   "busiestMonth": {
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-11-07T23:58:45.381Z"
+    "last": "2026-11-10T00:42:57.498Z"
   },
   "topNarrators": [
     {
@@ -122,7 +122,7 @@
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 73
+      "count": 74
     },
     {
       "name": "Mystery, Thriller & Suspense",
@@ -230,12 +230,12 @@
       "finished": 0
     },
     {
-      "title": "Audible Iliad & Odyssey",
+      "title": "Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
     {
-      "title": "Iliad & Odyssey",
+      "title": "Audible Iliad & Odyssey",
       "owned": 2,
       "finished": 0
     },
@@ -261,7 +261,7 @@
     }
   ],
   "byMonth": {
-    "2026-11": 4,
+    "2026-11": 5,
     "2026-10": 6,
     "2026-09": 2,
     "2026-08": 2,

@@ -1,5 +1,42 @@
 [
   {
+    "asin": "B01N17THEO",
+    "title": "For We Are Many",
+    "subtitle": "Bobiverse, Book 2",
+    "authors": [
+      "Dennis E. Taylor"
+    ],
+    "narrators": [
+      "Ray Porter"
+    ],
+    "series": [
+      {
+        "title": "Bobiverse",
+        "sequence": "2"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 539,
+    "releaseDate": "2017-04-18",
+    "purchaseDate": "2026-11-11T04:38:32.801Z",
+    "finished": false,
+    "percentComplete": 7,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 4.8,
+      "narration": 4.9,
+      "story": 4.7,
+      "count": 74800
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/516OMBlJD7L._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B01N17THEO"
+  },
+  {
     "asin": "B0077DEH7A",
     "title": "The Stand",
     "subtitle": null,
@@ -21,9 +58,9 @@
     "releaseDate": "2012-02-14",
     "purchaseDate": "2026-11-10T00:45:49.376Z",
     "finished": false,
-    "percentComplete": 4,
-    "finishedAt": "2026-11-10T09:33:49.665Z",
-    "lastActivityAt": "2026-11-10T09:33:49.665Z",
+    "percentComplete": 9,
+    "finishedAt": "2026-11-11T15:31:51.915Z",
+    "lastActivityAt": "2026-11-11T15:31:51.915Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -77,7 +114,7 @@
     "lastActivityAt": null,
     "rating": {
       "overall": 5,
-      "narration": 5,
+      "narration": 4.8,
       "story": 5,
       "count": 0
     },
@@ -120,7 +157,7 @@
       "overall": 4.5,
       "narration": 4.7,
       "story": 4.4,
-      "count": 2900
+      "count": 3600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -287,7 +324,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 6100
+      "count": 6200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -1987,7 +2024,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 6400
+      "count": 6500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61PDURimu0L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14PB6WN"
@@ -2182,7 +2219,7 @@
     "finishedAt": "2026-01-26T07:37:41.232Z",
     "lastActivityAt": "2026-01-26T07:37:41.232Z",
     "rating": {
-      "overall": 4.7,
+      "overall": 4.8,
       "narration": 4.9,
       "story": 4.7,
       "count": 1600
@@ -2574,7 +2611,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 316600
+      "count": 316700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2768,7 +2805,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.8,
-      "count": 40200
+      "count": 40300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/518nfG1FaYL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B094XCNV6G"
@@ -2845,7 +2882,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 73600
+      "count": 73700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -2862,12 +2899,12 @@
     ],
     "series": [
       {
-        "title": "The Mistborn Saga",
-        "sequence": "1"
-      },
-      {
         "title": "The Cosmere",
         "sequence": ""
+      },
+      {
+        "title": "The Mistborn Saga",
+        "sequence": "1"
       }
     ],
     "genres": [
@@ -5385,11 +5422,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

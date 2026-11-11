@@ -1,15 +1,15 @@
 {
   "totals": {
-    "library": 139,
+    "library": 140,
     "finished": 94,
-    "inProgress": 20,
+    "inProgress": 21,
     "notStarted": 26,
     "finishedHours": 1471,
-    "libraryHours": 2296,
+    "libraryHours": 2305,
     "libraryDays": 96,
     "narrators": 130,
     "authors": 31,
-    "seriesStarted": 16
+    "seriesStarted": 17
   },
   "busiestMonth": {
     "ym": "2026-06",
@@ -223,6 +223,11 @@
       "title": "Moonfall",
       "owned": 3,
       "finished": 3
+    },
+    {
+      "title": "Bobiverse",
+      "owned": 2,
+      "finished": 1
     },
     {
       "title": "Hyperion",

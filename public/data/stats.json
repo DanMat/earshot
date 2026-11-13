@@ -1,12 +1,12 @@
 {
   "totals": {
-    "library": 140,
+    "library": 144,
     "finished": 94,
     "inProgress": 21,
-    "notStarted": 26,
+    "notStarted": 30,
     "finishedHours": 1471,
-    "libraryHours": 2305,
-    "libraryDays": 96,
+    "libraryHours": 2349,
+    "libraryDays": 98,
     "narrators": 130,
     "authors": 31,
     "seriesStarted": 17
@@ -190,6 +190,11 @@
       "finished": 1
     },
     {
+      "title": "Bobiverse",
+      "owned": 6,
+      "finished": 1
+    },
+    {
       "title": "The Dresden Files",
       "owned": 5,
       "finished": 4
@@ -223,11 +228,6 @@
       "title": "Moonfall",
       "owned": 3,
       "finished": 3
-    },
-    {
-      "title": "Bobiverse",
-      "owned": 2,
-      "finished": 1
     },
     {
       "title": "Hyperion",

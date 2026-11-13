@@ -1,5 +1,153 @@
 [
   {
+    "asin": "B07341FZDC",
+    "title": "All These Worlds",
+    "subtitle": "Bobiverse, Book 3",
+    "authors": [
+      "Dennis E. Taylor"
+    ],
+    "narrators": [
+      "Ray Porter"
+    ],
+    "series": [
+      {
+        "title": "Bobiverse",
+        "sequence": "3"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 476,
+    "releaseDate": "2017-08-08",
+    "purchaseDate": "2026-11-12T18:05:43.321Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 4.8,
+      "narration": 4.9,
+      "story": 4.7,
+      "count": 69600
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51pdrrgwa+L._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B07341FZDC"
+  },
+  {
+    "asin": "B0H8SY9QMX",
+    "title": "The Infinite Extent",
+    "subtitle": "Bobiverse, Book 6",
+    "authors": [
+      "Dennis E. Taylor"
+    ],
+    "narrators": [
+      "Ray Porter"
+    ],
+    "series": [
+      {
+        "title": "Bobiverse",
+        "sequence": "6"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 502,
+    "releaseDate": "2026-09-10",
+    "purchaseDate": "2026-11-12T18:05:02.170Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 4.6,
+      "narration": 4.9,
+      "story": 4.6,
+      "count": 5900
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51O1HmGSbEL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0H8SY9QMX"
+  },
+  {
+    "asin": "B0CW23CC7L",
+    "title": "Not Till We Are Lost",
+    "subtitle": "Bobiverse, Book 5",
+    "authors": [
+      "Dennis E. Taylor"
+    ],
+    "narrators": [
+      "Ray Porter"
+    ],
+    "series": [
+      {
+        "title": "Bobiverse",
+        "sequence": "5"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 701,
+    "releaseDate": "2024-09-05",
+    "purchaseDate": "2026-11-12T18:03:24.595Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 4.7,
+      "narration": 4.9,
+      "story": 4.7,
+      "count": 14700
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51Lrwt49zdL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B0CW23CC7L"
+  },
+  {
+    "asin": "B088C4DBYP",
+    "title": "Heaven's River",
+    "subtitle": "Bobiverse, Book 4",
+    "authors": [
+      "Dennis E. Taylor"
+    ],
+    "narrators": [
+      "Ray Porter"
+    ],
+    "series": [
+      {
+        "title": "Bobiverse",
+        "sequence": "4"
+      }
+    ],
+    "genres": [
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 1017,
+    "releaseDate": "2020-09-24",
+    "purchaseDate": "2026-11-12T18:02:42.861Z",
+    "finished": false,
+    "percentComplete": 0,
+    "finishedAt": null,
+    "lastActivityAt": null,
+    "rating": {
+      "overall": 4.8,
+      "narration": 4.9,
+      "story": 4.7,
+      "count": 43000
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/51-tilFI-eL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B088C4DBYP"
+  },
+  {
     "asin": "B01N17THEO",
     "title": "For We Are Many",
     "subtitle": "Bobiverse, Book 2",
@@ -24,9 +172,9 @@
     "releaseDate": "2017-04-18",
     "purchaseDate": "2026-11-11T04:38:32.801Z",
     "finished": false,
-    "percentComplete": 7,
-    "finishedAt": null,
-    "lastActivityAt": null,
+    "percentComplete": 33,
+    "finishedAt": "2026-11-13T13:29:58.732Z",
+    "lastActivityAt": "2026-11-13T13:29:58.732Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -58,9 +206,9 @@
     "releaseDate": "2012-02-14",
     "purchaseDate": "2026-11-10T00:45:49.376Z",
     "finished": false,
-    "percentComplete": 17,
-    "finishedAt": "2026-11-12T08:10:15.932Z",
-    "lastActivityAt": "2026-11-12T08:10:15.932Z",
+    "percentComplete": 19,
+    "finishedAt": "2026-11-13T03:24:34.075Z",
+    "lastActivityAt": "2026-11-13T03:24:34.075Z",
     "rating": {
       "overall": 4.7,
       "narration": 4.8,
@@ -157,7 +305,7 @@
       "overall": 4.5,
       "narration": 4.7,
       "story": 4.4,
-      "count": 4200
+      "count": 4700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -324,7 +472,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 6300
+      "count": 6400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -564,7 +712,7 @@
       "overall": 4.6,
       "narration": 4.7,
       "story": 4.5,
-      "count": 25200
+      "count": 25300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51Z9Q70MyCL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B00S5AAHLY"
@@ -794,7 +942,7 @@
       "overall": 4.7,
       "narration": 4.9,
       "story": 4.7,
-      "count": 8600
+      "count": 8700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/411me2ykf6L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK3ZV4XR"
@@ -957,7 +1105,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 33100
+      "count": 33200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -2578,7 +2726,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 35700
+      "count": 35800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2611,7 +2759,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 316800
+      "count": 316900
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2882,7 +3030,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 73700
+      "count": 73800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -3368,7 +3516,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 14700
+      "count": 14800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51CpBBPmT-L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0D1DPR1X3"
@@ -3888,7 +4036,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 28900
+      "count": 29000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51neQMPY-eL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GHD1R2R"
@@ -4445,7 +4593,7 @@
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
-      "story": 4.8,
+      "story": 4.7,
       "count": 7000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51A0XoLP2BL._SL500_.jpg",

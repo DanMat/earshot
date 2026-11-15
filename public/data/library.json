@@ -24,9 +24,9 @@
     "releaseDate": "2017-08-08",
     "purchaseDate": "2026-11-12T18:05:43.321Z",
     "finished": false,
-    "percentComplete": 0,
-    "finishedAt": null,
-    "lastActivityAt": null,
+    "percentComplete": 28,
+    "finishedAt": "2026-11-15T09:07:14.692Z",
+    "lastActivityAt": "2026-11-15T09:07:14.692Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -171,10 +171,10 @@
     "runtimeMin": 539,
     "releaseDate": "2017-04-18",
     "purchaseDate": "2026-11-11T04:38:32.801Z",
-    "finished": false,
-    "percentComplete": 83,
-    "finishedAt": "2026-11-14T05:39:04.567Z",
-    "lastActivityAt": "2026-11-14T05:39:04.567Z",
+    "finished": true,
+    "percentComplete": 99,
+    "finishedAt": "2026-11-15T04:01:51.620Z",
+    "lastActivityAt": "2026-11-15T04:01:51.620Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -302,10 +302,10 @@
     "finishedAt": "2026-11-10T00:42:57.498Z",
     "lastActivityAt": "2026-11-10T00:42:57.498Z",
     "rating": {
-      "overall": 4.5,
+      "overall": 4.4,
       "narration": 4.7,
-      "story": 4.4,
-      "count": 5100
+      "story": 4.3,
+      "count": 5500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -472,7 +472,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 6400
+      "count": 6500
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -807,11 +807,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "2"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "2"
       }
     ],
@@ -848,11 +848,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -2297,7 +2297,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 7100
+      "count": 7200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51KqTt1Fk1L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14PK33J"
@@ -2651,7 +2651,7 @@
       "overall": 4.8,
       "narration": 4.8,
       "story": 4.9,
-      "count": 17700
+      "count": 17800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51ym2M+-kiL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14RPXHR"
@@ -2759,7 +2759,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 316900
+      "count": 317000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2991,7 +2991,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 42100
+      "count": 42200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51e1PKKdv8L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0934GTSGT"
@@ -3030,7 +3030,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 73900
+      "count": 74000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"

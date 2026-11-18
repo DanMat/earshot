@@ -1,10 +1,10 @@
 {
   "totals": {
     "library": 144,
-    "finished": 94,
-    "inProgress": 21,
+    "finished": 95,
+    "inProgress": 20,
     "notStarted": 30,
-    "finishedHours": 1470,
+    "finishedHours": 1478,
     "libraryHours": 2349,
     "libraryDays": 98,
     "narrators": 128,
@@ -17,7 +17,7 @@
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-11-15T04:01:51.620Z"
+    "last": "2026-11-18T08:48:00.270Z"
   },
   "topNarrators": [
     {
@@ -35,6 +35,10 @@
     {
       "name": "Ki Hong Lee",
       "count": 8
+    },
+    {
+      "name": "Ray Porter",
+      "count": 7
     },
     {
       "name": "Hugh Laurie",
@@ -55,10 +59,6 @@
     {
       "name": "Cush Jumbo",
       "count": 7
-    },
-    {
-      "name": "Ray Porter",
-      "count": 6
     },
     {
       "name": "Mark Addy",
@@ -99,16 +99,16 @@
       "count": 7
     },
     {
+      "name": "Dennis E. Taylor",
+      "count": 5
+    },
+    {
       "name": "Pierce Brown",
       "count": 5
     },
     {
       "name": "Rebecca Cantrell",
       "count": 5
-    },
-    {
-      "name": "Dennis E. Taylor",
-      "count": 4
     },
     {
       "name": "Jim Butcher",
@@ -122,7 +122,7 @@
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 74
+      "count": 75
     },
     {
       "name": "Literature & Fiction",
@@ -192,7 +192,7 @@
     {
       "title": "Bobiverse",
       "owned": 6,
-      "finished": 2
+      "finished": 3
     },
     {
       "title": "The Dresden Files",
@@ -266,7 +266,7 @@
     }
   ],
   "byMonth": {
-    "2026-11": 6,
+    "2026-11": 7,
     "2026-10": 6,
     "2026-09": 2,
     "2026-08": 2,

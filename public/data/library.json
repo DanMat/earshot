@@ -25,8 +25,8 @@
     "purchaseDate": "2026-11-12T18:05:43.321Z",
     "finished": true,
     "percentComplete": 99,
-    "finishedAt": "2026-11-19T09:18:16.039Z",
-    "lastActivityAt": "2026-11-19T09:18:16.039Z",
+    "finishedAt": "2026-11-19T22:46:53.416Z",
+    "lastActivityAt": "2026-11-19T22:46:53.416Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -135,9 +135,9 @@
     "releaseDate": "2020-09-24",
     "purchaseDate": "2026-11-12T18:02:42.861Z",
     "finished": false,
-    "percentComplete": 6,
-    "finishedAt": "2026-11-19T10:03:25.509Z",
-    "lastActivityAt": "2026-11-19T10:03:25.509Z",
+    "percentComplete": 25,
+    "finishedAt": "2026-11-20T08:14:36.304Z",
+    "lastActivityAt": "2026-11-20T08:14:36.304Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -305,7 +305,7 @@
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.3,
-      "count": 7000
+      "count": 7400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -1272,7 +1272,7 @@
     "lastActivityAt": "2026-06-23T07:06:20.660Z",
     "rating": {
       "overall": 4.6,
-      "narration": 4.8,
+      "narration": 4.9,
       "story": 4.6,
       "count": 200
     },
@@ -2009,7 +2009,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 5600
+      "count": 5700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qW73k+gWL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0F14P2632"
@@ -2726,7 +2726,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 35900
+      "count": 36000
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kOQeaXbAL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09ZJ82C7Y"
@@ -2759,7 +2759,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 317300
+      "count": 317400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -3341,8 +3341,8 @@
     "subtitle": null,
     "authors": [
       "singNsong",
-      "Hye Young Im — Translator",
-      "J. Torres — Translator"
+      "J. Torres — Translator",
+      "Hye Young Im — Translator"
     ],
     "narrators": [
       "Eric Yang"
@@ -3959,8 +3959,8 @@
     "purchaseDate": "2025-04-11T14:22:45.277Z",
     "finished": false,
     "percentComplete": 0,
-    "finishedAt": "2026-11-19T13:27:13.746Z",
-    "lastActivityAt": "2026-11-19T13:27:13.746Z",
+    "finishedAt": "2026-11-20T14:35:32.045Z",
+    "lastActivityAt": "2026-11-20T14:35:32.045Z",
     "rating": {
       "overall": 4.5,
       "narration": 4.7,
@@ -5551,7 +5551,7 @@
     "lastActivityAt": null,
     "rating": {
       "overall": 4.3,
-      "narration": 4.5,
+      "narration": 4.4,
       "story": 4.2,
       "count": 200
     },
@@ -5570,11 +5570,11 @@
     ],
     "series": [
       {
-        "title": "Harry Potter",
+        "title": "Wizarding World Collection",
         "sequence": "2"
       },
       {
-        "title": "Wizarding World Collection",
+        "title": "Harry Potter",
         "sequence": "2"
       }
     ],

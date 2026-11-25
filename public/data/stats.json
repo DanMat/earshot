@@ -1,23 +1,23 @@
 {
   "totals": {
-    "library": 144,
-    "finished": 95,
+    "library": 145,
+    "finished": 96,
     "inProgress": 22,
     "notStarted": 28,
-    "finishedHours": 1478,
-    "libraryHours": 2349,
+    "finishedHours": 1494,
+    "libraryHours": 2363,
     "libraryDays": 98,
     "narrators": 128,
     "authors": 30,
     "seriesStarted": 17
   },
   "busiestMonth": {
-    "ym": "2026-06",
+    "ym": "2026-11",
     "count": 8
   },
   "span": {
     "first": "2024-09-01T10:12:27.626Z",
-    "last": "2026-11-19T22:46:53.416Z"
+    "last": "2026-11-25T05:35:55.671Z"
   },
   "topNarrators": [
     {
@@ -29,16 +29,16 @@
       "count": 10
     },
     {
+      "name": "Ray Porter",
+      "count": 8
+    },
+    {
       "name": "Jeff Hays",
       "count": 8
     },
     {
       "name": "Ki Hong Lee",
       "count": 8
-    },
-    {
-      "name": "Ray Porter",
-      "count": 7
     },
     {
       "name": "Hugh Laurie",
@@ -100,7 +100,7 @@
     },
     {
       "name": "Dennis E. Taylor",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Pierce Brown",
@@ -122,7 +122,7 @@
   "topGenres": [
     {
       "name": "Science Fiction & Fantasy",
-      "count": 75
+      "count": 74
     },
     {
       "name": "Literature & Fiction",
@@ -141,16 +141,16 @@
       "count": 4
     },
     {
-      "name": "Romance",
-      "count": 3
-    },
-    {
       "name": "Arts & Entertainment",
       "count": 2
     },
     {
       "name": "Teen & Young Adult",
       "count": 2
+    },
+    {
+      "name": "Romance",
+      "count": 1
     }
   ],
   "series": [
@@ -192,7 +192,7 @@
     {
       "title": "Bobiverse",
       "owned": 6,
-      "finished": 3
+      "finished": 4
     },
     {
       "title": "The Dresden Files",
@@ -266,7 +266,7 @@
     }
   ],
   "byMonth": {
-    "2026-11": 7,
+    "2026-11": 8,
     "2026-10": 6,
     "2026-09": 2,
     "2026-08": 2,

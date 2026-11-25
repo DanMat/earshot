@@ -1,5 +1,43 @@
 [
   {
+    "asin": "B00P0277C2",
+    "title": "The Three-Body Problem",
+    "subtitle": null,
+    "authors": [
+      "Cixin Liu"
+    ],
+    "narrators": [
+      "Luke Daniels"
+    ],
+    "series": [
+      {
+        "title": "The Remembrance of Earth's Past",
+        "sequence": "1"
+      }
+    ],
+    "genres": [
+      "Literature & Fiction",
+      "Science Fiction & Fantasy"
+    ],
+    "language": "english",
+    "contentType": "Product",
+    "runtimeMin": 806,
+    "releaseDate": "2014-11-11",
+    "purchaseDate": "2026-11-25T04:28:57.233Z",
+    "finished": false,
+    "percentComplete": 10,
+    "finishedAt": "2026-11-25T18:01:25.210Z",
+    "lastActivityAt": "2026-11-25T18:01:25.210Z",
+    "rating": {
+      "overall": 4.4,
+      "narration": 4.5,
+      "story": 4.4,
+      "count": 31700
+    },
+    "coverUrl": "https://m.media-amazon.com/images/I/518UKlc1WKL._SL500_.jpg",
+    "audibleUrl": "https://www.audible.com/pd/B00P0277C2"
+  },
+  {
     "asin": "B07341FZDC",
     "title": "All These Worlds",
     "subtitle": "Bobiverse, Book 3",
@@ -68,7 +106,7 @@
       "overall": 4.7,
       "narration": 4.9,
       "story": 4.6,
-      "count": 6200
+      "count": 6300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51O1HmGSbEL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H8SY9QMX"
@@ -134,10 +172,10 @@
     "runtimeMin": 1017,
     "releaseDate": "2020-09-24",
     "purchaseDate": "2026-11-12T18:02:42.861Z",
-    "finished": false,
-    "percentComplete": 75,
-    "finishedAt": "2026-11-24T08:50:10.705Z",
-    "lastActivityAt": "2026-11-24T08:50:10.705Z",
+    "finished": true,
+    "percentComplete": 99,
+    "finishedAt": "2026-11-25T05:35:55.671Z",
+    "lastActivityAt": "2026-11-25T05:35:55.671Z",
     "rating": {
       "overall": 4.8,
       "narration": 4.9,
@@ -305,7 +343,7 @@
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.3,
-      "count": 8300
+      "count": 8600
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -472,7 +510,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 7000
+      "count": 7100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51XVeo9KqOL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0H4LKXP2C"
@@ -722,11 +760,11 @@
     "title": "The Lost Island",
     "subtitle": "A Gideon Crew Novel",
     "authors": [
-      "Douglas Preston",
-      "Lincoln Child"
+      "Douglas Preston 84522819",
+      "Lincoln Child 84634024"
     ],
     "narrators": [
-      "David W. Collins"
+      "David W. Collins 85147924"
     ],
     "series": [
       {
@@ -761,11 +799,11 @@
     "title": "Gideon's Corpse",
     "subtitle": null,
     "authors": [
-      "Douglas Preston",
-      "Lincoln Child"
+      "Douglas Preston 84522819",
+      "Lincoln Child 84634024"
     ],
     "narrators": [
-      "David W. Collins"
+      "David W. Collins 85147924"
     ],
     "series": [
       {
@@ -848,11 +886,11 @@
     ],
     "series": [
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -952,11 +990,11 @@
     "title": "Gideon's Sword",
     "subtitle": null,
     "authors": [
-      "Douglas Preston",
-      "Lincoln Child"
+      "Douglas Preston 84522819",
+      "Lincoln Child 84634024"
     ],
     "narrators": [
-      "John Glover"
+      "John Glover 85062907"
     ],
     "series": [
       {
@@ -3266,10 +3304,10 @@
     "title": "The Trouble with Peace",
     "subtitle": null,
     "authors": [
-      "Joe Abercrombie"
+      "Joe Abercrombie 85039271"
     ],
     "narrators": [
-      "Steven Pacey"
+      "Steven Pacey 85201302"
     ],
     "series": [
       {
@@ -3303,10 +3341,10 @@
     "title": "A Little Hatred",
     "subtitle": null,
     "authors": [
-      "Joe Abercrombie"
+      "Joe Abercrombie 85039271"
     ],
     "narrators": [
-      "Steven Pacey"
+      "Steven Pacey 85201302"
     ],
     "series": [
       {
@@ -4112,7 +4150,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.9,
-      "count": 34000
+      "count": 34100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51GSxj-rhzL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1774249162"
@@ -4650,8 +4688,7 @@
     "series": [],
     "genres": [
       "Literature & Fiction",
-      "Mystery, Thriller & Suspense",
-      "Science Fiction & Fantasy"
+      "Mystery, Thriller & Suspense"
     ],
     "language": "english",
     "contentType": "Product",
@@ -5124,9 +5161,7 @@
     "series": [],
     "genres": [
       "Literature & Fiction",
-      "Mystery, Thriller & Suspense",
-      "Romance",
-      "Science Fiction & Fantasy"
+      "Mystery, Thriller & Suspense"
     ],
     "language": "english",
     "contentType": "Product",
@@ -5274,7 +5309,6 @@
     ],
     "genres": [
       "Mystery, Thriller & Suspense",
-      "Romance",
       "Science Fiction & Fantasy"
     ],
     "language": "english",

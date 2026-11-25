@@ -59,6 +59,14 @@
     "lat": 36.5,
     "lon": 127.8
   },
+  "Cixin Liu": {
+    "found": true,
+    "qid": "Q607588",
+    "country": "People's Republic of China",
+    "iso": "CN",
+    "lat": 35.844722222222224,
+    "lon": 103.45194444444445
+  },
   "Cornman": {
     "found": false,
     "checkedAt": "2026-11-21T15:54:54.443Z"
@@ -90,6 +98,10 @@
     "iso": "US",
     "lat": 39.828175,
     "lon": -98.5795
+  },
+  "Douglas Preston 84522819": {
+    "found": false,
+    "checkedAt": "2026-11-25T18:25:51.768Z"
   },
   "Freida McFadden": {
     "found": true,
@@ -171,6 +183,10 @@
     "lat": 54.6,
     "lon": -2
   },
+  "Joe Abercrombie 85039271": {
+    "found": false,
+    "checkedAt": "2026-11-25T18:25:53.992Z"
+  },
   "John Kenney": {
     "found": false,
     "checkedAt": "2026-11-21T15:54:49.981Z"
@@ -206,6 +222,10 @@
     "iso": "US",
     "lat": 39.828175,
     "lon": -98.5795
+  },
+  "Lincoln Child 84634024": {
+    "found": false,
+    "checkedAt": "2026-11-25T18:25:52.972Z"
   },
   "Mark Greaney": {
     "found": true,

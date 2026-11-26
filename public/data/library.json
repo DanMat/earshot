@@ -25,9 +25,9 @@
     "releaseDate": "2014-11-11",
     "purchaseDate": "2026-11-25T04:28:57.233Z",
     "finished": false,
-    "percentComplete": 10,
-    "finishedAt": "2026-11-25T18:01:25.210Z",
-    "lastActivityAt": "2026-11-25T18:01:25.210Z",
+    "percentComplete": 28,
+    "finishedAt": "2026-11-26T17:36:26.081Z",
+    "lastActivityAt": "2026-11-26T17:36:26.081Z",
     "rating": {
       "overall": 4.4,
       "narration": 4.5,
@@ -343,7 +343,7 @@
       "overall": 4.4,
       "narration": 4.7,
       "story": 4.3,
-      "count": 8600
+      "count": 8700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QMmltt5IL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0HDFGKSTL"
@@ -760,11 +760,11 @@
     "title": "The Lost Island",
     "subtitle": "A Gideon Crew Novel",
     "authors": [
-      "Douglas Preston 84522819",
-      "Lincoln Child 84634024"
+      "Douglas Preston",
+      "Lincoln Child"
     ],
     "narrators": [
-      "David W. Collins 85147924"
+      "David W. Collins"
     ],
     "series": [
       {
@@ -799,11 +799,11 @@
     "title": "Gideon's Corpse",
     "subtitle": null,
     "authors": [
-      "Douglas Preston 84522819",
-      "Lincoln Child 84634024"
+      "Douglas Preston",
+      "Lincoln Child"
     ],
     "narrators": [
-      "David W. Collins 85147924"
+      "David W. Collins"
     ],
     "series": [
       {
@@ -886,11 +886,11 @@
     ],
     "series": [
       {
-        "title": "Iliad & Odyssey",
+        "title": "Audible Iliad & Odyssey",
         "sequence": "1"
       },
       {
-        "title": "Audible Iliad & Odyssey",
+        "title": "Iliad & Odyssey",
         "sequence": "1"
       }
     ],
@@ -990,11 +990,11 @@
     "title": "Gideon's Sword",
     "subtitle": null,
     "authors": [
-      "Douglas Preston 84522819",
-      "Lincoln Child 84634024"
+      "Douglas Preston",
+      "Lincoln Child"
     ],
     "narrators": [
-      "John Glover 85062907"
+      "John Glover"
     ],
     "series": [
       {
@@ -1143,7 +1143,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 34100
+      "count": 34200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51QkyISCzbL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0FXY6DVJS"
@@ -1230,7 +1230,7 @@
     "rating": {
       "overall": 4.7,
       "narration": 4.9,
-      "story": 4.8,
+      "story": 4.7,
       "count": 1400
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51kU3yteEkL._SL500_.jpg",
@@ -2258,8 +2258,8 @@
     "subtitle": null,
     "authors": [
       "singNsong",
-      "J. Torres — Translator",
-      "Hye Young Im — Translator"
+      "Hye Young Im — Translator",
+      "J. Torres — Translator"
     ],
     "narrators": [],
     "series": [
@@ -2797,7 +2797,7 @@
       "overall": 4.9,
       "narration": 4.9,
       "story": 4.8,
-      "count": 317700
+      "count": 317800
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51POf8gOyLL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08G9PRS1K"
@@ -2836,7 +2836,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 32100
+      "count": 32200
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rtjss07uL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0DK282SYV"
@@ -2876,7 +2876,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 26000
+      "count": 26100
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51qfZAq2J4L._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B0CDXWSS5D"
@@ -2952,7 +2952,7 @@
       "overall": 4.9,
       "narration": 5,
       "story": 4.9,
-      "count": 33600
+      "count": 33700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51rmyTTWPsL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B09GCYRZRQ"
@@ -3068,7 +3068,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.8,
-      "count": 74600
+      "count": 74700
     },
     "coverUrl": "https://m.media-amazon.com/images/I/51HIZdnqASL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/B08V8B2CGV"
@@ -3085,12 +3085,12 @@
     ],
     "series": [
       {
-        "title": "The Cosmere",
-        "sequence": ""
-      },
-      {
         "title": "The Mistborn Saga",
         "sequence": "1"
+      },
+      {
+        "title": "The Cosmere",
+        "sequence": ""
       }
     ],
     "genres": [
@@ -3304,10 +3304,10 @@
     "title": "The Trouble with Peace",
     "subtitle": null,
     "authors": [
-      "Joe Abercrombie 85039271"
+      "Joe Abercrombie"
     ],
     "narrators": [
-      "Steven Pacey 85201302"
+      "Steven Pacey"
     ],
     "series": [
       {
@@ -3341,10 +3341,10 @@
     "title": "A Little Hatred",
     "subtitle": null,
     "authors": [
-      "Joe Abercrombie 85039271"
+      "Joe Abercrombie"
     ],
     "narrators": [
-      "Steven Pacey 85201302"
+      "Steven Pacey"
     ],
     "series": [
       {
@@ -3368,7 +3368,7 @@
       "overall": 4.8,
       "narration": 4.9,
       "story": 4.7,
-      "count": 11200
+      "count": 11300
     },
     "coverUrl": "https://m.media-amazon.com/images/I/61u1vYY6gaL._SL500_.jpg",
     "audibleUrl": "https://www.audible.com/pd/1478916591"
@@ -3379,8 +3379,8 @@
     "subtitle": null,
     "authors": [
       "singNsong",
-      "J. Torres — Translator",
-      "Hye Young Im — Translator"
+      "Hye Young Im — Translator",
+      "J. Torres — Translator"
     ],
     "narrators": [
       "Eric Yang"
